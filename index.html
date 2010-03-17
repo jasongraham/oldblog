@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% assign hide_extended = true %}
+
+{% for post in site.posts limit:3 %}
+{% include post.html %}
+{% endfor %}
+
+<div class="previous_posts">
+<h3>Previous posts</h3>
+<table class="archive">
+	{% for post in site.posts offset:3 limit:5 %}
+	<tr>
+		<td class="first"> <span>{{ post.date | date_to_string }}</span> </td>
+		<td> <a href="{{ post.url }}">{{ post.title }}</a> </td>
+	</tr>
+	{% endfor %}
+</table>
+<p>
+   See the <a href="/archive/">archive</a> for more.
+</p>
+</div>
+
+<div class="cloud">
+<h3>Topic list</h3>
+{% include cloud.html %}
+</div> 
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+
+    <title>{% if page.title %}{{ page.title }} &rarr; {% endif %}jason.the-graham.com</title>
+    <link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/zenburn.css" />
+
+  </head>
+  <body>
+    <div id="header">
+      <h1><a href="/">Jason<span>.the-</span>Graham<span>.com</span></a></h1>
+
+      <ul id="navigation">
+        <li class="first"><a href="/">blog</a></li>
+        <li><a href="/about/">about</a></li>
+        <li><a href="/archive/">archive</a></li>
+        <li class="last"><a href="http://code.the-graham.com">code</a></li>
+        <a href="http://feeds.feedburner.com/jason-the-graham" title="RSS Feed"><img src="/images/Newsfeed-RSS-icon.png" style="float: right; border: 0; margin-top: .5em;" /></a>
+      </ul>
+
+    <div class="clear_both">
+    </div>
+   </div>
+
+    {{ content }}
+
+  <div class="clear_both">
+  </div>
+
+  <div class="footer">
+    <div class="contact">
+      <a href="/about/">Jason Graham</a><br />
+      jason AT the-graham DOT com<br />
+    </div>
+    <div class="contact">
+      <a href="http://www.eecs.wsu.edu/">EECS</a> Graduate Student,<br />
+      <a href="http://www.wsu.edu/">Washington State University</a><br />
+    </div>
+    <div class="menu">
+      <a href="http://code.graham-clan.net">code</a><br />
+    </div>
+    <div class="menu">
+      <a href="/archive/">archive</a><br />
+    </div>
+    <div class="menu">
+      <a href="/about/">about</a><br />
+    </div>
+    <div class="menu">
+      <a href="/">blog</a><br />
+    </div>
+
+    <div class="clear_both"></div>
+    <div class="copy">Copyright &copy; 2010 Jason Graham. Licenced under the <a href='http://creativecommons.org/licenses/by-sa/3.0/us/'>creative commons attribution-share alike license</a>.
+  </div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+var links = document.getElementsByTagName('a');
+var query = '?';
+for(var i = 0; i < links.length; i++) {
+if(links[i].href.indexOf('#disqus_thread') >= 0) {
+query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+}
+}
+document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/jason-the-graham-blog/get_num_replies.js' + query + '"></' + 'script>');
+})();
+//]]>
+</script>
+
+  </body>
+</html>
+

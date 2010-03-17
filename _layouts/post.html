@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<div class="meta"><span class="date">{{ page.date | date_to_string }}</span></div>
+<h2>{{ page.title }}</h2>
+
+{{ content }}
+
+<div class='tags'>
+<span>
+tags:   
+{% for t in page.tags %} 
+<a href='http://www.google.com/search?q={{ t | escape }}+site:graham-clan.net'>{{ t }}</a>{% if forloop.last == false %}    , {% endif %}
+{% endfor %}                    
+</span>
+</div>
+
+<div class="clear_both"></div>
+
+{% if site.related_posts %}
+<div class="previous_posts">
+<h3>Possibly related posts</h3>
+
+<table class="archive">
+{% for post in site.related_posts limit:5 %}
+<tr>
+<td class="first">
+<span>{{ post.date | date_to_string }}</span>
+</td>
+<td>
+<a href="{{ post.url }}">{{ post.title }}</a>
+</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+{% endif %}
+
+<div class="cloud">
+<h3>Topic list</h3>
+{% include cloud.html %}
+</div> 
+
+<div class="clear_both">
+</div>
+
+<div class="paginator">
+<hr/>
+
+<div class="left_column">
+{% if page.previous %}
+<a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous Post</a>
+{% endif %}
+</div>
+
+<div class="right_column">
+{% if page.next %}
+<a href="{{ page.next.url }}" title="{{ page.next.title }}">Next Post &rarr;</a>
+{% endif %}
+</div>
+
+<div class="clear_both">
+</div>
+
+<hr/>
+</div>
+
+<section>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://jason-the-graham-blog.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=jason-the-graham-blog">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</section>
