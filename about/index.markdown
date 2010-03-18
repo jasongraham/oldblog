@@ -36,7 +36,7 @@ The site design was heavily inspired by similar blogs setup up by both [Tate Joh
 [blogroll]:/about/blogroll/
 
 [facebook]:http://facebook.com/jason.the.graham
-[twitter]:http://twitter.com/jason.the.graham
+[twitter]:http://twitter.com/jason__graham
 
 [SheevaPlug]:http://en.wikipedia.org/wiki/SheevaPlug
 [debian]:http://www.debian.org/
