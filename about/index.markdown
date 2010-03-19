@@ -14,7 +14,7 @@ For a bit more professional or academic information on me, check out my [school 
 
 ## Contact Information
 
-If you should wish to contact me, my email is `jason AT the-graham DOT com`, or alternatively my school email is `jgraham AT eecs DOT wsu DOT edu`.
+If you should wish to contact me, my email is `jgraham AT eecs.wsu DOT edu`.
 
 I can also be found on [facebook] and [twitter].
 
