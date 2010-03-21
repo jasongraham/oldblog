@@ -11,7 +11,7 @@ Yesterday my wife and I mourned the passing of Bobby, or as he was better known 
 
 On an unrelated note, I bought a new router yesterday.  Rodney (I enjoy using router names that are easy to yell at), a [Linksys WRT160n], and stepped up to take Bobby's place.  I had planned to make my next router wireless N with 1Gb wired transfer, but decided to hold off on that, seeing as routers which actually implement the [recently finalized], full [wireless N] specs aren't on the market yet, and I really have no need for 1Gb connections.  Maybe after Rodney bites the dust, or I build a media center PC I'll get one.
 
-<img class="img_left" src="http://hargalaptopnotebooknetbookaceraspiretoshibasatellitehp.com/images/Linksys_WRT160N.jpg" title="Rodney" width="150" height="150" />
+<img class="img_left" src="http://www.noadapterneeded.com/images/linksys-wireless-router.jpg" title="Rodney" width="150" height="150" />
 
 One important selection criteria for routers, at least for me, is the ability to flash [dd-wrt], a alternative, Linux based, open-source firmware.  It turns out that many cheap-ish routers can support many more features than the built in firmware allows, so for me, this is a cheaper way to get a [fully featured] device.  They have a nice [list of supported devices], and well written instructions on how to upgrade and configure afterwards.
 
