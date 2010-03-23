@@ -3,11 +3,8 @@ layout: default
 title: Blogroll
 ---
 
-_This page is a continuing work in progress.  I haven't decided how to include these as biog posts or not, so for now, they'll slowly grow in this quiet corner of the site._
-
----
 ## Helpful Howtos
-Collection of links to sites that I've found useful.
+Collection of links to sites that I've found helpful.
 
 ### Command Line and Text Editting
 * [A Short Introduction to Cron Jobs](http://www.howtoforge.com/a-short-introduction-to-cron-jobs)
