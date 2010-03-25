@@ -5,7 +5,7 @@ time: '15:30'
 tags: [school, time, distractions]
 ---
 
-This week I've spent something on the order of four hours in [Les Schwab] getting our two car's studded winter tires changed out.  The [deadline] for removing them before the police can start fining you is at the end of the month, thus explaining the wait.
+This week I've spent something on the order of four hours in [Les Schwab] getting our two cars' studded winter tires changed out.  The [deadline] for removing them before the police can start fining you is at the end of the month, thus explaining the wait.
 
 To pass the time, I was a good student and worked on some homework that I didn't need my computer for.  From this I discovered, to my dismay, that I am _much_ more productive when not seated in from of a computer screen.  The internet can be very distracting, with [Google Reader], [twitter] and email constantly updating.
 
@@ -25,9 +25,9 @@ I need to find myself a method of cutting out some of the distractions that I fa
 	+ **Pros**: It _can_ be an environment more conducive to working...
 	+ **Cons**: ...but frequently isn't.  So overall, not much different.  Also, the dogs would be kenneled for longer periods.
 
-I'm leaning toward shutting off the monitor and seeing how that does.  Perhaps I can regain some of my productivity.
+I'm leaning toward shutting off the monitor and seeing how that works.  Perhaps I can regain some of my productivity.
 
-I do wonder how people that code for a living keep their focus.  I hear that often, one has an IDE open, perhaps a web browser for documentation, and assorted shells, file manager windows, etc.  I'm sure it becomes an issue there as well.
+With all the distraction the computer brings, I'm curious how people that code for a living keep their focus.  I hear that often, one has an IDE open, perhaps a web browser for documentation, and assorted shells, file manager windows, etc.  I'm sure it becomes an issue there as well.
 
 [Les Schwab]:http://www.lesschwab.com/
 [deadline]:http://www.wsdot.wa.gov/winter/studtire/
