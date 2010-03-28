@@ -37,9 +37,7 @@ Scripts to log and graph the activities are mostly unmodified versions of those 
 <img src="/images/net.png">
 
 ### Disk Usage
-<img src="/images/hdd_root.png">
-
-<img src="/images/hdd_home.png">
+<img src="/images/sda.png">
 
 [SheevaPlug]:http://en.wikipedia.org/wiki/SheevaPlug
 [blog]:/
