@@ -19,3 +19,7 @@ rm -rf _site/* && \
 # rsync the _site directory with the server
 jekyll --lsi && \
 rsync -avz --delete _site/ homeserver:blog/
+
+# Ping google and bing to tell them the sitemap has been updated
+wget http://www.google.com/webmasters/tools/ping?sitemap=http%3A%2F%2Fjason.the-graham.com%2Fsitemap.xml > /dev/null
+wget http://www.bing.com/webmaster/ping.aspx?siteMap=http%3A%2F%2Fjason.the-graham.com%2Fsitemap.xml > /dev/null
