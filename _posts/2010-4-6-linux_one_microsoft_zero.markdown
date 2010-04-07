@@ -11,7 +11,7 @@ She is considering a slight career change, and getting additional training onlin
 
 Anyway, as she's telling me that the software only runs on Windows, she comments:
 
-> Its too bad it doesn't run on Linux, its so much faster than Windows.
+> It's too bad it doesn't run on Linux, it's so much faster than Windows.
 
 I have officially converted my wife.  Now, maybe I can get to the rest of my family.
 
