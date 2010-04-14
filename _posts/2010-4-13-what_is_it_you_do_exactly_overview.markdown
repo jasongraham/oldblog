@@ -13,7 +13,7 @@ Unfortunately, Shannon and the rest of pure theory tells you nothing about how t
 
 Anyway, I have a classic example of a digital transmission system in the image below.  This could be thought of as a cell phone (with the whole part where the cell tower is involved conveniently removed) or perhaps a digital walkie-talky system.
 
-There are many steps involved; each of the boxes below is complicated enough to have a graduate level class dedicated to the 'basics' of its implementation.  But its easy enough to trace your way through the steps required.
+There are many steps involved; each of the boxes is complicated enough to have a graduate level class dedicated to the 'basics' of its implementation.  But its easy enough to trace your way through the steps required.
 
 <!-- EXTENDED -->
 
@@ -29,11 +29,11 @@ A quick explanation:
 
 	You can see this happen in the written language too.  For example:
 	> My comp_ter keys can be a bit sti_ky sometimes.
-	Your brain is able to put together what the message based on the English dictionary and surrounding context.  In a nutshell, channel coding does more or less the same thing by providing a dictionary of sorts so the receiver can check what it hears against a list of codewords, and pick the closest one.
+	Your brain is able to put together the message based on the English dictionary and surrounding context.  In a nutshell, channel coding does more or less the same thing by providing a dictionary of sorts so the receiver can check what it hears against a list of codewords, and pick the best match.
 
-* 	**Signal Modulation**: This is difficult to explain.  This takes the codewords put together by the channel coding, and decides how to send them as wavey signals through space.  For example, the your car radio can pick up FM ([frequency modulation]) and AM ([amplitude modulation]) channels, which are two such methods.
+* 	**Signal Modulation**: This is difficult to visualize.  This takes the codewords put together by the channel coding, and decides how to send them as signals through space.  For example, the your car radio can pick up FM ([frequency modulation]) and AM ([amplitude modulation]) channels, which are two such methods.
 
-The rest of the chain is undoing these steps in reverse order to get back to an approximation of the voice signal that went into the system in the first place.
+The rest of the chain involves undoing these steps in reverse order to get back to an approximation of the voice signal that went into the system in the first place.
 
 [Information Theory]:http://en.wikipedia.org/wiki/Information_theory
 [Claude Shannon]:http://en.wikipedia.org/wiki/Claude_E._Shannon
