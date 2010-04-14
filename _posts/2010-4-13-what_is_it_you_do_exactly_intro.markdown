@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is you do exactly? (Introduction)
+title: What is it you do exactly? (Introduction)
 time: '21:15'
 tags: [school, research, information, communication]
 ---
