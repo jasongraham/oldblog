@@ -2,6 +2,8 @@
 
 script="./deploy.sh"
 
+# make sure we are in the jekyll root directory
+# (where deploy.sh should be)
 if [ -f $script ] ; then 
 	echo "Compiling site..."
 else
@@ -20,11 +22,20 @@ rm -rf _site/* && \
 jekyll --lsi && \
 rsync -avz --delete _site/ homeserver:blog/
 
-# Ping google tell them the sitemap has been updated
-wget --output-document /dev/null http://www.google.com/webmasters/tools/ping?sitemap=http%3A%2F%2Fjason.the-graham.com%2Fsitemap.xml
+# explicitly ping google only when 'ping' is passed as a parameter to the script
+# ie, ./deploy ping
 
-# and bing
-wget --output-document /dev/null http://www.bing.com/webmaster/ping.aspx?siteMap=http%3A%2F%2Fjason.the-graham.com%2Fsitemap.xml > /dev/null
+if [ $# -gt 0 ] ; then
+if [ $1 = ping ] ; then
+	echo "Pinging Search Engines..."
 
-# and feedburner
-wget --output-document /dev/null http://feedburner.google.com/fb/a/pingSubmit?bloglink=http%3A%2F%2Fjason.the-graham.com > /dev/null
+	# Ping google tell them the sitemap has been updated
+	wget --output-document /dev/null http://www.google.com/webmasters/tools/ping?sitemap=http%3A%2F%2Fjason.the-graham.com%2Fsitemap.xml
+
+	# and bing
+	wget --output-document /dev/null http://www.bing.com/webmaster/ping.aspx?siteMap=http%3A%2F%2Fjason.the-graham.com%2Fsitemap.xml > /dev/null
+
+	# and feedburner
+	wget --output-document /dev/null http://feedburner.google.com/fb/a/pingSubmit?bloglink=http%3A%2F%2Fjason.the-graham.com > /dev/null
+fi
+fi
