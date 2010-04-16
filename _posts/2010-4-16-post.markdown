@@ -1,0 +1,17 @@
+---
+layout: post
+title: Post Title
+tags: []
+time: '14:31'
+---
+
+*[ABC]: American Broadcasting Company
+*[who are you]: interesting song.
+
+On [ABC] this week, the song who are you was played way too much.[^1]
+
+This is a second paragraph.
+
+[ABC]:http://abc.com
+
+[^1]: This is a footnote.

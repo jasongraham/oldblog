@@ -5,7 +5,7 @@ time: '21:20'
 tags: [school, research, information, communication, DSP]
 ---
 
-I thought I'd start by poiting to some background material, for those interested, about the history of what is called "[Information Theory]".  The founding father of the field is [Claude Shannon], and his work is very important as to telling you what is possible when trying to move data from point A to point B.
+I thought I'd start by pointing to some background material, for those interested, about the history of what is called "[Information Theory]".  The founding father of the field is [Claude Shannon], and his work is very important as to telling you what is possible when trying to move data from point A to point B.
 
 : _Note: As an aside, Shannon is actually a very interesting geek figure. Among other things, his masters thesis is the basis of digital logic circuits.  Definitely check out his Wikipedia page._
 
