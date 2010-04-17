@@ -14,4 +14,4 @@ I hope everyone had a wonderful holiday season.
 
 [Guild Wars]:http://www.guildwars.com/
 [school website]:http://eecs.wsu.edu/~jgraham
-[code for this blog]:/git/blog/
+[code for this blog]:http://code.the-graham.com/blog/
