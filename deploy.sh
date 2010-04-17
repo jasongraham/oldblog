@@ -37,5 +37,7 @@ if [ $1 = ping ] ; then
 
 	# and feedburner
 	wget --output-document /dev/null http://feedburner.google.com/fb/a/pingSubmit?bloglink=http%3A%2F%2Fjason.the-graham.com > /dev/null
+else
+	echo "Use \"$0 ping\" to ping google about an update."
 fi
 fi
