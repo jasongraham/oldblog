@@ -16,7 +16,7 @@ For a bit more professional or academic information on me, check out my [school 
 
 If you should wish to contact me, my email is `jason AT the-graham DOT com`.
 
-I can also be found on [facebook] and [twitter].
+I can also be found on [facebook.com/jason.the.graham] and [@jason__graham] on twitter.
 
 ## About This Site
 
@@ -35,8 +35,8 @@ The site design was heavily inspired by similar blogs setup up by both [Tate Joh
 
 [blogroll]:/about/blogroll/
 
-[facebook]:http://facebook.com/jason.the.graham
-[twitter]:http://twitter.com/jason__graham
+[facebook.com/jason.the.graham]:http://facebook.com/jason.the.graham
+[@jason__graham]:http://twitter.com/jason__graham
 
 [SheevaPlug]:http://en.wikipedia.org/wiki/SheevaPlug
 [debian]:http://www.debian.org/
