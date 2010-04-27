@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mythbusters is not like Science
-tags: [school, rant, education, politics, mythbusters]
+tags: [school, rants, education, politics, mythbusters]
 ---
 
 Today, President Obama gave a [speech] on the importance of math/science/engineering education, and is starting an program to show young people [how "cool" science can be](http://blogs.discovermagazine.com/badastronomy/2009/11/23/obama-kicks-off-massive-science-education-effort/).  As an engineering student, I'm happy for all the extra funding we may be receiving, and I think it would be great for more interested students to join the scientific community.
