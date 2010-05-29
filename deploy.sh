@@ -27,16 +27,16 @@ rsync -avz --delete _site/ homeserver:blog/
 
 if [ $# -gt 0 ] ; then
 if [ $1 = ping ] ; then
-	echo "Pinging Search Engines..."
+	echo "Pinging Update Services..."
 
 	# Ping google tell them the sitemap has been updated
-	wget --output-document /dev/null http://www.google.com/webmasters/tools/ping?sitemap=http%3A%2F%2Fjason.the-graham.com%2Fsitemap.xml
+	wget --output-document=/dev/null http://www.google.com/webmasters/tools/ping?sitemap=http%3A%2F%2Fjason.the-graham.com%2Fsitemap.xml
 
 	# and bing
-	wget --output-document /dev/null http://www.bing.com/webmaster/ping.aspx?siteMap=http%3A%2F%2Fjason.the-graham.com%2Fsitemap.xml > /dev/null
+	wget --output-document=/dev/null http://www.bing.com/webmaster/ping.aspx?siteMap=http://jason.the-graham.com/sitemap.xml
 
-	# and feedburner
-	wget --output-document /dev/null http://feedburner.google.com/fb/a/pingSubmit?bloglink=http%3A%2F%2Fjason.the-graham.com > /dev/null
+	# and blog search engines
+	./rpcping.pl "Blog for Jason Graham" http://jason.the-graham.com
 else
 	echo "Use \"$0 ping\" to ping google about an update."
 fi
