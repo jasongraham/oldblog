@@ -36,7 +36,7 @@ if [ $1 = ping ] ; then
 	wget --output-document=/dev/null http://www.bing.com/webmaster/ping.aspx?siteMap=http://jason.the-graham.com/sitemap.xml
 
 	# and blog search engines
-	./rpcping.pl "Blog for Jason Graham" http://jason.the-graham.com
+	./rpcping.pl "Blog for Jason Graham" http://jason.the-graham.com/
 else
 	echo "Use \"$0 ping\" to ping google about an update."
 fi
