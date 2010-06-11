@@ -6,6 +6,10 @@
     <meta name="msvalidate.01" content="ACC160819805135880C0D947A70F0AE8" />
     <meta name="author" content="Jason Graham" />
 
+    {% if page.tags %}
+    <meta name="keywords" content="{{page.tags | join:','}}" />
+    {% endif %}
+
     <title>{% if page.title %}{{ page.title }} &rarr; {% endif %}Blog of Jason Graham</title>
     <link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
 
