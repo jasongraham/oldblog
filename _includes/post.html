@@ -1,5 +1,5 @@
-<div class="meta"><span class="date">{{ post.date | date_to_string }}</span></div>
 <h2>{{ post.title }}<a href="{{ post.url }}" style="border: none;">&#8628;</a></h2>
+<div class="meta"><span class="date">{{ post.date | date_to_string }}</span></div>
 
 {{ post.preview }}
 {% if post.preview != post.content %}
