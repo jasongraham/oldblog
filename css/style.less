@@ -43,15 +43,14 @@ ul
 div#header
 {
   position: relative;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
   padding-top: 1em;
 
   ul#navigation
   {
     margin: 0;
-    padding: 0;
     list-style-type: none;
-      background: @foreground-color;
+    background: @foreground-color;
 
     li
     {
@@ -62,12 +61,13 @@ div#header
       a
       {
         display: block;
-        padding: 0.6em 0.6em;
+        padding: 0.4em 1.35em;
         border-bottom: none;
         font-size: 1.65em;
         text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
+        /* text-transform: uppercase; */
+	font-weight: bold;
+        letter-spacing: 0.05em;
         color: @primary-text-color;
 
         :hover, :active, :focus
@@ -80,7 +80,7 @@ div#header
 
     .first
     {
-      padding-left: 1.2em;
+      padding-left: 1.4em;
       -moz-border-radius-topleft: 10px;
       -moz-border-radius-bottomleft: 10px;
       -webkit-border-top-left-radius: 10px;
@@ -145,9 +145,10 @@ div#header
 
 h1
 {
-  margin-bottom: 0.375em;
+  margin-bottom: 0.125em;
   font-size: 5.5em;
   font-weight: normal;
+  text-align: center;
 
   a
   {
@@ -390,7 +391,7 @@ hr
 
 hr.post
 {
-  margin: 1em 0 3.5em 0;
+  margin: 1em 0 0 0;
 }
 
 
@@ -485,7 +486,7 @@ div.meta
   margin: 0;
   line-height: 0;
   font-weight: bold;
-  margin-top: -3.5em;
+  margin-top: -3.25em;
   float: right;
 
   span.date
