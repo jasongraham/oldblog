@@ -21,10 +21,11 @@ html, body
 html
 {
   background: @background-color;
-  font-family: 'Georgia', 'DejaVu Serif', 'Times', 'Times New Roman', serif;
+  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica', sans-serif;
   font-size: 110%;
   line-height: 1.8em;
   color: @primary-text-color;
+  text-align: justify;
 }
 
 body
@@ -122,7 +123,7 @@ div#header
 
 .monospace
 {
-  font-family: 'monaco', monospace;
+  font-family: 'Droid Sans Mono', 'Monaco', monospace;
 }
 
 .secondary-text
@@ -310,6 +311,10 @@ table.archive
   td.first
   {
     width: 7em;
+    font-weight: bold;
+    .sans-serif;
+    color: @secondary-text-color;
+    text-align: left;
   }
 }
 
