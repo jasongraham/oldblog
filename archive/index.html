@@ -13,7 +13,7 @@ title: Archive
 <table class="archive">
 	{% for post in site.posts %}
 	<tr>
-		<td class="first"><span class="date">{{ post.date | date_to_string }}</span></td>
+		<td class="first">{{ post.date | date:"%b %d, %Y" }}</td>
 		<td><a href="{{ post.url }}">{{ post.title }}</a></td>
 	</tr>
 	{% endfor %}
