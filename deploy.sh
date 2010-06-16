@@ -15,7 +15,7 @@ fi
 rm -rf _site/* && \
 
 # Generate the cloud to include before running jekyll
-./_scripts/generate_cloud.py 50 10 . > ./_includes/cloud.html && \
+./_scripts/generate_cloud.py 40 10 . > ./_includes/cloud.html && \
 
 # Run the jekyll and then
 # rsync the _site directory with the server
