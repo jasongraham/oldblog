@@ -14,13 +14,11 @@ On the rare occasion I have free time, I enjoy playing guitar, spending time wit
 
 For a bit more professional or academic information on me, check out my [school website], though it's a bit sparse at the moment.
 
-## Contact Information
+### On the Web
 
-If you should wish to contact me, my email is `jason AT the-graham DOT com`.
+{% include on_the_web.html %}
 
-I can also be found on [facebook.com/jason.the.graham] and [@jason__graham] on twitter.
-
-My wife and I also share some photos on [Flickr].
+You can email me at `jason AT the-graham DOT com`.
 
 ## About This Site
 
