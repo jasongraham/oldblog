@@ -5,6 +5,8 @@ layout: default
 <h2>{{ page.title }}</h2>
 <div class="meta"><span class="date">{{ page.date | date:"%b %d, %Y" }}</span></div>
 
+{% include paginator.html %}
+
 {{ content }}
 
 <div class='tags'>
@@ -17,6 +19,8 @@ tags:
 </div>
 
 <div class="clear_both"></div>
+
+{% include paginator.html %}
 
 {% if site.related_posts %}
 <div class="previous_posts">
@@ -43,27 +47,6 @@ tags:
 </div> 
 
 <div class="clear_both">
-</div>
-
-<div class="paginator">
-<hr/>
-
-<div class="left_column">
-{% if page.previous %}
-<a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous Post</a>
-{% endif %}
-</div>
-
-<div class="right_column">
-{% if page.next %}
-<a href="{{ page.next.url }}" title="{{ page.next.title }}">Next Post &rarr;</a>
-{% endif %}
-</div>
-
-<div class="clear_both">
-</div>
-
-<hr/>
 </div>
 
 <section>
