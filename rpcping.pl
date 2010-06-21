@@ -2,7 +2,7 @@
 #
 # rpcping.pl - Ping your blog with update services
 #
-# © Copyright, 2006 by John Bokma, http://johnbokma.com/
+# Copyright, 2006 by John Bokma, http://johnbokma.com/
 # License: The Artistic License
 #
 # $Id: rpcping.pl 1083 2008-09-30 19:06:18Z john $ 
