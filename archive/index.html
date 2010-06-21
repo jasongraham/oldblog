@@ -3,18 +3,22 @@ layout: default
 title: Archive
 ---
 
-<div class="cloud" style="float: none; max-width: 100%">
-<h2>Topic list</h2>
+<div class="cloud" style="float: right; max-width: 30%;">
+<h2 style="margin-top: 0;">Topic list</h2>
 {% include cloud.html %}
 </div> 
 
-<h2> Archive </h2>
+<div style="float: left; max-width: 65%;">
+<h2 style="margin-top: 0;"> Archive </h2>
 
 <table class="archive">
 	{% for post in site.posts %}
 	<tr>
 		<td class="first">{{ post.date | date:"%b %d, %Y" }}</td>
-		<td><a href="{{ post.url }}">{{ post.title }}</a></td>
+		<td>
+		<a href="{{ post.url }}">{{ post.title }}</a>
+		</td>
 	</tr>
 	{% endfor %}
 </table>
+</div>
