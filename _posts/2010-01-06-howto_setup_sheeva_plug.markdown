@@ -48,12 +48,14 @@ I don't want to use root to log in or do much of anything directly.  I want to u
 
 {% highlight bash %}
 # as root
-useradd -d /home/USERNAME -m USERNAME -p PASSWORD --shell bash
+useradd -d /home/USERNAME -m USERNAME -p PASSWORD --shell /bin/bash
 
-groupadd -g --system admin
+groupadd -g ### --system admin
 {% endhighlight %}
 
-Make the line is `/etc/group` with admin look as `admin:x:###:USERNAME`, where `###` is just the number thats there to start with.
+The `-g ###` above is the number you want for your admin group.  If you don't care, then leave off that part.
+
+Make the line is `/etc/group` with admin look as `admin:x:###:USERNAME`, where `###` is just the number that you chose, or that the system assigned.
 
 Enter `visudo` to edit the sudoers file, and add:
 
@@ -66,6 +68,9 @@ Verify that you can now execute a command as sudo successfully, then nuke the ro
 
 {% highlight bash %}
 # as the new user
+sudo pwd # make sure sudo is working
+
+# if it is, you can safely remove the ability to log in as root
 sudo passwd -l root
 {% endhighlight %}
 
@@ -76,7 +81,7 @@ LoginGraceTime 20 #(length of time system in seconds server will wait for a resp
 PermitRootLogin no
 {% endhighlight %}
 
-Remotely logging in to the server can now only be done through the new user, and root commands and functionality are preserved through sudo.  For added security, [use ssh keys] rather than passwords, and move sshd to a non-standard port.
+Remotely logging in to the server can now only be done through the new user, and root commands and functionality are preserved through sudo.  For added security, [use ssh keys] rather than passwords, and / or move sshd to a non-standard port.
 
 ---
 ### Install Additional Software ### {#install_additional_software}
