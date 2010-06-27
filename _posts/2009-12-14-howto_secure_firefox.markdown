@@ -4,7 +4,7 @@ title: How to Secure Firefox
 tags: [privacy, security, firefox, howto]
 ---
 
-<img src="http://upload.wikimedia.org/wikipedia/ilo/0/0c/Firefox-logo.png" style="float:right; border: 0px" />
+<img class="img_right" src="http://upload.wikimedia.org/wikipedia/ilo/0/0c/Firefox-logo.png" style="border: 0px" />
 
 After leaving a posts describing [how to set up Chromium Securely](/2009/12/14/secure_chromium_setup/), I figured that I would explain how I have Firefox setup in the same way.  This setup meets my own needs, so you may want to modify what I have done to better suit you.  I'll try to explain the pros and cons of each step along the way.
 

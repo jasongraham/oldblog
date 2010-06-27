@@ -4,7 +4,7 @@ title: How to Setup a Sheeva Plug
 tags: [server, sheevaplug, howto, blog]
 ---
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/SheevaPlug_with_external_drive_enclosure.jpg/300px-SheevaPlug_with_external_drive_enclosure.jpg" style="float:right" />
+<img class="img_right" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/SheevaPlug_with_external_drive_enclosure.jpg/300px-SheevaPlug_with_external_drive_enclosure.jpg" />
 
 My Christmas present to myself was a new computer of sorts: a [Sheeva Plug] computer from Marvel.  Its a tiny, cheap, wall-wart style computer, and much lower power than the previous dual-core machine I had running this server.
 

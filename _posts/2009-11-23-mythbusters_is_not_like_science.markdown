@@ -14,7 +14,7 @@ I realize since I'm an engineer, this may sound really weird to say.  Truly, I'm
 
 It seems to me, that performing research is very similar to what they say about war, being long stretches of boredom punctuated by moments of sheer terror, perhaps with excitement or discovery replacing the terror (although, [PhD Comics] does illustrate the terror portion well).  Years are spent running simulations on a computer, or titrating chemicals, or injecting random concoctions into lab rats before you confirm that perhaps your theory is actually panning out.
 
-<img src="http://images3.wikia.nocookie.net/uncyclopedia/images/thumb/a/a4/Mythbusters19.jpg/320px-Mythbusters19.jpg" alt="mythbusters" style="float:right" />
+<img class="img_right" src="http://images3.wikia.nocookie.net/uncyclopedia/images/thumb/a/a4/Mythbusters19.jpg/320px-Mythbusters19.jpg" alt="mythbusters" />
 
 Interestingly, in his speech, Obama gives a shout out to the Discovery show [Mythbusters] team, who were in attendance.  Science should be more like an episode of Mythbusters.  You ask a question, and answer it in  an hour packed with high speed camera footage and explosions.  The problem facing educators preparing students for these disciplines is a world filled with instant gratification.  No one wants to cram their brain full of theorems, methods, and formula for years and then beat their head against the wall for years longer coming up with some new idea which may or may not be useful or even acknowledged.  Granted, research methods, like all things, tend to improve over time, and hopefully let you do research faster.  It seems though, that the improved methods have only meant that the complexity of the research tasks undertaken have increased.
 

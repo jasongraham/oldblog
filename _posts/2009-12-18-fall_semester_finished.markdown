@@ -4,7 +4,7 @@ title: Fall Semester Finished
 tags: [school, finals, physics]
 ---
 
-<img src="http://virtualwolf.org/images/ars/exam_math_problem.jpg" width="300" height="460" style="float:right" />
+<img class="img_right" src="http://virtualwolf.org/images/ars/exam_math_problem.jpg" width="300" height="460" />
 
 After a somewhat frustrating final last night, and finishing a project write up this morning, I have successfully finished my my inaugural semester of grad school.  I have to say, the difficulty level reminds me somewhat more of the higher level undergraduate physics classes, at least in the kind of questions that are asked.  They are more about applying what you've learned to to related ideas, proving theorems, and generally doing things you haven't considered before, rather than algebraically manipulating problems into forms you've already worked out in homework and in-class examples.
 

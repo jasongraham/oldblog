@@ -4,7 +4,7 @@ title: Finals and other happenings
 tags: [school, research, grants, finals]
 ---
 
-<CENTER><img src="http://voices.mysanantonio.com/stepfaniebishop/stress-picture-stress-relief-kit.jpg" alt="" width="300" height="356" /></CENTER>
+<img src="http://voices.mysanantonio.com/stepfaniebishop/stress-picture-stress-relief-kit.jpg" alt="" width="300" height="356" />
 
 It is that wonderful semiannual occurrence which comes in December and May.  A time of mixed anticipation in the coming calm between semesters, and terror of finishing the current one.  I'm beginning to feel the stress of finals approaching, but I'll be fine.  For others dealing with stress at the moment, I have included the [stress reduction kit](http://voices.mysanantonio.com/stepfaniebishop/stress-picture-stress-relief-kit.jpg) above.
 
