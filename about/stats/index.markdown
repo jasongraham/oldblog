@@ -14,10 +14,12 @@ This server is running:
 * The the-graham.com website, including:
 	* This [blog].
 	* A small [code repository].
-* A wordpress based family oriented blog.
+* A wordpress based [family oriented blog].
 * A small mail server.
-* File backups for my other computers.
+* Rsync based file backups for my other computers.
 * A few assorted other services.
+
+[family oriented blog]:http://www.graham-clan.net
 
 Scripts to log and graph the activities are mostly unmodified versions of those written by Kenny at [computingplugs.com], a [mediawiki] setup that is itself run by a Sheevaplug.  The update scripts run every minute, and the graphs are updated every ten minutes.  They do disappear after I write a post, but they reappear in at most 10 minutes when the graphs update.
 

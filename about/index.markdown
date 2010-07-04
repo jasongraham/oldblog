@@ -12,7 +12,9 @@ My name is Jason Graham. I am 23 years old. I have a lovely wife, and two small 
 
 On the rare occasion I have free time, I enjoy playing guitar, spending time with my family, reading sci-fi, and exploring Linux.  For the small snippets of spare time during the day, I tend to peruse my [blogroll].
 
-For a bit more professional or academic information on me, check out my [school website], though it's a bit sparse at the moment.
+For a bit more professional or academic information on me, check out my [school website], though it's a bit sparse at the moment.  My wife and I also share a [family blog].
+
+[family blog]:http://www.graham-clan.net
 
 ### On the Web
 
