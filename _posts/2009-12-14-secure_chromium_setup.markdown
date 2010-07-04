@@ -40,7 +40,7 @@ sudo apt-get update && sudo apt-get install chomium-browser
 
 A [flash cookie], or Local Shared Object, is a file a website stores on your computer, outside of the control of your browser settings.  It is different from a regular [cookie].  They are associated with adobe flash, which is used by many websites.  Unfortunately, they are also [used to store tracking information](http://www.wired.com/epicenter/2009/08/you-deleted-your-cookies-think-again/), as well as back up data from regular cookies stored by your browser.
 
-In Ubuntu and most other Linux distributions, Adobe Flash settings are stored in `~/.adobe` and the cookies themselves in `~/.macromedia` folders.  I have these simlinked to `/dev/null` (effectively a [black hole])so that anything trying to write to these folders doesn't get an error message, but nothing ever gets written to disk.
+In Ubuntu and most other Linux distributions, Adobe Flash settings are stored in `~/.adobe` and the cookies themselves in `~/.macromedia` folders.  I have these simlinked to `/dev/null` (effectively a [black hole]) so that anything trying to write to these folders doesn't get an error message, but nothing ever gets written to disk.
 
 {% highlight bash %}
 rm -rf ~/.adobe ~/.macromedia
@@ -50,7 +50,7 @@ ln -s /dev/null ~/.macromedia
 
 ### Open Chromium and Set Default Settings
 
-Now we get to setup the default settings within Chromium.  Open the browser, but don't go anywhere.  We're going to make the settings directory read-only in a bit so that nothing can change the settings or write in new ones.
+Now we get to setup the default settings within Chromium.  Open the browser, but don't go anywhere.  We're going to make the settings directory read-only in a bit so that nothing can change the settings or write in new ones.  This will also stop Chromium from logging your browsing history or installing extensions.
 
 0. If you wish to make Chromium the default browser for your system, you might as well do so now, since it asks you. Otherwise, say no.
 1. In the upper right corner click on the wrench icon and pick "Options" from the menu.
@@ -86,9 +86,13 @@ This will make it so that the settings cannot be changed from within Chromium.  
 chmod a-w -R ~/.config/chromium/Default
 {% endhighlight %}
 
-### Disable Chromium's Cache
+### Disable Chromium's Disk Cache
 
-This is optional.  All web browsers will cache pages so that they don't need to fetch the site again if you go back to the page later.  Removing the caching ability will make it harder for your browsing history to be determined, while requiring you to fetch each page fresh, which can take a little bit longer to load.
+This is optional.  All web browsers will [cache pages] to improve the perceived speed of web browsing.  Removing the caching ability will make it harder for your browsing history to be determined.
+
+Bear in mind this only prevents Chromium from using your hard drive as cache, and your RAM will still be used (and as best I can tell, no option to disable cacheing in RAM exists).
+
+[cache pages]:http://en.wikipedia.org/wiki/Web_cache
 
 {% highlight bash %}
 rm -rf ~/.cache/chromium
