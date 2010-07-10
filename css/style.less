@@ -183,6 +183,8 @@ h2
   color: @heading-color;
   line-height: 1.5em;
   margin-bottom: 0em;
+  max-width: 87%;
+  text-align: left;
 }
 
 h3
@@ -321,6 +323,7 @@ table.archive
 {
   width: 100%;
   margin: 0;
+  text-align: left;
 
   tr
   {
@@ -329,11 +332,10 @@ table.archive
     
   td.first
   {
-    width: 7em;
+    width: 8em;
     font-size: 80%;
-    .sans-serif;
+    .monospace;
     color: @secondary-text-color;
-    text-align: left;
   }
 }
 
@@ -518,7 +520,7 @@ div.meta
 
   span.date
   {
-  .sans-serif;
+  .monospace;
   color: @secondary-text-color;
   }
   span.category
@@ -541,7 +543,8 @@ div.tags
   line-height: 1.7em;
   color: @secondary-text-color;
   float: right;
-  font-size: 80%;
+  font-size: 70%;
+  .monospace;
 }
 
 div.clear_both
