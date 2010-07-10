@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gaming and Identity Online
-tags: [identity, privacy, games, community]
+tags: [identity, privacy, games, community, perceptions]
 time: '18:06'
 ---
 
