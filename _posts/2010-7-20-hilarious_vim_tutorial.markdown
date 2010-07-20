@@ -12,7 +12,7 @@ While trolling the [Jekyll wiki] to see what [sites people have designed] using 
 [Jekyll wiki]:http://wiki.github.com/mojombo/jekyll/
 [sites people have designed]:http://wiki.github.com/mojombo/jekyll/sites
 [stumbled into Vim]:http://jeffkreeftmeijer.com/2010/stumbling-into-vim/
-[interesting video]:http://vimeo.com/6999927
+[entertaining video]:http://vimeo.com/6999927
 
 It's a touch long, but amusing if you have the time for it.  Some of the plugins shown in the video look useful, and are one's I haven't seen before.
 
