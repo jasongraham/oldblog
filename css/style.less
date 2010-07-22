@@ -5,6 +5,8 @@
 
 @background-color: #3f3f3f;
 @foreground-color: #333;
+@title-color: #dfdfdf;
+@title-span-color: #cfbfaf;
 @heading-color: #f0dfaf;
 @anchor-color: #ffcfaf;
 @archor-underline-color: #997959;
@@ -151,12 +153,13 @@ h1
   font-size: 5.5em;
   font-weight: normal;
   text-align: center;
+  .monospace;
 
   a
   {
     border-bottom: none;
     text-decoration: none;
-    color: @primary-text-color;
+    color: @title-color;
   
     :hover, :focus, :active
     {
@@ -170,7 +173,8 @@ h1
       bottom: 0.7em;
       padding-left: 0.25em;
       padding-right: 0.25em;
-      font-size: 0.2em;
+      font-size: 0.15em;
+      color: @title-span-color;
     }
   }
 }
