@@ -7,9 +7,10 @@
 @foreground-color: #333;
 @title-color: #dfdfdf;
 @title-span-color: #cfbfaf;
+@navbar-background-highlight: #2a2a2a;
 @heading-color: #f0dfaf;
 @anchor-color: #ffcfaf;
-@archor-underline-color: #997959;
+@anchor-underline-color: #997959;
 @primary-text-color: #dcdccc;
 @secondary-text-color: #aaa;
 @code-text-color: #c3bf9f;
@@ -50,23 +51,36 @@ div#header
   margin-bottom: 2em;
   padding-top: 1em;
 
-  ul#navigation
+  div#navbar
+  {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+  ul
   {
     margin: 0;
+    padding: 0;
     list-style-type: none;
-    background: @foreground-color;
+    text-align: center;
+    clear: left;
+    float: left;
+    left: 50%;
+    position: relative;
 
     li
     {
       display: block;
       float: left;
       background: @foreground-color;
+      position: relative;
+      right: 50%;
       
       a
       {
         display: block;
         padding: 0.4em 1.35em;
-        border-bottom: none;
+	border: solid 1px @foreground-color;
         font-size: 1.65em;
         text-decoration: none;
         /* text-transform: uppercase; */
@@ -76,8 +90,9 @@ div#header
 
         :hover, :active, :focus
         {
-          background: @anchor-color;
-          color: @foreground-color;
+          background: @navbar-background-highlight;
+          color: @anchor-color;
+	  border: solid 1px @anchor-underline-color;
         }
       }
     }
@@ -89,6 +104,8 @@ div#header
       -moz-border-radius-bottomleft: 10px;
       -webkit-border-top-left-radius: 10px;
       -webkit-border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
     }
 
     .last
@@ -98,22 +115,10 @@ div#header
       -moz-border-radius-bottomright: 10px;
       -webkit-border-top-right-radius: 10px;
       -webkit-border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
   }
-
-  div#lime
-  {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 202px;
-    height: 202px;
-    background: url("/images/layout/lime.png") right top no-repeat;
-
-    :hover
-    {
-      background-position: left bottom;
-    }
   }
 }
         
@@ -150,7 +155,7 @@ div#header
 h1
 {
   margin-bottom: 0.125em;
-  font-size: 5.5em;
+  font-size: 5em;
   font-weight: normal;
   text-align: center;
   .monospace;
@@ -164,7 +169,8 @@ h1
     :hover, :focus, :active
     {
       background: transparent;
-      color: @anchor-color;
+      color: @title-color;
+      border-bottom: solid 1px @secondary-text-color;
     }
     
     span
@@ -208,7 +214,7 @@ h4
 
 a
 {
-  border-bottom: 1px solid @archor-underline-color;
+  border-bottom: 1px solid @anchor-underline-color;
   text-decoration: none;
   color: @anchor-color;
 
@@ -235,18 +241,25 @@ blockquote
   .secondary-text;
 }
 
-.about
-{
-  padding: 0 0.5em;
-  text-align: center;
-  .secondary-text;
-}
-
 code
 {
   color: @code-text-color;
   background: @foreground-color;
   .monospace;
+  padding: 2px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+pre
+{
+  font-size: 115%;
+
+  code
+  {
+    color: @primary-text-color;
+  }
 }
 
 /* On the web */
@@ -527,11 +540,6 @@ div.meta
   {
   .monospace;
   color: @secondary-text-color;
-  }
-  span.category
-  {
-  color: @heading-color;
-
   }
 }
 
