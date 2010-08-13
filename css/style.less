@@ -325,14 +325,20 @@ ul.images
 
 table
 {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+    .sans-serif;
+  border-collapse: collapse;
 
   thead tr th
   {
-    .sans-serif;
-    text-align: left;
+    text-align: center;
     text-decoration: underline;
+    border-bottom: 5px solid @foreground-color;
+  }
+  tbody tr td
+  {
+    border-bottom: 1px solid @foreground-color;
   }
 }
 
