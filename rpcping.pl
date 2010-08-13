@@ -34,7 +34,7 @@ my @services = (
 		# a more comprehensive list.
 		'Google'         => 'http://blogsearch.google.com/ping/RPC2',
 		'Weblogs.com'    => 'http://rpc.weblogs.com/RPC2',
-		'Feed Burner'    => 'http://ping.feedburner.com/',
+		#'Feed Burner'    => 'http://ping.feedburner.com/',
 		'Ping-o-Matic!'  => 'http://rpc.pingomatic.com/',
 	       );
 
