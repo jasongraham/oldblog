@@ -19,11 +19,13 @@ So [child themes], to me, are a wonderful idea.  Essentially, they are glorified
 [diffs]:http://en.wikipedia.org/wiki/Diff
 
 So I made [my own] child theme based on the new default for Wordpress, [Twenty Ten].  The _very_ simple changes essentially amount to the following:
++ color changes
 + Increase the font size in the navigation bar and title.
-+ Increase the width of the content area, and separate the sidebar with a border element.
++ Separate posts and comments with border "bubbles"
++ Increase the width of the content area
 + In the sidebar, create a bit more separation between the widget titles and their content.
 
-[my own]:http://code.the-graham.com/twenty-ten-customized/
+[my own]:http://code.the-graham.com/twentyten_custom/
 [Twenty Ten]:http://en.blog.wordpress.com/2010/04/26/new-theme-twenty-ten/
 
 So if you have any need for Wordpress, I highly recommend the [tutorials] included at the bottom of the previously linked page for [child themes].  If I think of any other excuses to warp the theme, maybe I'll get to play with adding some php functions.
