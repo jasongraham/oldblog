@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SSH Proxy for Firefox and Chromium
-tags: [firefox, chromium, privacy, ssh, howto]
+tags: [firefox, chromium, privacy, ssh, code, howto]
 time: '15:10'
 ---
 

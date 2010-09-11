@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Setup a Sheeva Plug
-tags: [server, sheevaplug, howto, blog]
+tags: [server, sheevaplug, code, howto, blog]
 ---
 
 <img class="img_right" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/SheevaPlug_with_external_drive_enclosure.jpg/300px-SheevaPlug_with_external_drive_enclosure.jpg" />

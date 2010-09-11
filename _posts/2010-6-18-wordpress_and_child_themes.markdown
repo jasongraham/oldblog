@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wordpress and Child Themes&#58; wish I'd found them sooner
-tags: [wordpress, themes]
+tags: [wordpress, themes, code]
 time: '10:30'
 ---
 
