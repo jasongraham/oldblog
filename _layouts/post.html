@@ -2,12 +2,18 @@
 layout: default
 ---
 
+<article>
+<header>
 <h2>{{ page.title }}</h2>
 <div class="meta"><span class="date">{{ page.date | date:"%b %d, %Y" }}</span></div>
+<header>
 
 {% include paginator.html %}
 
+<section>
+
 {{ content }}
+
 
 <div class='tags'>
 <span>
@@ -17,6 +23,7 @@ tags:
 {% endfor %}                    
 </span>
 </div>
+</section>
 
 <div class="clear_both"></div>
 
@@ -24,6 +31,7 @@ tags:
 
 {% if site.related_posts %}
 <div class="previous_posts">
+<aside>
 <h3>Possibly related posts</h3>
 
 <table class="archive">
@@ -38,12 +46,15 @@ tags:
 </tr>
 {% endfor %}
 </table>
+</aside>
 </div>
 {% endif %}
 
 <div class="cloud">
+<aside>
 <h3>Topic list</h3>
 {% include cloud.html %}
+</aside>
 </div> 
 
 <div class="clear_both">
@@ -62,3 +73,4 @@ dsq.src = 'http://jason-the-graham-blog.disqus.com/embed.js';
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
 </section>
+</article>

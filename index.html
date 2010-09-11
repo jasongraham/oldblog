@@ -9,6 +9,7 @@ layout: default
 {% endfor %}
 
 <div class="previous_posts">
+<aside>
 <h3>Previous posts</h3>
 <table class="archive">
 	{% for post in site.posts offset:3 limit:5 %}
@@ -21,10 +22,13 @@ layout: default
 <p>
    See the <a href="/archive/">archive</a> for more.
 </p>
+</aside>
 </div>
 
 <div class="cloud">
+<aside>
 <h3>Topic list</h3>
 {% include cloud.html %}
+</aside>
 </div> 
 
