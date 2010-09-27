@@ -6,21 +6,18 @@ title: About
 
 ## About Me
 
-<a href="http://www.flickr.com/photos/jason_and_whittney/4691327564/" title="Under Deception Pass on Whidbey Island"><img class="img_right" src="http://farm2.static.flickr.com/1281/4691327564_5e72723bb5.jpg" width="371" height="500" alt="Under Deception Pass on Whidbey Island" /></a>
+<a href="http://www.flickr.com/photos/jason_and_whittney/5089976799/" title="Getting my feet wet"><img class="img_right" src="http://farm5.static.flickr.com/4131/5089976799_ddb0b41c2d_m_d.jpg" width="240" alt="Getting my feet wet" /></a>
 
 My name is Jason Graham. I am 23 years old. I have a lovely wife, and two small dogs. By day I am an [electrical engineering](http://www.eecs.wsu.edu/) graduate student in communication and information theory at [Washington State University](http://www.wsu.edu).  In the future, I hope do research and possibly teach.
 
 On the rare occasion I have free time, I enjoy playing guitar, spending time with my family, reading sci-fi, and exploring Linux.  For the small snippets of spare time during the day, I tend to peruse my [blogroll].
 
+{% include on_the_web.html %}
 For a bit more professional or academic information on me, check out my [school website], though it's a bit sparse at the moment.  My wife and I also share a [family blog].
 
 [family blog]:http://www.graham-clan.net
 
-### On the Web
-
-{% include on_the_web.html %}
-
-You can email me at `jason AT the-graham DOT com`.
+<p><noscript>You can email me at <code>my_first_name AT this_site</code>.</noscript></p>
 
 ## About This Site
 
@@ -35,6 +32,8 @@ A [Sheevaplug] computer running [debian] powers the site.  If you're curious wha
 I compose this blog with [Vim], manage its code with [git], and generate the site with Jekyll, using the [Jekylless fork] in addition to [jekyll_ext] extension framework.  The [source code] for the site is freely available.
 
 The original site design was heavily inspired by similar blogs setup up by [Tate Johnson], [Raoul Felix], and [Jack Moffitt] who generously expose their site's code to the world, to the benefit of lesser coders like me.
+
+The "on the web" icons are the work of [konodomedia].
 
 
 [blogroll]:/about/blogroll/
@@ -58,3 +57,4 @@ The original site design was heavily inspired by similar blogs setup up by [Tate
 [Tate Johnson]:http://tatey.com/about/
 [Raoul Felix]:http://rfelix.com/about/
 [Jack Moffitt]:http://metajack.im/about/
+[konodomedia]:http://www.komodomedia.com/blog/2009/06/social-network-icon-pack/

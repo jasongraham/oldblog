@@ -6,16 +6,15 @@ layout: default
 <header>
 <h2>{{ page.title }}</h2>
 <div class="meta"><span class="date">{{ page.date | date:"%b %d, %Y" }}</span></div>
-<header>
+</header>
 
 {% include paginator.html %}
 
-<section>
 
 {{ content }}
 
 
-<div class='tags'>
+<div class='clear_both tags'>
 <span>
 tags:   
 {% for t in page.tags %} 
@@ -23,7 +22,7 @@ tags:
 {% endfor %}                    
 </span>
 </div>
-</section>
+</article>
 
 <div class="clear_both"></div>
 
@@ -73,4 +72,3 @@ dsq.src = 'http://jason-the-graham-blog.disqus.com/embed.js';
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
 </section>
-</article>

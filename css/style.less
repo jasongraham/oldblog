@@ -3,6 +3,8 @@
 
 /* Colors */
 
+/*@header-color: #222;*/
+@header-color: #3f3f3f;
 @background-color: #3f3f3f;
 @foreground-color: #333;
 @title-color: #dfdfdf;
@@ -17,6 +19,24 @@
 
 /* Layout */
 
+.serif
+{
+  /*font-family: 'Latin Modern Roman', 'Helvetica Neue', 'Helvetica', serif;*/
+    font-family: 'Bitstream Charter', Georgia, serif;
+}
+
+.sans-serif
+{
+  /*font-family: 'Latin Modern Sans', 'Helvetica Neue', 'Helvetica', sans-serif;*/
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+.monospace
+{
+  /*font-family: 'Latin Modern Mono', 'Monaco', monospace;*/
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
 html, body
 {
   margin: 0;
@@ -26,19 +46,28 @@ html, body
 html
 {
   background: @background-color;
-  font-family: 'Droid Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
-  font-size: 110%;
-  line-height: 1.8em;
+  .serif;
+  font-size: 105%;
+  line-height: 1.5em;
   color: @primary-text-color;
   /*text-align: justify;*/
 }
 
 body
 {
-  width: 46em;
+  width: 42em;
   margin: 0 auto;
   padding: 0 20px 3em;
 }
+
+/*
+div.content
+{
+  width: 42em;
+  margin: 0 auto;
+  padding: 0 20px 3em;
+}
+*/
 
 ul
 {
@@ -48,14 +77,17 @@ ul
 div#header
 {
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   padding-top: 1em;
+  background-color: @header-color;
 
   div#navbar
   {
     width: 100%;
     position: relative;
     overflow: hidden;
+    background-color: @header-color;
+    /*border-bottom: 1px solid @foreground-color;*/
 
   ul
   {
@@ -87,6 +119,7 @@ div#header
 	font-weight: bold;
         letter-spacing: 0.05em;
         color: @primary-text-color;
+        /*color: @foreground-color;*/
 	margin: 0;
 
         :hover, :active, :focus
@@ -126,19 +159,9 @@ div#header
         
 /* Type */
 
-.sans-serif
-{
-  font-family: 'Droid Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
-}
-
-.monospace
-{
-  font-family: 'Inconsolata', 'Monaco', monospace;
-}
-
 .secondary-text
 {
-  .sans-serif;
+  .serif;
   color: @secondary-text-color;
 
   a 
@@ -156,8 +179,9 @@ div#header
 
 h1
 {
+  margin-top: 0.25em;
   margin-bottom: 0.125em;
-  font-size: 5em;
+  font-size: 3.5em;
   font-weight: normal;
   text-align: center;
   .monospace;
@@ -191,13 +215,25 @@ h1
 h2
 {
   .sans-serif;
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: bold;
   color: @heading-color;
-  line-height: 1.5em;
-  margin-bottom: .5em;
+  line-height: 1.3em;
+  margin: .5em 0;
   max-width: 87%;
   text-align: left;
+
+  a
+  {
+     color: @heading-color;
+
+     :hover, :focus, :active
+     {
+	color: @heading-color;
+        border-bottom: solid 1px @anchor-color;
+        background-color: @background-color;
+     }
+  }
 }
 
 h3
@@ -219,29 +255,30 @@ a
 {
   text-decoration: none;
   color: @anchor-color;
-  padding-left: 1px;
+  /*padding-left: 1px;
   padding-right: 1px;
   margin-left: -1px;
-  margin-right: -1px;
+  margin-right: -1px;*/
 
   :hover,
   :active,
   :focus
   {
-    border: 1px solid @anchor-background-color;
-    background-color: @foreground-color;
-    /*background-color: @anchor-background-color;*/
-    padding: 1px;
-    margin: -2px;
+    /*border-bottom: 1px solid @anchor-background-color;*/
+    color: @foreground-color;
+    background-color: @anchor-color;
+    /*padding: 1px;
+    margin: -1px;*/
   }
 }
 
 p
 {
   letter-spacing: 0.02em;
+margin: 0.5em 0;
 }
 
-p + p
+p + p, div.on_the_web + p
 {
   text-indent: 25px;
 }
@@ -268,8 +305,6 @@ code
 
 pre
 {
-  font-size: 115%;
-
   code
   {
     color: @primary-text-color;
@@ -279,17 +314,21 @@ pre
 /* On the web */
 div.on_the_web
 {
-  margin: -2.5em 3.5em 1.5em 1.5em;
+  /*margin: -2.5em 3.5em 1.5em 1.5em;*/
   line-height: 1.2em;
   font-size: 80%;
   float: right;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-left: 1em;
   ul
   {
     list-style-type: none;
+    padding: 0;
 
     li
     {
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
   }
 }
@@ -300,13 +339,27 @@ img
 {
   display: block;
   margin: 0 auto;
-  border: 6px solid @foreground-color;
+  border: 2px solid @foreground-color;
+  margin-bottom: 24px;
 }
 
-a:hover img
+img.full_width
+{
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+img.noborder
+{
+  border: none;
+}
+   
+
+/*a:hover img
 {
   border-color: @heading-color;
-}
+}*/
 
 img.img_left
 {
@@ -450,6 +503,7 @@ div.paginator
   margin: 1.2em 0;
   line-height: 0;
   font-size: 60%;
+  .sans-serif;
 }
 
 /* Horizontal Rule */
@@ -471,7 +525,7 @@ hr.post
 /* Footer */
 div.footer
 {
-  text-align: justify;
+  /*text-align: justify;*/
   line-height: 1.6em;
   margin-left: auto;
   margin-right: auto;
@@ -494,6 +548,12 @@ div.footer
     float: left;
     margin-left: 1em;
     margin-right: 1.5em;
+
+    a
+    {
+      margin: 0;
+      padding: 0;
+    }
   }
 
   .copy
@@ -531,7 +591,7 @@ background: none;
 }
 
 .cloud ul li a { text-decoration: none; border-bottom: none; }
-.cloud ul li a:hover { color: @anchor-color; }
+.cloud ul li a:hover { color: @anchor-color; background: transparent; }
 .cloud ul .cloud-rank-1  { font-size: 1.4em; }
 .cloud ul .cloud-rank-1 a { color: @title-color; }
 .cloud ul .cloud-rank-2  { font-size: 1.311em; }
@@ -560,7 +620,7 @@ div.meta
   margin: 0;
   line-height: 0;
   font-size: 80%;
-  margin-top: -3em;
+  margin-top: -2.75em;
   float: right;
 
   span.date
@@ -579,12 +639,12 @@ div.previous_posts
 
 div.tags
 {
-  margin: -1em 0 0 0;
+  /*margin: -1em 0 0 0;*/
   line-height: 1.7em;
   color: @secondary-text-color;
   float: right;
   font-size: 70%;
-  .monospace;
+  .sans-serif;
 
   span
   {
@@ -600,4 +660,5 @@ div.clear_both
 div.footnotes
 {
   font-size: 75%;
+  .serif;
 }
