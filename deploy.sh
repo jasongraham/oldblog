@@ -17,6 +17,9 @@ rm -rf _site/* && \
 # Generate the cloud to include before running jekyll
 ./_scripts/generate_cloud.py 40 10 . > ./_includes/cloud.html && \
 
+# fetch current gravatar image and use for favicon
+./_scripts/gen_favicon.sh
+
 # Run the jekyll and then
 # rsync the _site directory with the server
 jekyll --lsi && \
