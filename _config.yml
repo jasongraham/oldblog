@@ -6,3 +6,5 @@ permalink: /:year/:month/:day/:title
 content_delimeter: "<!-- EXTENDED -->" # Default is <!-- -**-END-**- -->
 
 exclude: [ deploy.sh, rpcping.pl ]
+
+markdown: rdiscount
