@@ -9,7 +9,7 @@ time: '9:30'
 
 Yesterday my wife and I mourned the passing of Bobby, or as he was better known to the world, [Linksys WRT54G].  He has been my faithful router and friend for nearly 5 years now, and for the entire time that I've known him, his only thoughts were to serve...packets.  Indeed, he will be missed.
 
-On an unrelated note, I bought a new router yesterday.  Rodney (I enjoy using router names that are easy to yell at), a [Linksys WRT160n], which stepped up to take Bobby's place.  I had planned to make my next router wireless N with 1Gb wired transfer, but decided to hold off on that, seeing as routers which actually implement the [recently finalized], full [wireless N] specs aren't on the market yet, and I really have no need for 1Gb connections.  Maybe after Rodney bites the dust, or I build a media center PC I'll get one.
+On an unrelated note, I bought a new router yesterday.  Rodney (I enjoy using router names that are easy to yell at), is a [Linksys WRT160n], and has bravely stepped up to take Bobby's place.  I had planned to make my next router wireless N with 1Gb wired transfer, but decided to hold off on that, seeing as routers which actually implement the [recently finalized], full [wireless N] specs aren't on the market yet, and I really have no need for 1Gb connections.  Maybe after Rodney bites the dust, or I build a media center PC I'll get one.
 
 <img class="img_left" src="http://www.noadapterneeded.com/images/linksys-wireless-router.jpg" title="Rodney" width="150" height="150" />
 

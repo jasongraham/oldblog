@@ -10,7 +10,7 @@ After leaving a post describing [how to set up Chromium Securely](/2009/12/14/se
 
 This post will deal with securing Firefox.  I'll leave another one in the future explaining what I do to speed it up.
 
-Also, I use [Ubuntu] Linux as my operating system, but most of this guide will serve is OS agnostic.
+Also, I use [Ubuntu] Linux as my operating system, but most of this guide is OS agnostic.
 
 #### Advantages
 1. Browsing information (cookies, cache, history) is deleted on browser exit.

@@ -6,7 +6,7 @@ tags: [privacy, security, chromium, howto]
 
 <img class="img_right" src="http://upload.wikimedia.org/wikipedia/commons/c/c0/Chromium_Icon.png" width="246" height="246" style="border: 0px" />
 
-Google's new web browser, [Chrome], is a very fast browser.  My wife especially likes it, for this reason, as well as because [I really lock down Firefox] with extensions that sometimes can make it hard to use sites for the first time without some configuration.  Being somewhat of a privacy and anti-tracking fanatic, I asked myself how to keep our online privacy reasonably safe while she's online, while not causing the majority of sites to fail for her while she's watching videos, house hunting, or shopping.
+Google's new web browser, [Chrome], is a very fast browser.  My wife especially likes it, for this reason, as well as because [I really lock down Firefox] in a way that sometimes can make it hard to use sites without some configuration.  Being somewhat of a privacy and anti-tracking fanatic, I asked myself how to keep our online privacy reasonably safe while she's online, while not causing the majority of sites to fail for her while she's watching videos, house hunting, or shopping.
 
 [I really lock down Firefox]:/2009/12/14/howto_secure_firefox/
 
@@ -29,10 +29,12 @@ So there are serious disadvantages to securing the browser this way, and it is n
 
 [Chromium] is the open-source software from which Google's [Chrome] is made.  Google runs the Chromium project, and the two are for all purposes the same.  Chromium only lacks the branding.
 
-We use the [development version of Chromium from the PPA](https://launchpad.net/~chromium-daily/+archive/ppa), which can be installed on Ubuntu Karmic or later with the following commands.
+You can choose between the [development version of Chromium from the PPA](https://launchpad.net/~chromium-daily/+archive/ppa), or the [stable version](https://launchpad.net/~chromium-daily/+archive/stable), which can be installed on Ubuntu Karmic or later with the following commands.
 
 {% highlight bash %}
 sudo add-apt-reposititory ppa:chromium-daily/ppa
+#use ppa:chromium-daily/stable for the stable version instead
+
 sudo apt-get update && sudo apt-get install chomium-browser
 {% endhighlight %}
 
