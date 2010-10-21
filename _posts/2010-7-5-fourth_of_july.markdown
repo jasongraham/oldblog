@@ -5,7 +5,7 @@ tags: [family, fun, holiday, pullman]
 time: '13:00'
 ---
 
-<a href="http://www.flickr.com/photos/jason_and_whittney/4764572461/" title="IMG_3970_cropped by Jason and Whittney, on Flickr"><img class="img_right" src="http://farm5.static.flickr.com/4099/4764572461_514cf196fd.jpg" width="500" height="413" alt="Fireworks in Pullman"></a>
+<a href="http://www.flickr.com/photos/jason_and_whittney/4764572461/" title="IMG_3970_cropped by Jason and Whittney, on Flickr"><img class="img_right" src="http://farm5.static.flickr.com/4099/4764572461_514cf196fd.jpg" alt="Fireworks in Pullman"></a>
 
 My wife's family enjoyed spending some of the weekend in Pullman with Whittney and I.  We had a lot of fun playing games and getting to see our niece and nephew.  They seem to grow bigger every week.
 

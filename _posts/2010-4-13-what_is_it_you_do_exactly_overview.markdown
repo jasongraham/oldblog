@@ -15,7 +15,7 @@ There are many steps involved; each of the boxes is complicated enough to have a
 
 <!-- EXTENDED -->
 
-<img src="https://cacoo.com/diagrams/UBxf2qq5Hq4u2ZGR-0F230.png" style="border: 0px;" />
+<img class="full_width" src="https://cacoo.com/diagrams/UBxf2qq5Hq4u2ZGR-0F230.png" style="border: 0px;" />
 
 A quick explanation:
 

@@ -9,7 +9,7 @@ This week I've spent something on the order of four hours in [Les Schwab] gettin
 
 To pass the time, I was a good student and worked on some homework that I didn't need my computer for.  From this I discovered, to my dismay, that I am _much_ more productive when not seated in from of a computer screen.  The internet can be very distracting, with [Google Reader], [twitter] and email constantly updating.
 
-There was a time, back in high school until toward the end of undergrad, when I was very driven and focused; I was able to sit for hours pushing through homework.  Now, it seems that I take breaks after perhaps half hour intervals, which last probably longer than they should.
+There was a time, in high school and the through the end of undergrad, when I was very driven and focused; I was able to sit for hours pushing through homework.  Now it seems that I take breaks at perhaps half hour intervals, which last probably longer than they should.
 
 I need to find myself a method of cutting out some of the distractions that I face.  I have the following ideas:
 
