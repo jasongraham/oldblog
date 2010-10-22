@@ -20,8 +20,8 @@ Interestingly, in his speech, Obama gives a shout out to the Discovery show [Myt
 
 My point is, the biggest obstacle for increasing the nation's excellence in the field of science and engineering isn't that there's some kind of stigma against geeks making it seem uncool.  I just don't think most have the patience for it anymore.  But if they must do something about it, I vote that they make it much more financially lucrative to do research.  Elevating researchers to, oh, say a doctor's or lawyer's salary certainly wouldn't hurt enticing more into the field.
 
-[speech]:(http://www.whitehouse.gov/the-press-office/remarks-president-education-innovate-campaign)
+[speech]:http://www.whitehouse.gov/the-press-office/remarks-president-education-innovate-campaign
 
-[PhD Comics]:(http://www.phdcomics.com/comics/archive/phd090308s.gif)
+[PhD Comics]:http://www.phdcomics.com/comics/archive/phd090308s.gif
 
-[Mythbusters]:(http://en.wikipedia.org/wiki/MythBusters)
+[Mythbusters]:http://en.wikipedia.org/wiki/MythBusters

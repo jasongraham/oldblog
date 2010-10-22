@@ -38,10 +38,6 @@ The "on the web" icons are the work of [konodomedia].
 
 [blogroll]:/about/blogroll/
 
-[facebook.com/jason.the.graham]:http://facebook.com/jason.the.graham
-[@jason__graham]:http://twitter.com/jason__graham
-[Flickr]:http://www.flickr.com/photos/jason_and_whittney/
-
 [SheevaPlug]:http://en.wikipedia.org/wiki/SheevaPlug
 [debian]:http://www.debian.org/
 [real-time stats]:/about/stats/

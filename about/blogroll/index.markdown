@@ -22,6 +22,7 @@ Collection of links to sites that I've found helpful.
 
 
 ---
+
 ## Blogroll  
 This is stuff online that I read.
 

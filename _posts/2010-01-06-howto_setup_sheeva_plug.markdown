@@ -14,18 +14,13 @@ So here is documentation for myself on what I did, and for anyone else who finds
 
 _EDIT: I have since reinstalled the OS with [debian], using the [excellent tutorial] by Martin Michlmayr.  The following tutorial assumes you have the default Ubuntu 9.04 that comes with the plug._
 
-<!-- EXTENDED -->
-
-### Contents ###
-+ [Fix DNS](#fix_dns)
-+ [Fix apt-get error](#fix_apt-get)
-+ [Add non-root user](#non-root_user)
-+ [Install Additional Software](#install_additional_software)
-	+ [Lighttpd](#lighttpd)
-	+ [cgit](#cgit)
+### Contents
++ This will be replaced with a table of contents
+{:toc}
 
 ---
-### Fix the DNS issue <a id="fix_dns"></a>
+
+### Fix the DNS issue
 
 The Sheeva Plug won't use the DNS servers set within my DHCP router without the following line being commented in the file `/etc/dhcp3/dhclient.conf`:
 
@@ -34,7 +29,8 @@ supersede domain-name-servers 127.0.0.1;
 {% endhighlight %}
 
 ---
-### Get apt-get working <a id="fix_apt-get"></a>
+
+### Get apt-get working
 
 See [this article](http://computingplugs.com/index.php/Fixing_apt-get) for instructions and options of what to do.
 
@@ -42,7 +38,8 @@ From there, run `apt-get update && apt-get dist-upgrade` to update the software 
 
 
 ---
-### Add a non-root default user <a id="non-root_user"></a>
+
+### Add a non-root default user
 
 I don't want to use root to log in or do much of anything directly.  I want to use the typical default Ubuntu `sudo` techniques.  Thus, I'll add myself another user, make and add him to the admin group, and disable the ability to log in as root remotely or via `su`.
 
@@ -84,7 +81,8 @@ PermitRootLogin no
 Remotely logging in to the server can now only be done through the new user, and root commands and functionality are preserved through sudo.  For added security, [use ssh keys] rather than passwords, and / or move sshd to a non-standard port.
 
 ---
-### Install Additional Software <a id="install_additional_software"></a>
+
+### Install Additional Software
 
 First, lets get some basic software that I consider useful.
 
@@ -104,7 +102,7 @@ vnstat -u -i eth0
 
 I run several services using the server, including this webpage, and my [code repository] through [Git].  Some generic highlights:
 
-#### Webserver through lighttpd <a id="lighttpd"></a>
+#### Webserver through lighttpd
 
 [Lighttpd](http://www.lighttpd.net/) (pronounced "lighty") is a smaller, lighter webserver especially well suited for this plug with its smaller amount of memory (512M), and the fact that its mostly just static pages.
 
