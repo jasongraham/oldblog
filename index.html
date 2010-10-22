@@ -4,7 +4,7 @@ layout: default
 
 {% assign hide_extended = true %}
 
-{% for post in site.posts limit:3 %}
+{% for post in site.posts limit:1 %}
 {% include post.html %}
 {% endfor %}
 
@@ -12,7 +12,7 @@ layout: default
 <aside>
 <h3>Previous posts</h3>
 <table class="archive">
-	{% for post in site.posts offset:3 limit:5 %}
+	{% for post in site.posts offset:1 limit:5 %}
 	<tr>
 		<td class="first">{{ post.date | date:"%b %d, %Y" }}</td>
 		<td><a href="{{ post.url }}">{{ post.title }}</a></td>
