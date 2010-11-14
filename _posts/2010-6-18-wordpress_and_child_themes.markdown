@@ -19,6 +19,7 @@ So [child themes], to me, are a wonderful idea.  Essentially, they are glorified
 [diffs]:http://en.wikipedia.org/wiki/Diff
 
 So I made [my own] child theme based on the new default for Wordpress, [Twenty Ten].  The _very_ simple changes essentially amount to the following:
+
 + color changes
 + Increase the font size in the navigation bar and title.
 + Separate posts and comments with border "bubbles"

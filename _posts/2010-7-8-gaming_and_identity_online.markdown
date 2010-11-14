@@ -13,7 +13,7 @@ Once upon a time, I played [World of Warcraft].  Along with more than 11 million
 [Ratchet]:http://www.wowwiki.com/Ratchet
 [Booty Bay]:http://www.wowwiki.com/Booty_bay
 [Illidan]:http://www.wowwiki.com/Illidan
-[Kil'jaeden]:http://www.wowwiki.com/Kil%27jaeden
+[Kiljaeden]:http://www.wowwiki.com/Kil%27jaeden
 [Lich King]:http://www.wowwiki.com/Lich_king
 [forsaken]:http://www.wowwiki.com/Forsaken
 [priest]:http://www.wowwiki.com/Priest
@@ -34,7 +34,7 @@ This may be a consequence of a law passed in South Korea [banning anonymous post
 
 Anyone having experienced the WoW community first-hand knows that the communal maturity level in the game is juvenile at best.  On the forums, at least, this will go a long way toward fixing the problem popularly known as the [Greater Internet F#@kwad Theory].
 
-[Greater Internet F#@kwad Theory]:http://www.penny-arcade.com/comic/2004/3/19/
+[Greater Internet Fkwad Theory]:http://www.penny-arcade.com/comic/2004/3/19/
 
 <img class="img_right" src="http://upload.wikimedia.org/wikipedia/en/1/1b/Make_Love%2C_Not_Warcraft_%28South_Park%29.png" />
 

@@ -13,7 +13,9 @@ I found an article written nearly two years ago on [Wired Magazine] by a Paul Bo
 [Twitter]:https://www.twitter.com
 [Flickr]:http://www.flickr.com/
 
-For most users, these services do everything they need for them to be able to express themselves and share with their friends.  They all have different strengths and limitations,(_In his final paragraph, Mr. Boutin claims one of the strengths of Twitter is leveling the grammatical playing field between amateur and professional by limiting both to 140 characters.  Be that as it may, it is ironic that this strength is killing people's ability to express themselves in more verbose writing, such as [university placement exams]._) but obviously appeal despite themselves.  They are all useful tools, but I don't feel they replace a blog entirely.
+For most users, these services do everything they need for them to be able to express themselves and share with their friends.  They all have different strengths and limitations[^1], but obviously appeal despite themselves.  They are all useful tools, but I don't feel they replace a blog entirely.
+
+[^1]: In his final paragraph, Mr. Boutin claims one of the strengths of Twitter is leveling the grammatical playing field between amateur and professional by limiting both to 140 characters.  Be that as it may, it is ironic that this strength is killing people's ability to express themselves in more verbose writing, such as [university placement exams].
 
 [university placement exams]:http://www.theglobeandmail.com/news/technology/texting-twitter-contributing-to-students-poor-grammar-skills-profs-say/article1452300/
 
