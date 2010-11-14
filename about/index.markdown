@@ -33,7 +33,7 @@ I compose this blog with [Vim], manage its code with [git], and generate the sit
 
 The original site design was heavily inspired by similar blogs setup up by [Tate Johnson], [Raoul Felix], and [Jack Moffitt] who generously expose their site's code to the world, to the benefit of lesser coders like me.
 
-The "on the web" icons are the work of [konodomedia].
+The social network icons are the work of [konodomedia].
 
 
 [blogroll]:/about/blogroll/
