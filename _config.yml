@@ -5,6 +5,6 @@ permalink: /:year/:month/:day/:title
 # Delimeter to be used to seperate whole post from its preview
 #content_delimeter: "<!-- EXTENDED -->" # Default is <!-- -**-END-**- -->
 
-exclude: [ deploy.sh, rpcping.pl ]
+exclude: [ README.markdown, deploy.sh, rpcping.pl ]
 
 markdown: kramdown
