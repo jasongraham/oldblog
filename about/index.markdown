@@ -29,7 +29,7 @@ The color scheme for the site is based on the popular [Zenburn] colors which I p
 
 A [Sheevaplug] computer running [debian] powers the site.  If you're curious what kind of stress you and others are putting on the tiny thing take a look at the [real-time stats].
 
-I compose this blog with [Vim], manage its code with [git], and generate the site with Jekyll, using the [Jekylless fork] in addition to [jekyll_ext] extension framework.  The [source code] for the site is freely available.
+I compose this blog with [Vim], manage its code with [git], and generate the site with [Jekyll], The [source code] for the site is freely available.
 
 The original site design was heavily inspired by similar blogs setup up by [Tate Johnson], [Raoul Felix], and [Jack Moffitt] who generously expose their site's code to the world, to the benefit of lesser coders like me.
 
@@ -42,13 +42,12 @@ The social network icons are the work of [konodomedia].
 [debian]:http://www.debian.org/
 [real-time stats]:/about/stats/
 
-[jekyll_ext]:http://github.com/rfelix/jekyll_ext
+[Jekyll]:https://github.com/mojombo/jekyll
 [Vim]:http://www.vim.org/
 [git]:http://git-scm.cm
 [source code]:http://code.graham-clan.net/blog/
 [Linux]:http://en.wikipedia.org/wiki/Linux
 [school website]:http://eecs.wsu.edu/~jgraham
-[Jekylless fork]:http://github.com/tatey/jekylless/
 [Zenburn]:http://slinky.imukuppi.org/zenburnpage/
 [Tate Johnson]:http://tatey.com/about/
 [Raoul Felix]:http://rfelix.com/about/
