@@ -26,7 +26,10 @@ The contents of the following files directories are the copyright of Jason
 Graham.  You may not use them without permission.
 
 + `about/`
-+ `images/`
++ `images/`, with the exception of `images/icons`, which are the
+  work of [komodomedia.com][].
+
+[komodomedia.com]:http://www.komodomedia.com/blog/2009/06/social-network-icon-pack/
 
 The following content is available through the [Creative Commons
 Attribution-Noncommercial-No Derivative Works License][by-nc-nd].
