@@ -24,22 +24,22 @@ This server is running:
 Scripts to log and graph the activities are mostly unmodified versions of those written by Kenny at [computingplugs.com], a [mediawiki] setup that is itself run by a Sheevaplug.  The update scripts run every minute, and the graphs are updated every ten minutes.  They do disappear after I write a post, but they reappear in at most 10 minutes when the graphs update.
 
 ### Uptime
-<img src="/images/uptime.gif">
+<img class="full_width" src="/images/uptime.gif">
 
 ### Server Load
-<img src="/images/load.png">
+<img class="full_width" src="/images/load.png">
 
 ### CPU
-<img src="/images/cpu.png">
+<img class="full_width" src="/images/cpu.png">
 
 ### Memory
-<img src="/images/memory.png">
+<img class="full_width" src="/images/memory.png">
 
 ### Network
-<img src="/images/net.png">
+<img class="full_width" src="/images/net.png">
 
 ### Disk Usage
-<img src="/images/sda.png">
+<img class="full_width" src="/images/sda.png">
 
 [SheevaPlug]:http://en.wikipedia.org/wiki/SheevaPlug
 [blog]:/
