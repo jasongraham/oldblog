@@ -3,12 +3,17 @@ layout: post
 title: kramdown support for Jekyll
 tags: [kramdown, blog, jekyll, code]
 time: '10:24'
+updated: '2010-11-23'
 ---
 
-The last several months I've been fiddling around with different [Markdown][] converters used with [Jekyll][].  I like [Maruku's][maruku] enhanced feature set (footnotes are nice), but was dissapointed with the execution speed.  I briefly played around with [Rdiscount][], which is *much* faster, but didn't ended up missing the extra features of Maruku.
+**Update {{ page.updated | date:"%b %d, %Y" }}**: My changes have been merged into the mainline branch, which can be found on [Github][Jekyll].
+{: .update}
+
+The last several months I've been fiddling around with different [Markdown][] converters used with [Jekyll][Jekyll readme].  I like [Maruku's][maruku] enhanced feature set (footnotes are nice), but was dissapointed with the execution speed.  I briefly played around with [Rdiscount][], which is *much* faster, but didn't ended up missing the extra features of Maruku.
 
 [Markdown]:http://daringfireball.net/projects/markdown/
-[Jekyll]:https://github.com/mojombo/jekyll#readme
+[Jekyll]:https://github.com/mojombo/jekyll
+[Jekyll readme]:https://github.com/mojombo/jekyll#readme
 [maruku]:http://maruku.rubyforge.org/maruku.html
 [Rdiscount]:https://github.com/rtomayko/rdiscount#readme
 
