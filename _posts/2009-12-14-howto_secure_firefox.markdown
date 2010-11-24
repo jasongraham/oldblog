@@ -2,6 +2,7 @@
 layout: post
 title: How to Secure Firefox
 tags: [privacy, security, firefox, howto]
+description: Securing Firefox to Protect your Privacy and Thwart Malware
 ---
 
 <img class="img_right" src="http://upload.wikimedia.org/wikipedia/ilo/0/0c/Firefox-logo.png" style="border: 0px" />

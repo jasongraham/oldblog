@@ -2,6 +2,7 @@
 layout: post
 title: A slightly more paranoid than necessary Chromium browser setup
 tags: [privacy, security, chromium, howto]
+description: Browsing safely with privacy and thwarting malware
 ---
 
 <img class="img_right" src="http://upload.wikimedia.org/wikipedia/commons/c/c0/Chromium_Icon.png" width="246" height="246" style="border: 0px" />

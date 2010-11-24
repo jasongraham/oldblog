@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+description: Electrical Engineering Graduate Student in Communcations and Info. Theory
 ---
 
 

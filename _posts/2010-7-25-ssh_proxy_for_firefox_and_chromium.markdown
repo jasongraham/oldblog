@@ -3,6 +3,7 @@ layout: post
 title: SSH Proxy for Firefox and Chromium
 tags: [firefox, chromium, privacy, ssh, code, howto]
 time: '15:10'
+description: Bash script to open SSH tunnel for proxy
 ---
 
 <img class="img_left" src="http://www.webmastersbydesign.com/wp-content/uploads/2008/07/encryption.jpg" />
