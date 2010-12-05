@@ -4,9 +4,9 @@
 /* Colors */
 
 /*@header-color: #222;*/
-@header-color: #3f3f3f;
-@background-color: #3f3f3f;
-@foreground-color: #333;
+@header-color: #333;
+@background-color: #333;
+@foreground-color: #262626;
 @title-color: #dfdfdf;
 @title-span-color: #cfbfaf;
 @navbar-background-highlight: #2a2a2a;
@@ -102,9 +102,9 @@ div#header
       a
       {
         display: block;
-        padding: 0.4em 1.15em;
+        padding: 0.2em 1.75em;
 	border: solid 1px @foreground-color;
-        font-size: 1.65em;
+        /*font-size: 1.65em;*/
         text-decoration: none;
         /* text-transform: uppercase; */
 	font-weight: bold;
@@ -150,10 +150,11 @@ h1
 {
   margin-top: 0.25em;
   margin-bottom: 0.125em;
-  font-size: 3.5em;
+  font-size: 2.75em;
   font-weight: normal;
   text-align: center;
-  .monospace;
+  letter-spacing: .03em;
+  /*.monospace;*/
 
   a
   {
@@ -175,7 +176,7 @@ h1
       bottom: 0.7em;
       padding-left: 0.25em;
       padding-right: 0.25em;
-      font-size: 0.15em;
+      font-size: 0.2em;
       color: @title-span-color;
     }
   }
@@ -563,6 +564,7 @@ padding: 0 5px;
 margin: 0;
 padding: 0 0 10px 0;
 text-align: justify;
+font-size: .85em;
 }
  
 .cloud ul li 

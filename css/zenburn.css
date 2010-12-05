@@ -1,8 +1,8 @@
 /* Adapted from http://victorgavin.co.uk/zenburn/ */
 
 .highlight { padding: 0.5em 1em; margin-bottom: 1em; line-height: 1.1em; overflow: auto; }
-.highlight .hll { background-color: #333333 }
-.highlight  { background: #333333; color: #dcdccc }
+.highlight .hll { background-color: #262626 }
+.highlight  { background: #262626; color: #dcdccc }
 .highlight .c { color: #7f9f7f; font-style: italic; } /* Comment */
 .highlight .err { color: #80d4aa; font-weight: bold; background-color: #2f2f2f } /* Error */
 .highlight .g { color: #dcdccc } /* Generic */
@@ -16,7 +16,7 @@
 .highlight .cp { color: #ffcfaf; font-weight: bold; } /* Comment.Preproc */
 .highlight .c1 { color: #7f9f7f; font-style: italic; } /* Comment.Single */
 .highlight .cs { color: #82a282; font-weight: bold; } /* Comment.Special */
-.highlight .gd { color: #333333; background-color: #464646 } /* Generic.Deleted */
+.highlight .gd { color: #262626; background-color: #464646 } /* Generic.Deleted */
 .highlight .ge { color: #dcdccc } /* Generic.Emph */
 .highlight .gr { color: #80d4aa; font-weight: bold; background-color:#2f2f2f } /* Generic.Error */
 .highlight .gh { color: #dcdccc; font-weight: bold } /* Generic.Heading */
