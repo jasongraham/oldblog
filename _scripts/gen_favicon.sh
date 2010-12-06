@@ -8,6 +8,9 @@
 
 wget "http://www.gravatar.com/avatar/b2a0f795640bd199b6a00ba9fd4c4809?s=256" -O /tmp/favicon.jpg
 
+# Grab a 64px square image for use on site (mostly within cgit)
+wget "http://www.gravatar.com/avatar/b2a0f795640bd199b6a00ba9fd4c4809?s=64" -O ./images/mug64.jpg
+
 convert /tmp/favicon.jpg ./favicon.png
 
 # below is adapted from
