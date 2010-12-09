@@ -1,12 +1,16 @@
 ---
 layout: post
 title: kramdown support for Jekyll
-tags: [kramdown, blog, jekyll, code]
+tags: [coderay, kramdown, blog, jekyll, code]
 time: '10:24'
-updated: '2010-11-23'
+updated: '2010-12-9'
 ---
 
-**Update {{ page.updated | date:"%b %d, %Y" }}**: My changes have been merged into the mainline branch, which can be found on [Github][Jekyll].
+
+**Update {{ page.updated | date:"%b %d, %Y" }}**: Added some instructions on kramdown and Jekyll, (optionally with [Coderay][]).  [Jump down][] to it.
+{: .update}
+
+**Update Nov. 11th 2010**: My changes have been merged into the mainline branch, which can be found on [Github][Jekyll].
 {: .update}
 
 The last several months I've been fiddling around with different [Markdown][] converters used with [Jekyll][Jekyll readme].  I like [Maruku's][maruku] enhanced feature set (footnotes are nice), but was dissapointed with the execution speed.  I briefly played around with [Rdiscount][], which is *much* faster, but didn't ended up missing the extra features of Maruku.
@@ -16,6 +20,8 @@ The last several months I've been fiddling around with different [Markdown][] co
 [Jekyll readme]:https://github.com/mojombo/jekyll#readme
 [maruku]:http://maruku.rubyforge.org/maruku.html
 [Rdiscount]:https://github.com/rtomayko/rdiscount#readme
+[Coderay]:http://coderay.rubychan.de/
+[Jump Down]:#using-kramdown-and-jekyll
 
 I then discovered [kramdown][].  It seems like a happy middle between Maruku and Rdiscount [performance-wise][performance], while containing a feature set even larger than that of Maruku.  Unfortunately, it isn't yet supported by Jekyll, though it had been a [long requested][] feature.
 
@@ -41,3 +47,51 @@ Hopefully, the fork will be pulled into the main branch, though I may need to cl
 You can find the fork on [Github][fork], or my own [personal repository][] on this site.
 
 [personal repository]:http://code.the-graham.com/jekyll
+
+### Using kramdown and Jekyll ###
+
+First, be sure you are using my branch of Jekyll (or v0.8.0 or higher in the mainline).
+
+To use kramdown with Jekyll, you will need the following in your `_config.yml` file.
+
+{% highlight text %}
+...
+markdown: kramdown
+...
+{% endhighlight %}
+
+See the Jekyll wiki [configuration page][config] for more of the options.
+
+#### Adding Coderay ####
+
+If you are wanting to additionally use Coderay for highlighting, then your `_config.yml` file must include the following.
+
+{% highlight text %}
+...
+markdown: kramdown
+kramdown:
+  use_coderay: true
+...
+{% endhighlight %}
+
+You may use a kramdown [block attribute][] within your markdown files to specify how you want Coderay to handle the highlighting for that block.
+
+{% highlight text %}
+---
+layout: default
+title: Silly Test Post
+---
+
+This is a paragraph element before a highlighted block of C code.
+
+    int main(void) {
+        printf("Hello world!");
+        return 0;
+    }
+{:lang="c"}
+
+Another paragraph element.
+
+{% endhighlight %}
+
+[block attribute]:http://kramdown.rubyforge.org/syntax.html#block-ials
