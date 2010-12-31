@@ -22,7 +22,20 @@ rm -rf _site/* && \
 
 # Run the jekyll and then
 # rsync the _site directory with the server
-jekyll --lsi && \
+jekyll --lsi
+
+for f in _site/css/*.css; do
+    echo "Minifying $f..."
+    mv $f $f.old
+    ./_scripts/cssOptimizer.pl $f.old $f
+    rm $f.old
+done
+
+find _site -type f -size +500c | egrep -v "*.(jpg|gif|png|pdf|zip|gz|woff)$" | while read file
+do 
+    gzip --best <$file >$file.gz
+done
+
 rsync -avz --delete _site/ homeserver:blog/
 
 # explicitly ping google only when 'ping' is passed as a parameter to the script
