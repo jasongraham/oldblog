@@ -20,22 +20,32 @@ rm -rf _site/* && \
 # fetch current gravatar image and use for favicon
 ./_scripts/gen_favicon.sh
 
-# Run the jekyll and then
-# rsync the _site directory with the server
+# Run jekyll
 jekyll --lsi
 
+# Run HTML White space remover
+echo "Minifying HTML..."
+for f in $(find _site/ -name \*.html); do
+    mv $f $(echo "$f" | sed 's/html$/html.old/')
+    _scripts/strip_whitespace.pl < $f.old > $f
+    rm $f.old
+done
+
+# CSS Minifier
+echo "Minifying CSS..."
 for f in _site/css/*.css; do
-    echo "Minifying $f..."
     mv $f $f.old
     ./_scripts/cssOptimizer.pl $f.old $f
     rm $f.old
 done
 
+# gzip all files larger than 500B as much as possible
 find _site -type f -size +500c | egrep -v "*.(jpg|gif|png|pdf|zip|gz|woff)$" | while read file
 do 
     gzip --best <$file >$file.gz
 done
 
+# Use rsync to send blog to server
 rsync -avz --delete _site/ homeserver:blog/
 
 # explicitly ping google only when 'ping' is passed as a parameter to the script
