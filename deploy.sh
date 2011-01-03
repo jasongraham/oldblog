@@ -42,7 +42,7 @@ done
 # gzip all files larger than 500B as much as possible
 find _site -type f -size +500c | egrep -v "*.(jpg|gif|png|pdf|zip|gz|woff)$" | while read file
 do 
-    gzip --best <$file >$file.gz
+    gzip --best -n <$file >$file.gz
 done
 
 # Use rsync to send blog to server
