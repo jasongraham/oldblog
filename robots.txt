@@ -1,4 +1,5 @@
 Sitemap: http://jason.the-graham.com/sitemap.xml
-
 User-agent: *
 Disallow: /images/
+Disallow: /fonts/
+Disallow: /scripts/
