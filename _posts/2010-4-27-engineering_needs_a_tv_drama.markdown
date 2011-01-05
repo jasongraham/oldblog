@@ -14,7 +14,7 @@ We engineers tend to be a cynical bunch.  We've spawned the likes of [Dilbert] a
 
 Thus, we must work to improve our socio-professional image.  And I can think of no better way to do this than to create an engineering themed drama: a [Grey's Anatomy] of engineering, if you will.  Allow me to give you a sample excerpt in a software engineering context.
 
-[Grey's Anatomy]:http://en.wikipedia.org/wiki/Grey%27s_Anatomy
+[Greys Anatomy]:http://en.wikipedia.org/wiki/Grey%27s_Anatomy
 
 <!-- EXTENDED -->
 
