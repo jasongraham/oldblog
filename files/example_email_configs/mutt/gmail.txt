@@ -1,0 +1,18 @@
+# Gmail information
+
+unset record 	# gmail does this automatically
+set postpone=+"gmail/bak.drafts"
+unset signature
+
+# use msmtp to send outgoing mail to the mailserver
+# see ~/.msmtp for configuration
+set sendmail="/usr/bin/msmtp -C ~/.mail_configs/msmtp -a gmail"
+
+set from="user.name@gmail.com"
+
+# Thread yourself (hopefully)
+my_hdr bcc: user.name@gmail.com
+
+# pgp settings
+unmy_hdr X-PGP-Key
+set pgp_autosign = no

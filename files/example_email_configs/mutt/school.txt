@@ -1,0 +1,22 @@
+# $config_dir/school
+# School configuration
+
+# save copies of sent emails to the ${folder}Sent directory
+# the '+' expands to $folders (like '~' to $HOME in the bash shell)
+set record = +eecs/sent
+set postpone = +eecs/drafts
+set signature = $config_dir/sig_school.sig
+
+# use msmtp to send outgoing mail to the mailserver
+# see ~/.msmtp for configuration
+set sendmail="/usr/bin/msmtp -C ~/.mail_configs/msmtp -a school"
+
+set from="me@school.edu"
+
+# bcc myself to make gmail style threaded conversations
+my_hdr bcc: me@school.edu
+
+# pgp settings
+my_hdr X-PGP-Key: http://eecs.wsu.edu/~jgraham/pubkey.asc
+set pgp_sign_as=0x2905734FBC298D3F
+set pgp_autosign=yes

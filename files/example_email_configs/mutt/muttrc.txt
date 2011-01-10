@@ -1,0 +1,58 @@
+#------------------------------------------------------#
+# $config_dir/muttrc
+# Main configuration based on
+# http://www.physics.drexel.edu/liki/index.php/Mutt
+#
+
+# This is where your local mail directory is located.
+# Other mail directories (ie, +"school/inbox") are
+# relative to this.
+#
+set folder = ~/.mail
+
+# For simplicity of changing, point to the current directory
+#
+set config_dir=~/.mail_configs/mutt
+
+# This is the list of mailboxes created by offlineimap.  We want to
+# check these for new mail.
+#
+source $config_dir/muttmailboxes
+
+# when you start mutt, this is the inbox that will open by default
+#
+set spoolfile = +"school/inbox"
+
+# Other global configuration files to include.
+#
+source $config_dir/common
+source $config_dir/colors
+source $config_dir/pgp
+
+# A file which will hold you address book
+#
+set alias_file=$config_dir/aliases
+source $alias_file
+
+# If we are in any directory starting with the following, pull
+# specific settings for that account.
+#
+folder-hook +school/.* "source $config_dir/school"
+folder-hook +gmail/.* "source $config_dir/gmail"
+
+# These are the addresses that you mutt to think are you.  You can have them be
+# for any 
+#
+alternates username@school.edu username@department.school.edu user.name@gmail.com bla@example.com
+
+# Some keybinds that I use.
+#
+#macro index <f2> <change-folder>+"gmail/INBOX"<enter>
+#macro index <f3> <change-folder>+"school/INBOX"<enter>
+#macro generic	\c<Space>	":source $config_dir/muttrc\n" "Reload mutt's configuration file"
+macro index	\cn		<next-unread-mailbox>
+macro pager	j		<next-line>
+macro pager	k		<previous-line>
+macro pager	<PageUp> 	<previous-undeleted>
+macro pager	<PageDown>	<next-undeleted>
+macro pager	\cb 		<pipe-entry>'w3m'<enter> 'Follow links in w3m'

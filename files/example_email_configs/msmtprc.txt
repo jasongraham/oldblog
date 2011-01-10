@@ -1,0 +1,31 @@
+# The following are default values for all accounts
+defaults
+tls on
+tls_starttls on
+auth on
+logfile ~/.msmtp.log
+syslog off
+
+account school
+host smtp.school.edu
+port 465
+from username@school.edu
+# Assuming you don't have the certificate corresponding to
+# the one on your school smtp server, and you cannot obtain
+# it, the following may be necessary.
+#
+#tls_trust_file /etc/ssl/certs/ca-certificates.crt
+tls_starttls off
+tls_certcheck off
+user username@school.edu
+password password
+
+account gmail
+host smtp.gmail.com          
+port 587                     
+from user.name@gmail.com   
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+user user.name
+password password
+
+account default : school
