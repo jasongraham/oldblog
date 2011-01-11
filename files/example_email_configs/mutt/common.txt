@@ -1,5 +1,5 @@
 #------------------------------------------------------#
-# $config_dir/common
+# ~/.mail_configs/mutt/common
 
 set realname = "Jason Graham"
 
@@ -32,9 +32,9 @@ set imap_check_subscribed = yes
 # email with offlineimap, but if we were having mutt fetch
 # the mail directly, this would help make it faster.
 #
-#set header_cache=$config_dir/cache/headers
-#set message_cachedir=$config_dir/cache/bodies
-#set certificate_file=$config_dir/certificates
+#set header_cache=~/.mail_configs/mutt/cache/headers
+#set message_cachedir=~/.mail_configs/mutt/cache/bodies
+#set certificate_file=~/.mail_configs/mutt/certificates
 
 # Don't move mail from the spool.
 #
