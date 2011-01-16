@@ -30,7 +30,7 @@ The color scheme for the site is based on the popular [Zenburn] colors which I p
 
 A [Sheevaplug] computer running [debian] powers the site.  If you're curious what kind of stress you and others are putting on the tiny thing take a look at the [real-time stats].
 
-I compose this blog with [Vim], manage its code with [git], and generate the site with [Jekyll], The [source code] for the site is freely available.
+I compose this blog with [Vim], manage its code with [git], and generate the site with [Jekyll]. The [source code] for the site is freely available.
 
 The original site design was heavily inspired by similar blogs setup up by [Tate Johnson], [Raoul Felix], and [Jack Moffitt] who generously expose their site's code to the world, to the benefit of lesser coders like me.
 
