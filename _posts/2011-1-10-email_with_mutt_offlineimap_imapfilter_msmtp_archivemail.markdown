@@ -2,7 +2,8 @@
 layout: post
 title: Quick and simple email management with mutt, offlineimap, imapfilter, msmtp, and archivemail
 time: '15:30'
-tags: [email, howto, Linux, mutt, offlineimap, imapfilter, msmtp, archivemail]
+update: '2011-16-1'
+tags: [email, howto, Linux, mutt, offlineimap, imapfilter, msmtp, archivemail, gnome-keyring]
 ---
 
 After using [Gmail][] for many years, about a year ago my academic advisor introduced me to [mutt][].  I've been using it as my mail reader ever since, in combination with [offlineimap][], [imapfilter][], [msmtp][], and most recently [archivemail][].  The setup is highly customizable, incredibly fast, and since the configuration is completely in text files, I can quickly make and keep track of changes across my multiple computers with [git][].
@@ -180,9 +181,19 @@ ls | egrep ^(cpts|ee) | xargs archivemail -D 2011-1-1 -uvs _records_fall2010
 
 It is also possible to set up archivemail to run from a cron job and keep a running archive, keeping your inbox clean of files older than a certain number of days, but as I don't use this personally, I leave the explanation to others.  Check out the man page for archive mail or Google to read many good examples online.
 
-{::comment}
+### Encrypting your Passwords with Gnome-Keyring ###
+
+I've written [another post][] with links pointing to keeping your passwords encrypted with Gnome-Keyring rather than having them be in plain text in your configuration files.  For a single person computer, the above portion works just fine, but encryption never hurts.
+
+To summarize, here are the links from the other post to integrate [msmtp with gnome-keyring] and [offlineimap with gnome-keyring].  Imapfilter integration is explained in [my own post][another post].
+
+[another post]:/2011/01/16/gnome_keyring_with_msmtp_imapfilter_offlineimap/
+[msmtp with gnome-keyring]:http://simple-and-basic.com/2008/10/using-msmtp-with-the-gnome-keyring.html
+[offlineimap with gnome-keyring]:http://www.clasohm.com/blog/one-entry?entry_id=90957
+
+
 ### Changelog ###
 
++ Jan 16, 2011: Added encrypting passwords with Gnome-Keyring
 + {{ page.date | date:"%b %d, %Y" }}: Initial post.
-{:/comment}
 
