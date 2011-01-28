@@ -136,6 +136,7 @@ offlineimap.
 
 {% highlight bash %}
 #!/bin/bash
+# file: pullmail.sh
 #
 # This script may be called via a cron job to allow
 # offlineimap (and imapfilter) to use the environmental
