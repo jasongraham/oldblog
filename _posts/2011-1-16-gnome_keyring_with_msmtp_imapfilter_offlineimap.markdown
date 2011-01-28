@@ -1,9 +1,15 @@
 ---
 layout: post
-title: Using Gnome Keyring with msmtp, offlineimap, and imapfilter
+title: Using Gnome Keyring with msmtp, offlineimap, and imapfilter via cron
 time: '10:40'
-tags: [email, passwords, gnome-keyring, msmtp, offlineiamp, imapfilter]
+tags: [email, passwords, gnome-keyring, msmtp, offlineiamp, imapfilter, cron]
 ---
+
+**Update Jan 27th, 2011**: Added portion relavent to cron.  It's down at the
+[bottom of the page][].
+{: .update}
+
+[bottom of the page]:#cron
 
 In my [previous post][], I walked through setting up using [mutt][], [msmtp][], [offlineimap][], [imapfilter][], and [archivemail][] to work together.  As I wrote the post, I was reminded of how bothered I felt about having passwords for my email accounts in my configuration files.  For a single user computer, this isn't a huge problem, but I would still prefer keep my passwords out of plain text.
 
@@ -25,6 +31,8 @@ A gnome-keyring patch for msmtp has [already been integrated][msmtp-gnome] into 
 [offlineimap-gnome-keyring]:http://www.clasohm.com/blog/one-entry?entry_id=90957
 
 I didn't find any examples of using imapfilter with gnome-keyring, but I was reminded after seeing the [example extended settings file][imapfilter-ext-config] that since the configuration files are actually Lua scripts, we can use a slightly modified version of the python helper script used with offlineimap, and then simply pipe the input into the settings file to clean up.
+
+[imapfilter-ext-config]:http://imapfilter.hellug.gr/sample.extend.lua.txt
 
 {% highlight python %}
 #!/usr/bin/python
@@ -118,4 +126,42 @@ ACCOUNT = IMAP {
 
 {% endhighlight %}
 
-[imapfilter-ext-config]:http://imapfilter.hellug.gr/sample.extend.lua.txt
+Finally, the trick to allowing cron to access the gnome-keyring is found in
+supplying it with the right environmental variables.  I found something close
+[implemented in svn][] and a couple small changes let's it work with
+offlineimap.
+{: #cron}
+
+[implemented in svn]:http://mud-slide.blogspot.com/2010/12/subversion-and-gnome-keyring.html
+
+{% highlight bash %}
+#!/bin/bash
+#
+# This script may be called via a cron job to allow
+# offlineimap (and imapfilter) to use the environmental
+# variables to access from gnome-keyring
+#
+# Attaches the current BASH session to a GNOME keyring daemon
+#
+# Returns 0 on success 1 on failure.
+#
+# Example cron call: (change the times to suit)
+#
+#	*/10 * * * * /full/path/to/pullmail.sh > /full/path/to/logfile.txt
+#
+function gnome-keyring-control() {
+	local -a vars=( \
+		DBUS_SESSION_BUS_ADDRESS \
+		GNOME_KEYRING_CONTROL \
+		GNOME_KEYRING_PID \
+		XDG_SESSION_COOKIE \
+	)
+	local pid=$(ps -C gnome-session -o pid --no-heading)
+	eval "unset ${vars[@]}; $(printf "export %s;" $(sed 's/\x00/\n/g' /proc/${pid//[^0-9]/}/environ | grep $(printf -- "-e ^%s= " "${vars[@]}")) )"
+}
+
+gnome-keyring-control
+
+/usr/bin/offlineimap -c /full/path/to/offlineimaprc -o -u Noninteractive.Basic
+{% endhighlight %}
+
