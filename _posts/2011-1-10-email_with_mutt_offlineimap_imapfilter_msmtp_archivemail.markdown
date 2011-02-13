@@ -95,7 +95,7 @@ offlineimap -c ~/.mail_configs/offlineimaprc
 
 [Imapfilter][] is another program which is able to sort and move messages around on the IMAP server.  I use it before calling offlineimap to sort my mail into the correct folder (ie, messages for a certain class into a given folder).  The configuration file can use [regular expressions][] to do the sorting, and is extendable using [Lua][], if you want to do so.
 
-[regular expressions]:en.wikipedia.org/wiki/Regular_expression_examples
+[regular expressions]:http://en.wikipedia.org/wiki/Regular_expression_examples
 [Lua]:http://en.wikipedia.org/wiki/Lua_(programming_language)
 
 Sorting can take place based on who an email is sent from, sent to, title contents, body contents, other header information, email size, age of the email, email status (recent, unread,...) and many other possibilities in combination.
