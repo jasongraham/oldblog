@@ -3,6 +3,7 @@ layout: post
 title: Using Gnome Keyring with msmtp, offlineimap, and imapfilter via cron
 time: '10:40'
 tags: [email, passwords, gnome-keyring, msmtp, offlineiamp, imapfilter, cron]
+updated: '2011-2-16'
 ---
 
 **Update Jan 27th, 2011**: Added portion relavent to cron.  It's down at the
