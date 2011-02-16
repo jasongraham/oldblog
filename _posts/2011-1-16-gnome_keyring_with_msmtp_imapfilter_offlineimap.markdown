@@ -128,11 +128,11 @@ ACCOUNT = IMAP {
 
 Finally, the trick to allowing cron to access the gnome-keyring is found in
 supplying it with the right environmental variables.  I found something close
-[implemented in svn][] and a couple small changes let's it work with
+[implemented for svn][] and a couple small changes lets it work with
 offlineimap.
 {: #cron}
 
-[implemented in svn]:http://mud-slide.blogspot.com/2010/12/subversion-and-gnome-keyring.html
+[implemented for svn]:http://mud-slide.blogspot.com/2010/12/subversion-and-gnome-keyring.html
 
 {% highlight bash %}
 #!/bin/bash
