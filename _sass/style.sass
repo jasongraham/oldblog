@@ -199,6 +199,26 @@ div.on_the_web
     padding: 0
     li
       margin-bottom: 4px
+      &#email
+        background-position: 0 0
+        width: 16px
+        height: 16px
+      &#facebook
+        background-position: -58px 0
+        width: 16px
+        height: 16px
+      &#flickr
+        background-position: -116px 0
+        width: 16px
+        height: 16px
+      &#linkedin
+        background-position: -174px 0
+        width: 16px
+        height: 16px
+      &#twitter
+        background-position: -232px 0
+        width: 16px
+        height: 16px
 
 img
   display: block
@@ -322,9 +342,52 @@ div.footer
     float: left
     margin-left: 0.5em
     margin-right: 0.5em
-    a
-      margin: 0
+  .links
+    float: left
+    width: 200px
+    height: 32px
+    margin-left: 3em
+    margin-right: 0.5em
+    text-align: center
+    ul
       padding: 0
+    li
+      margin: 4px
+      padding: 0
+      top: 0
+      height: 32px
+      list-style: none
+      diplay: block
+      background: url(/images/icons/sprite.png) no-repeat top left
+      float: left
+      a
+        margin: 0
+        padding: 0
+        display: block
+        height: 32px
+        &:hover
+          background-color: transparent
+          color: transparent
+      &#email
+        background-position: -21px 0
+        width: 32px
+        height: 32px
+      &#linkedin
+        background-position: -195px 0
+        width: 32px
+        height: 32px
+      &#facebook
+        background-position: -79px 0
+        width: 32px
+        height: 32px
+      &#twitter
+        background-position: -253px 0
+        width: 32px
+        height: 32px
+      &#flickr
+        background-position: -137px 0
+        width: 32px
+        height: 32px
   .copy
     margin-top: 2em
     text-align: center
