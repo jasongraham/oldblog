@@ -43,46 +43,47 @@ body
 ul
   list-style-type: square
 
-div#header
+#header
   position: relative
   margin-bottom: 1em
   padding-top: 1em
   background-color: $header-color
-  div#navbar
-    width: 100%
+
+#navbar
+  width: 100%
+  position: relative
+  overflow: hidden
+  background-color: $foreground-color
+  -moz-border-radius: 10px
+  border-radius: 10px
+  ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+    text-align: center
+    clear: left
+    float: left
+    left: 50%
     position: relative
-    overflow: hidden
-    background-color: $foreground-color
-    -moz-border-radius: 10px
-    border-radius: 10px
-    ul
+  li
+    display: block
+    float: left
+    position: relative
+    right: 50%
+  a
+    display: block
+    padding: 0.2em 1.75em
+    border: solid 1px $foreground-color
+    text-decoration: none
+    font-weight: bold
+    letter-spacing: 0.05em
+    color: $primary-text-color
+    margin: 0
+    &:hover, &:active, &:focus
+      background: $navbar-background-highlight
+      color: $anchor-color
+      border: solid 1px $anchor-background-color
       margin: 0
-      padding: 0
-      list-style-type: none
-      text-align: center
-      clear: left
-      float: left
-      left: 50%
-      position: relative
-      li
-        display: block
-        float: left
-        position: relative
-        right: 50%
-        a
-          display: block
-          padding: 0.2em 1.75em
-          border: solid 1px $foreground-color
-          text-decoration: none
-          font-weight: bold
-          letter-spacing: 0.05em
-          color: $primary-text-color
-          margin: 0
-          &:hover, &:active, &:focus
-            background: $navbar-background-highlight
-            color: $anchor-color
-            border: solid 1px $anchor-background-color
-            margin: 0
 
 .secondary-text
   @extend .serif
@@ -110,13 +111,13 @@ h1
       color: $title-color
       border: 0
       border-bottom: solid 1px $secondary-text-color
-    span
-      position: relative
-      bottom: 0.7em
-      padding-left: 0.25em
-      padding-right: 0.25em
-      font-size: 0.2em
-      color: $title-span-color
+  span
+    position: relative
+    bottom: 0.7em
+    padding-left: 0.25em
+    padding-right: 0.25em
+    font-size: 0.2em
+    color: $title-span-color
 
 h2
   @extend .sans-serif
@@ -163,7 +164,7 @@ p
     box-shadow: 0px 0px 0px $primary-text-color
     text-indent: 0
 
-p + p, div.on_the_web + p
+p + p, .on_the_web + p
   text-indent: 25px
 
 blockquote
@@ -187,7 +188,7 @@ pre code
   color: $primary-text-color
   font-size: 13px
 
-div.on_the_web
+.on_the_web
   line-height: 1.2em
   font-size: 80%
   float: right
@@ -197,28 +198,28 @@ div.on_the_web
   ul
     list-style-type: none
     padding: 0
-    li
-      margin-bottom: 4px
-      &#email
-        background-position: 0 0
-        width: 16px
-        height: 16px
-      &#facebook
-        background-position: -58px 0
-        width: 16px
-        height: 16px
-      &#flickr
-        background-position: -116px 0
-        width: 16px
-        height: 16px
-      &#linkedin
-        background-position: -174px 0
-        width: 16px
-        height: 16px
-      &#twitter
-        background-position: -232px 0
-        width: 16px
-        height: 16px
+  li
+    margin-bottom: 4px
+    //&#email
+      //background-position: 0 0
+      //width: 16px
+      //height: 16px
+    //&#facebook
+      //background-position: -58px 0
+      //width: 16px
+      //height: 16px
+    //&#flickr
+      //background-position: -116px 0
+      //width: 16px
+      //height: 16px
+    //&#linkedin
+      //background-position: -174px 0
+      //width: 16px
+      //height: 16px
+    //&#twitter
+      //background-position: -232px 0
+      //width: 16px
+      //height: 16px
 
 img
   display: block
@@ -242,25 +243,16 @@ img
     margin-bottom: 0.25em
     max-width: 18em
 
-ul.images
-  margin: 0
-  padding: 0
-  list-style-type: none
-  li img
-    float: left
-    margin-right: 1.5em
-    margin-bottom: 1.5em
-
 table
   width: 90%
   margin: 0 auto
   @extend .sans-serif
   border-collapse: collapse
-  thead tr th
+  th
     text-align: center
     text-decoration: underline
     border-bottom: 5px solid $foreground-color
-  tbody tr td
+  td
     border-bottom: 1px solid $foreground-color
 
 table.archive
@@ -273,44 +265,39 @@ table.archive
     vertical-align: top
     border-bottom: 1px solid $foreground-color
     border-top: 1px solid $foreground-color
-  tbody tr td
+  td
     border: 0
-  td.first
-    width: 8em
-    font-size: 80%
-    @extend .monospace
-    color: $secondary-text-color
+    &.first
+      width: 8em
+      font-size: 80%
+      @extend .monospace
+      color: $secondary-text-color
 
-ol.archive
-  margin: 0
-  padding: 0
-  list-style-type: none
-  span.date
-    float: left
-    display: block
-    width: 7em
-    padding-right: 1em
-    text-align: right
+//ol.archive
+  //margin: 0
+  //padding: 0
+  //list-style-type: none
+  //span.date
+    //float: left
+    //display: block
+    //width: 7em
+    //padding-right: 1em
+    //text-align: right
 
-div.left_column, div.right_column, form.center_column
+.left_column, .right_column
   border-bottom: 3px solid $background-color
 
-div.left_column, div.right_column
+.left_column, .right_column
   width: 25%
 
-div.left_column
+.left_column
   float: left
 
-div.center_column
-  float: left
-  width: 50%
-  text-align: center
-
-div.right_column
+.right_column
   float: right
   text-align: right
 
-div.paginator
+.paginator
   margin: 1.2em 0
   line-height: 0
   font-size: 60%
@@ -324,7 +311,7 @@ hr
     margin: 1em 0 0 0
     border-width: 3px medium
 
-div.footer
+.footer
   line-height: 1.6em
   margin-left: auto
   margin-right: auto
@@ -338,67 +325,61 @@ div.footer
     float: right
     margin-left: 0.6em
     margin-right: 0.6em
-  .contact
-    float: left
-    margin-left: 0.5em
-    margin-right: 0.5em
-  .links
-    float: left
-    width: 200px
+.contact
+  float: left
+  margin-left: 0.5em
+  margin-right: 0.5em
+.links
+  float: left
+  width: 200px
+  height: 32px
+  margin-left: 3em
+  margin-right: 0.5em
+  text-align: center
+  ul
+    padding: 0
+  a
+    margin: 0
+    padding: 0
+    display: block
     height: 32px
-    margin-left: 3em
-    margin-right: 0.5em
-    text-align: center
-    ul
-      padding: 0
-    li
-      margin: 4px
-      padding: 0
-      top: 0
+    &:hover
+      background-color: transparent
+      color: transparent
+  li
+    margin: 4px
+    padding: 0
+    top: 0
+    height: 32px
+    list-style: none
+    diplay: block
+    background: url(/images/icons/sprite.png) no-repeat top left
+    float: left
+    &#email
+      background-position: -21px 0
+      width: 32px
       height: 32px
-      list-style: none
-      diplay: block
-      background: url(/images/icons/sprite.png) no-repeat top left
-      float: left
-      a
-        margin: 0
-        padding: 0
-        display: block
-        height: 32px
-        &:hover
-          background-color: transparent
-          color: transparent
-      &#email
-        background-position: -21px 0
-        width: 32px
-        height: 32px
-      &#linkedin
-        background-position: -195px 0
-        width: 32px
-        height: 32px
-      &#facebook
-        background-position: -79px 0
-        width: 32px
-        height: 32px
-      &#twitter
-        background-position: -253px 0
-        width: 32px
-        height: 32px
-      &#flickr
-        background-position: -137px 0
-        width: 32px
-        height: 32px
-  .copy
-    margin-top: 2em
-    text-align: center
-    font-size: 0.85em
-    line-height: 1.4em
-
-@mixin cloud-rank($rank)
-  .cloud-rank-#{$rank}
-    font-size: 1.5em - ($rank - 1)*.1em
-    a
-      color: darken($title-color, ($rank - 1)*4%)
+    &#linkedin
+      background-position: -195px 0
+      width: 32px
+      height: 32px
+    &#facebook
+      background-position: -79px 0
+      width: 32px
+      height: 32px
+    &#twitter
+      background-position: -253px 0
+      width: 32px
+      height: 32px
+    &#flickr
+      background-position: -137px 0
+      width: 32px
+      height: 32px
+.copy
+  margin-top: 2em
+  text-align: center
+  font-size: 0.85em
+  line-height: 1.4em
 
 .cloud
   float: right
@@ -409,38 +390,46 @@ div.footer
     padding: 0 0 10px 0
     text-align: justify
     font-size: 0.85em
-    li
-      display: inline
-      margin: 0
-      padding: 0
-      line-height: 0.9
-      background: none
-      a
-        text-decoration: none
-        border-bottom: none
-        &:hover
-          color: $anchor-color
-          background: transparent
+  li
+    display: inline
+    margin: 0
+    padding: 0
+    line-height: 0.9
+    background: none
+  a
+    text-decoration: none
+    border-bottom: none
+    &:hover
+      color: $anchor-color
+      background: transparent
 
-    @for $i from 1 through 10
-      @include cloud-rank($i)
+@mixin cloud-rank($rank)
+  .cloud-rank-#{$rank}
+    font-size: 1.5em - ($rank - 1)*.1em
+    a
+      color: darken($title-color, ($rank - 1)*4%)
 
-div.meta
+
+@for $i from 1 through 10
+  @include cloud-rank($i)
+
+.meta
   margin: 0
   line-height: 0
   font-size: 70%
   margin-top: -2.75em
   float: right
-  span.date
-    @extend .monospace
-    color: $secondary-text-color
 
-div.previous_posts
+.date
+  @extend .monospace
+  color: $secondary-text-color
+
+.previous_posts
   float: left
   max-width: 55%
   padding: 0 5px
 
-div.tags
+.tags
   line-height: 1.7em
   color: $secondary-text-color
   float: right
@@ -449,9 +438,9 @@ div.tags
   span
     margin-right: 2px
 
-div.clear_both
+.clear_both
   clear: both
 
-div.footnotes
+.footnotes
   font-size: 75%
   @extend .serif
