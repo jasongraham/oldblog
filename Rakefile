@@ -30,7 +30,7 @@ namespace :build do
   desc "compress things in _site directory"
   task :compress do
     puts "Compressing..."
-    system('./_scripts/compressor.sh')
+    system('./_lib/compressor.sh')
     puts "Finished compressing"
     puts ""
   end
@@ -38,7 +38,7 @@ namespace :build do
   desc "generates the favicon"
   task :favicon do
     puts "Generating favicon..."
-    system('./_scripts/gen_favicon.sh')
+    system('./_lib/gen_favicon.sh')
     puts "Finished generating favicon"
     puts ""
   end
@@ -46,7 +46,7 @@ namespace :build do
   desc "generates the cloud"
   task :cloud do
     puts "Generating cloud..."
-    system('./_scripts/generate_cloud.py 40 10 . > ./_includes/cloud.html')
+    system('./_lib/generate_cloud.py 40 10 . > ./_includes/cloud.html')
     puts "Finished generating cloud"
     puts ""
   end
@@ -66,7 +66,7 @@ namespace :deploy do
     puts "Pinging web services"
     system('wget --output-document=/dev/null http://www.google.com/webmasters/tools/ping?sitemap=http%3A%2F%2Fjason.the-graham.com%2Fsitemap.xml')
     system('wget --output-document=/dev/null http://www.bing.com/webmaster/ping.aspx?siteMap=http://jason.the-graham.com/sitemap.xml')
-    system('./_scripts/rpcping.pl "Blog for Jason Graham" http://jason.the-graham.com/')
+    system('./_lib/rpcping.pl "Blog for Jason Graham" http://jason.the-graham.com/')
     puts "Finished pinging web services"
     puts ""
   end

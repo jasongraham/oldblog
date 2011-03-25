@@ -4,7 +4,7 @@
 echo "Minifying HTML..."
 for f in `find _site/ -name \*.html | egrep -v '^_site/google'`; do
     mv $f $(echo "$f" | sed 's/html$/html.old/')
-    _scripts/strip_whitespace.pl < $f.old > $f
+    _lib/strip_whitespace.pl < $f.old > $f
     rm $f.old
 done
 
