@@ -10,15 +10,17 @@ repository][my repo], and is mirrored on [Github][mirror].
 [my repo]:http://code.the-graham.com/blog
 [mirror]:https://github.com/jasongraham/blog
 
-The site is generated through [Jekyll][], which I have
-[patched][patch] (alternative on [Github][github patch]) slightly to allow the use of [kramdown][] as a
-[Markdown][] interpreter.
+The site is generated through [Jekyll][], using [kramdown][] as a
+[Markdown][] interpreter.  Originally, I was using my own forked version
+with kramdown functionality added, but kramdown functionality was merged
+into Jekyll as of version 0.8.
 
 [Jekyll]:https://github.com/mojombo/jekyll
-[patch]:http://code.the-graham.com/jekyll/commit/?id=28ed939a6ae02f980aba4f37149415cacaf12824
-[github patch]:https://github.com/jasongraham/jekyll/commit/28ed939a6ae02f980aba4f37149415cacaf12824
 [kramdown]:http://kramdown.rubyforge.org/
 [Markdown]:http://daringfireball.net/projects/markdown/
+
+Rather than explicitly calling Jekyll, I use `rake` to compile the site.  See
+the included Rakefile.
 
 ## License ##
 
