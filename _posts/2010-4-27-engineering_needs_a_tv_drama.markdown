@@ -7,12 +7,12 @@ time: '09:00'
 
 I've had an epiphany recently.  You may thank me later for single-handedly saving the engineering profession.  And you read it here first.
 
-We engineers tend to be a cynical bunch.  We've spawned the likes of [Dilbert] and [Office Space].  We're not known to be terribly social people.  Smart, but not necessarily likeable.
+We engineers tend to be a cynical bunch.  We've spawned the likes of [Dilbert][] and [Office Space][].  We're not known to be terribly social people.  Smart, but not necessarily likeable.
 
 [Dilbert]:http://www.dilbert.com/
 [Office Space]:http://www.imdb.com/title/tt0151804/
 
-Thus, we must work to improve our socio-professional image.  And I can think of no better way to do this than to create an engineering themed drama: a [Grey's Anatomy] of engineering, if you will.  Allow me to give you a sample excerpt in a software engineering context.
+Thus, we must work to improve our socio-professional image.  And I can think of no better way to do this than to create an engineering themed drama: a [Grey's Anatomy][] of engineering, if you will.  Allow me to give you a sample excerpt in a software engineering context.
 
 [Greys Anatomy]:http://en.wikipedia.org/wiki/Grey%27s_Anatomy
 

@@ -10,7 +10,7 @@ He's absolutely right that you really have no expectation of true privacy online
 
 >If you really need that kind of privacy, the reality is that search engines - including Google - do retain this information for some time and it's important, for example, that we are all subject in the United States to the Patriot Act and it is possible that all that information could be made available to the authorities.
 
-The question he's dodged, it seems to me, is how intimately this information that Google collects is associated with me within the company itself.  I don't mind Google doing statistical studies across large, anonymous groups of people, but when they start saying 
+The question he's dodged, it seems to me, is how intimately this information that Google collects is associated with me within the company itself.  I don't mind Google doing statistical studies across large, anonymous groups of people, but when they start saying
 
 * Don't forget your wife's birthday / your anniversary in a week! Here are ads for jewelry, flowers...!
 * Your car is 5 years old now, so we'll show you ads for a new car!

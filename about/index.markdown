@@ -9,7 +9,7 @@ description: Electrical Engineering Graduate Student in Communcations and Info. 
 
 <a href="http://www.flickr.com/photos/jason_and_whittney/5089976799/" title="Getting my feet wet"><img class="img_right" src="http://farm5.static.flickr.com/4131/5089976799_ddb0b41c2d_m_d.jpg" width="240" alt="Getting my feet wet" /></a>
 
-My name is Jason. I'm 23 years old. I have a lovely wife, and two small dogs. By day I am an [electrical engineering](http://www.eecs.wsu.edu/) graduate student in communication and information theory at [Washington State University](http://www.wsu.edu).  In the future, I hope do research and possibly teach.
+My name is Jason. I'm 24 years old. I have a lovely wife, and two small dogs. By day I am an [electrical engineering](http://www.eecs.wsu.edu/) graduate student in communication and information theory at [Washington State University](http://www.wsu.edu).  In the future, I hope do research and possibly teach.
 
 On the rare occasion I have free time, I enjoy playing guitar, spending time with my family, reading sci-fi, and exploring Linux.
 

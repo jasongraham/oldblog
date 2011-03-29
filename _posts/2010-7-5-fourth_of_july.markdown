@@ -13,6 +13,6 @@ Whittney's dad and brother stayed with us for the fireworks.  For a smaller town
 
 If we're in town next year, I think we'll just walk from our house.  It's close enough that we only got to drive about two blocks closer than the house before we had to park due to the number of people attending.
 
-As an aside, Whittney is finally starting to enjoy using our [family blog] as well.  She's exploring the interface and getting reacquainted with basic HTML editing.
+As an aside, Whittney is finally starting to enjoy using our [family blog][] as well.  She's exploring the interface and getting reacquainted with basic HTML editing.
 
 [family blog]:http://www.graham-clan.net

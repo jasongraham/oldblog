@@ -7,21 +7,21 @@ description: Fixing apt-get, fixing dns, adding users, setting up lighttpd and c
 
 <img class="img_right" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/SheevaPlug_with_external_drive_enclosure.jpg/300px-SheevaPlug_with_external_drive_enclosure.jpg" />
 
-My Christmas present to myself was a new computer of sorts: a [Sheeva Plug] computer from Marvel.  Its a tiny, cheap, wall-wart style computer, and much lower power than the previous dual-core machine I had running this server.
+My Christmas present to myself was a new computer of sorts: a [Sheeva Plug][] computer from Marvel.  Its a tiny, cheap, wall-wart style computer, and much lower power than the previous dual-core machine I had running this server.
 
-I wanted to document the steps that I used to get the sucker up and running, so I can remember them later.  For some of the steps, I am referring to the [Computing Plugs wiki], itself running off of a Sheeva plug.
+I wanted to document the steps that I used to get the sucker up and running, so I can remember them later.  For some of the steps, I am referring to the [Computing Plugs wiki][], itself running off of a Sheeva plug.
 
 So here is documentation for myself on what I did, and for anyone else who finds it useful.
 
-_EDIT: I have since reinstalled the OS with [debian], using the [excellent tutorial] by Martin Michlmayr.  The following tutorial assumes you have the default Ubuntu 9.04 that comes with the plug._
+_EDIT: I have since reinstalled the OS with [debian][], using the [excellent tutorial][] by Martin Michlmayr.  The following tutorial assumes you have the default Ubuntu 9.04 that comes with the plug._
 
-### Contents
+### Contents ###
 + This will be replaced with a table of contents
 {:toc}
 
 ---
 
-### Fix the DNS issue
+### Fix the DNS issue ###
 
 The Sheeva Plug won't use the DNS servers set within my DHCP router without the following line being commented in the file `/etc/dhcp3/dhclient.conf`:
 
@@ -31,7 +31,7 @@ supersede domain-name-servers 127.0.0.1;
 
 ---
 
-### Get apt-get working
+### Get apt-get working ###
 
 See [this article](http://computingplugs.com/index.php/Fixing_apt-get) for instructions and options of what to do.
 
@@ -40,7 +40,7 @@ From there, run `apt-get update && apt-get dist-upgrade` to update the software 
 
 ---
 
-### Add a non-root default user
+### Add a non-root default user ###
 
 I don't want to use root to log in or do much of anything directly.  I want to use the typical default Ubuntu `sudo` techniques.  Thus, I'll add myself another user, make and add him to the admin group, and disable the ability to log in as root remotely or via `su`.
 
@@ -79,16 +79,16 @@ LoginGraceTime 20 #(length of time system in seconds server will wait for a resp
 PermitRootLogin no
 {% endhighlight %}
 
-Remotely logging in to the server can now only be done through the new user, and root commands and functionality are preserved through sudo.  For added security, [use ssh keys] rather than passwords, and / or move sshd to a non-standard port.
+Remotely logging in to the server can now only be done through the new user, and root commands and functionality are preserved through sudo.  For added security, [use ssh keys][] rather than passwords, and / or move sshd to a non-standard port.
 
 ---
 
-### Install Additional Software
+### Install Additional Software ###
 
 First, lets get some basic software that I consider useful.
 
 + `man-db`: Serious oversight by the creators to neglect the manual pages in the default install.
-+ `vim-nox`: My text editor of choice is [vim].
++ `vim-nox`: My text editor of choice is [vim][].
 + `git-core`: Needed for the code repository management through gitosis later.
 + `vnstat`: A bandwidth logging tool.  Also, a cron job to update the stats hourly should be added.
 {% highlight bash %}
@@ -98,12 +98,12 @@ apt-get install man-db vim-nox git-core vnstat
 # Same command should be put in a cron job hourly
 vnstat -u -i eth0
 {% endhighlight %}
-+ [Install gitosis] to manage git.
-+ After installing gitosis, deploy `git-daemon` to those made public through gitosis for easy cloning.  For Ubuntu 9.04 at least, mind that there is a bug in the `git-daemon-run` package, and to use [this fix].
++ [Install gitosis][] to manage git.
++ After installing gitosis, deploy `git-daemon` to those made public through gitosis for easy cloning.  For Ubuntu 9.04 at least, mind that there is a bug in the `git-daemon-run` package, and to use [this fix][].
 
-I run several services using the server, including this webpage, and my [code repository] through [Git].  Some generic highlights:
+I run several services using the server, including this webpage, and my [code repository][] through [Git][].  Some generic highlights:
 
-#### Webserver through lighttpd
+#### Webserver through lighttpd ####
 
 [Lighttpd](http://www.lighttpd.net/) (pronounced "lighty") is a smaller, lighter webserver especially well suited for this plug with its smaller amount of memory (512M), and the fact that its mostly just static pages.
 
@@ -117,9 +117,9 @@ lighttpd-enable-mod cgi
 /etc/init.d/lighttpd force-reload
 {% endhighlight %}
 
-#### Setup cgit <a id="cgit"></a>
+#### Setup cgit ####
 
-[Cgit] is what displays my [code repository].  The install is fairly well documented.  For help with the lighttpd configuration, I found [these posts] linking to [this pastebin] helpful.
+[Cgit][] is what displays my [code repository][].  The install is fairly well documented.  For help with the lighttpd configuration, I found [these posts][] linking to [this pastebin][] helpful.
 
 There are two places you could put the git repository: as a subdomain or not (ie, www.example.com/git or git.example.com).
 

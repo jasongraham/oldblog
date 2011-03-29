@@ -11,25 +11,25 @@ After leaving a post describing [how to set up Chromium Securely](/2009/12/14/se
 
 This post will deal with securing Firefox.  I'll leave another one in the future explaining what I do to speed it up.
 
-Also, I use [Ubuntu] Linux as my operating system, but most of this guide is OS agnostic.
+Also, I use [Ubuntu][] Linux as my operating system, but most of this guide is OS agnostic.
 
-#### Advantages
+#### Advantages ####
 1. Browsing information (cookies, cache, history) is deleted on browser exit.
 2. Compatibility with most websites is maintained (provided you know how to adjust extension settings when there are problems).
 
-#### Disadvantages
+#### Disadvantages ####
 1. Initially, tweaking extensions for compatibility with your commonly used websites will take some time.
-2. Some sites that stream with flash, such as [Pandora] and [NPR] require local flash storage.
+2. Some sites that stream with flash, such as [Pandora][] and [NPR][] require local flash storage.
 
 Firefox comes installed by default on my Linux distribution of choice, so I leave you to figure out how to install it if you need to.
 
-### Kill all Flash Cookies
+### Kill all Flash Cookies ###
 
-A [flash cookie], or Local Shared Object, is a file a website stores on your computer, outside of the control of your browser settings.  It is different from a regular [cookie].  They are associated with adobe flash, which is used by many websites.  Unfortunately, they are also [used to store tracking information](http://www.wired.com/epicenter/2009/08/you-deleted-your-cookies-think-again/), as well as back up data from regular cookies stored by your browser.
+A [flash cookie][], or Local Shared Object, is a file a website stores on your computer, outside of the control of your browser settings.  It is different from a regular [cookie][].  They are associated with adobe flash, which is used by many websites.  Unfortunately, they are also [used to store tracking information](http://www.wired.com/epicenter/2009/08/you-deleted-your-cookies-think-again/), as well as back up data from regular cookies stored by your browser.
 
-* #### From the command line
+* #### From the command line ####
 
-	In Ubuntu and most other Linux distributions, Adobe Flash settings are stored in `~/.adobe` and the cookies themselves in `~/.macromedia` folders.  I have these simlinked to `/dev/null` (effectively a [black hole]) so that anything trying to write to these folders doesn't get an error message, but nothing ever gets written to disk.
+	In Ubuntu and most other Linux distributions, Adobe Flash settings are stored in `~/.adobe` and the cookies themselves in `~/.macromedia` folders.  I have these simlinked to `/dev/null` (effectively a [black hole][]) so that anything trying to write to these folders doesn't get an error message, but nothing ever gets written to disk.
 
 {% highlight bash %}
 rm -rf ~/.adobe ~/.macromedia
@@ -37,13 +37,13 @@ ln -s /dev/null ~/.adobe
 ln -s /dev/null ~/.macromedia
 {% endhighlight %}
 
-Every so often, I do listen to [NPR] or another site that requires Flash cookies for streaming media storage.  When that happens, I simply delete the simlinks to use them, and then repeat the command set above when I'm done.
+Every so often, I do listen to [NPR][] or another site that requires Flash cookies for streaming media storage.  When that happens, I simply delete the simlinks to use them, and then repeat the command set above when I'm done.
 
-* #### With extensions
+* #### With extensions ####
 
-	For those of you using Windows, or those not wanting to mess with the command line to watch a video, the Firefox extension [BetterPrivacy] allows you to a way to control Flash Cookies by deleting them on browser exit, at fixed intervals, or even if they haven't been changed for a given amount of time.  I recommend it over nothing.
+	For those of you using Windows, or those not wanting to mess with the command line to watch a video, the Firefox extension [BetterPrivacy][] allows you to a way to control Flash Cookies by deleting them on browser exit, at fixed intervals, or even if they haven't been changed for a given amount of time.  I recommend it over nothing.
 
-### Installing Privacy Extensions
+### Installing Privacy Extensions ###
 
 Speaking of extensions, this is as good a place as any to start installing them.
 
@@ -70,7 +70,7 @@ Next, go to the Security tab.  If you want to have Firefox remember passwords fo
 
 ### Disable Disk Cache by Editting about:config
 
-Excepting the powerful extensions, my favorite feature of Firefox is that they expose the configuration settings if you want them.  They can be accessed by typing [about:config](about:config) into your address bar.  Frequently guides to [speed up Firefox] will ask you to change settings in them, and are good ways to increase your browsing speed.  I suggest trying one to see if this helps you.
+Excepting the powerful extensions, my favorite feature of Firefox is that they expose the configuration settings if you want them.  They can be accessed by typing [about:config](about:config) into your address bar.  Frequently guides to [speed up Firefox][] will ask you to change settings in them, and are good ways to increase your browsing speed.  I suggest trying one to see if this helps you.
 
 [speed up Firefox]:http://www.blogsdna.com/6522/how-to-speed-up-your-firefox-browser.htm
 

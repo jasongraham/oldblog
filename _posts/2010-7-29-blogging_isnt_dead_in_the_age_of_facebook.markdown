@@ -5,7 +5,7 @@ tags: [blog, writing, facebook, twitter, perceptions]
 time: '17:00'
 ---
 
-I found an article written nearly two years ago on [Wired Magazine] by a Paul Boutin discussing the [futility of the personal blog].  Essentially, the author states what was as obvious then as now: people are leaving the "impersonal" sphere to blogging and sharing their lives and experiences through [Facebook], [Twitter], and [Flickr], leaving the professional sites with multiple authors to claim the blogs.
+I found an article written nearly two years ago on [Wired Magazine][] by a Paul Boutin discussing the [futility of the personal blog][].  Essentially, the author states what was as obvious then as now: people are leaving the "impersonal" sphere to blogging and sharing their lives and experiences through [Facebook][], [Twitter][], and [Flickr][], leaving the professional sites with multiple authors to claim the blogs.
 
 [Wired Magazine]:http://www.wired.com/
 [futility of the personal blog]:http://www.wired.com/entertainment/theweb/magazine/16-11/st_essay/
@@ -13,9 +13,9 @@ I found an article written nearly two years ago on [Wired Magazine] by a Paul Bo
 [Twitter]:https://www.twitter.com
 [Flickr]:http://www.flickr.com/
 
-For most users, these services do everything they need for them to be able to express themselves and share with their friends.  They all have different strengths and limitations[^1], but obviously appeal despite themselves.  They are all useful tools, but I don't feel they replace a blog entirely.
+For most users, these services do everything they need for them to be able to express themselves and share with their friends.  They all have different strengths and limitations[^1][], but obviously appeal despite themselves.  They are all useful tools, but I don't feel they replace a blog entirely.
 
-[^1]: In his final paragraph, Mr. Boutin claims one of the strengths of Twitter is leveling the grammatical playing field between amateur and professional by limiting both to 140 characters.  Be that as it may, it is ironic that this strength is killing people's ability to express themselves in more verbose writing, such as [university placement exams].
+[^1]: In his final paragraph, Mr. Boutin claims one of the strengths of Twitter is leveling the grammatical playing field between amateur and professional by limiting both to 140 characters.  Be that as it may, it is ironic that this strength is killing people's ability to express themselves in more verbose writing, such as [university placement exams][].
 
 [university placement exams]:http://www.theglobeandmail.com/news/technology/texting-twitter-contributing-to-students-poor-grammar-skills-profs-say/article1452300/
 
@@ -29,7 +29,7 @@ Obviously doesn't apply to me, but some people would like to have a place to ven
 
 ### Separation of Public and Personal Sharing ###
 
-This is one of the reasons I like to use this blog rather than facebook, for example.  Though facebook offers the ability to change your sharing settings for each individual thing you share, it's difficult to share with people outside of facebook.  The most popular content on this blog is actually walking through [setting up a sheevaplug], which most people find through Google.  I'm certain most of my real life friends have no interest in this.
+This is one of the reasons I like to use this blog rather than facebook, for example.  Though facebook offers the ability to change your sharing settings for each individual thing you share, it's difficult to share with people outside of facebook.  The most popular content on this blog is actually walking through [setting up a sheevaplug][], which most people find through Google.  I'm certain most of my real life friends have no interest in this.
 
 [setting up a sheevaplug]:http://jason.the-graham.com/2010/01/06/howto_setup_sheeva_plug
 

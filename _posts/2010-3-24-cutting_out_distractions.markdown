@@ -5,9 +5,9 @@ time: '15:30'
 tags: [school, time, distractions]
 ---
 
-This week I've spent something on the order of four hours in [Les Schwab] getting our two cars' studded winter tires changed out.  The [deadline] for removing them before the police can start fining you is at the end of the month, thus explaining the wait.
+This week I've spent something on the order of four hours in [Les Schwab][] getting our two cars' studded winter tires changed out.  The [deadline][] for removing them before the police can start fining you is at the end of the month, thus explaining the wait.
 
-To pass the time, I was a good student and worked on some homework that I didn't need my computer for.  From this I discovered, to my dismay, that I am _much_ more productive when not seated in from of a computer screen.  The internet can be very distracting, with [Google Reader], [twitter] and email constantly updating.
+To pass the time, I was a good student and worked on some homework that I didn't need my computer for.  From this I discovered, to my dismay, that I am _much_ more productive when not seated in from of a computer screen.  The internet can be very distracting, with [Google Reader][], [twitter][] and email constantly updating.
 
 There was a time, in high school and the through the end of undergrad, when I was very driven and focused; I was able to sit for hours pushing through homework.  Now it seems that I take breaks at perhaps half hour intervals, which last probably longer than they should.
 

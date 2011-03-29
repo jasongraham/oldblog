@@ -8,11 +8,11 @@ description: Bash script to open SSH tunnel for proxy
 
 <img class="img_left" src="http://www.webmastersbydesign.com/wp-content/uploads/2008/07/encryption.jpg" />
 
-When my wife and I were on our [anniversary vacation on Whidbey], I was sad that the wireless internet access provided to us was unencrypted.  I suppose that I should be glad that any existed at all, since Whittney and I were able to use Netflix as we were there.
+When my wife and I were on our [anniversary vacation on Whidbey][], I was sad that the wireless internet access provided to us was unencrypted.  I suppose that I should be glad that any existed at all, since Whittney and I were able to use Netflix as we were there.
 
 [anniversary vacation on Whidbey]:/2010/06/10/whidbey_vacation
 
-I wanted at the time to be able to set up a [ssh tunnel] to my home server, running the website that you're reading.  The tunnel itself is encrypted, so it would be equivalent security-wise to any browsing that I would do from home.  Something like this would be greatly helpful for using the web at the airport or your local coffee shop.
+I wanted at the time to be able to set up a [ssh tunnel][] to my home server, running the website that you're reading.  The tunnel itself is encrypted, so it would be equivalent security-wise to any browsing that I would do from home.  Something like this would be greatly helpful for using the web at the airport or your local coffee shop.
 
 [ssh tunnel]:http://en.wikipedia.org/wiki/Tunneling_protocol#Secure_Shell_tunneling
 
@@ -82,11 +82,11 @@ fi
 
 ### Firefox Configuration ###
 
-I used the [FoxyProxy Basic] addon for Firefox to easily switch between proxied or no-proxy modes.  Use a socks version 5 connection type when setting up the proxy, to localhost and port 8080 (or whatever you want, just change the script).
+I used the [FoxyProxy Basic][] addon for Firefox to easily switch between proxied or no-proxy modes.  Use a socks version 5 connection type when setting up the proxy, to localhost and port 8080 (or whatever you want, just change the script).
 
 [FoxyProxy Basic]:https://addons.mozilla.org/en-US/firefox/addon/15023/
 
-If you don't want to use an addon, you can also enable the proxy manually through the `about:config` screen by following [this helpful tutorial].
+If you don't want to use an addon, you can also enable the proxy manually through the `about:config` screen by following [this helpful tutorial][].
 
 [this helpful tutorial]:http://wiki.freaks-unidos.net/weblogs/azul/firefox-ssh-tunnel
 

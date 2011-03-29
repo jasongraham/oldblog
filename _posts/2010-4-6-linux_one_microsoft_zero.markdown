@@ -7,7 +7,7 @@ tags: [family, Linux, funny]
 
 Yesterday, my wife made my day.
 
-She is considering a slight career change, and getting additional training online to become a [sonographer].  Since the training is online, apparently it requires you to have some specific software on your computer, which of course is designed for Windows (which is fine, I'm not knocking on that, though it would be nicer if it was purely run through the browser).
+She is considering a slight career change, and getting additional training online to become a [sonographer][].  Since the training is online, apparently it requires you to have some specific software on your computer, which of course is designed for Windows (which is fine, I'm not knocking on that, though it would be nicer if it was purely run through the browser).
 
 Anyway, as she's telling me that the software only runs on Windows, she comments:
 

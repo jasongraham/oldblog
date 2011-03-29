@@ -17,7 +17,7 @@ Coming up shortly, I will have to&hellip;
 
 + Take the qualifying exams to get into the PhD program.  Originally I thought this would happen sometime in October, but I learned this week that they can start as soon as the 4th or 5th week, and are usually only scheduled two weeks in advance.
 
-+ Grade about 120 programming assignments each week.  I have been assigned as TA for two introductory programming classes ([CptS 111] and [Cpts 121] if you're curious), and have between the two of them a 3 hour lab commitment and much grading to do each week between the two of them.
++ Grade about 120 programming assignments each week.  I have been assigned as TA for two introductory programming classes ([CptS 111][] and [Cpts 121][] if you're curious), and have between the two of them a 3 hour lab commitment and much grading to do each week between the two of them.
   
   On the bright side, I did enjoy proctoring during the lab sessions.  Its the closest thing I've done to teaching a class, and I thought it went quite well.  I can remember being in these student's shoes before.  For many of them, including me when I took these courses, it was my first experience with programming, and I learned a lot.  Hopefully I can live up to my memory of the helpful TA from when I took the course.
 

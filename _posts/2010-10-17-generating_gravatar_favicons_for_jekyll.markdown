@@ -5,13 +5,13 @@ tags: [gravatar, jekyll, favicon, blog]
 time: '15:05'
 ---
 
-Today I decided that my previous [favicon] used on this site was incredibly boring.  I like the way that [Wordpress.com] handles making their favicons using their [Gravatar] service, and I decided that I could be cool and use that too!
+Today I decided that my previous [favicon][] used on this site was incredibly boring.  I like the way that [Wordpress.com][] handles making their favicons using their [Gravatar][] service, and I decided that I could be cool and use that too!
 
 [favicon]:http://en.wikipedia.org/wiki/Favicon
 [Wordpress.com]:http://wordpress.com
 [Gravatar]:http://gravatar.com
 
-Since [Jekyll] is a static blog generator, I have to generate the favicon when I update the site, rather than on page loads.  I wrote a script that pulls my Gravatar and converts it to the appropriate format.  It depends on the [netpbm] packages, available in most Linux distributions.
+Since [Jekyll][] is a static blog generator, I have to generate the favicon when I update the site, rather than on page loads.  I wrote a script that pulls my Gravatar and converts it to the appropriate format.  It depends on the [netpbm][] packages, available in most Linux distributions.
 
 [Jekyll]:http://github.com/mojombo/jekyll
 [netpbm]:http://netpbm.sourceforge.net/
@@ -47,6 +47,6 @@ rm -f tmp_logo* favicon.png
 
 {% endhighlight %}
 
-From there, I can include this in my [deploy script] which updates the contents on the site.
+From there, I can include this in my [deploy script][] which updates the contents on the site.
 
 [deploy script]:http://code.the-graham.com/blog/tree/deploy.sh

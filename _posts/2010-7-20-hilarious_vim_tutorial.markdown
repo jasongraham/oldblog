@@ -7,7 +7,7 @@ time: '13:21'
 
 <img class="img_right" src="http://work.alexyoung.org/wp-content/vim/vim.png" width="400" />
 
-While trolling the [Jekyll wiki] to see what [sites people have designed] using Jekyll, I came across one blog of a coder who has recently [stumbled into Vim].  Aside from using the very useful `vimtutor` command, from which I learned Vim basics, he links to an [entertaining video] showing many of the features that make Vim freaking awesome as an editor.  
+While trolling the [Jekyll wiki][] to see what [sites people have designed][] using Jekyll, I came across one blog of a coder who has recently [stumbled into Vim][].  Aside from using the very useful `vimtutor` command, from which I learned Vim basics, he links to an [entertaining video][] showing many of the features that make Vim freaking awesome as an editor.  
 
 [Jekyll wiki]:http://wiki.github.com/mojombo/jekyll/
 [sites people have designed]:http://wiki.github.com/mojombo/jekyll/sites
@@ -16,7 +16,7 @@ While trolling the [Jekyll wiki] to see what [sites people have designed] using 
 
 It's a touch long, but amusing if you have the time for it.  Some of the plugins shown in the video look useful, and are one's I haven't seen before.
 
-The video author also has many more [tutorial videos] about Vim, as well as resources on his [web site].
+The video author also has many more [tutorial videos][] about Vim, as well as resources on his [web site][].
 
 [tutorial videos]:http://vimeo.com/user1690209/videos/page:1/sort:newest
 [web site]:http://derekwyatt.org/
