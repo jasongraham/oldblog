@@ -11,7 +11,7 @@ description: Electrical Engineering Graduate Student in Communcations and Info. 
 
 My name is Jason. I'm 23 years old. I have a lovely wife, and two small dogs. By day I am an [electrical engineering](http://www.eecs.wsu.edu/) graduate student in communication and information theory at [Washington State University](http://www.wsu.edu).  In the future, I hope do research and possibly teach.
 
-On the rare occasion I have free time, I enjoy playing guitar, spending time with my family, reading sci-fi, and exploring Linux.  For the small snippets of spare time during the day, I tend to peruse my [blogroll].
+On the rare occasion I have free time, I enjoy playing guitar, spending time with my family, reading sci-fi, and exploring Linux.
 
 {% include on_the_web.html %}
 For a bit more professional or academic information on me, check out my [school website], though it's a bit sparse at the moment.  My wife and I also share a [family blog].
@@ -36,8 +36,6 @@ The original site design was heavily inspired by similar blogs setup up by [Tate
 
 The social network icons are the work of [konodomedia].
 
-
-[blogroll]:/about/blogroll/
 
 [SheevaPlug]:http://en.wikipedia.org/wiki/SheevaPlug
 [debian]:http://www.debian.org/
