@@ -1,7 +1,16 @@
 # Rakefile adapted from
 # http://davidwparker.com/2009/12/01/my-jekyll-rake-file/
 #
+
+# `rake` will build the test site
 task :default => [:"build:test"]
+
+# `rake build` should compile the site
+task :build => [:"build:compile_quick"]
+
+# by default, `rake deploy` should perform a full compile
+# and deploy the site
+task :deploy => [:"deploy:rsync"]
 
 desc "build _site"
 namespace :build do
@@ -23,6 +32,14 @@ namespace :build do
   task :compile => [:delete, :compass, :favicon, :cloud] do
     puts "building production _site"
     system('jekyll --lsi')
+    puts "building _site complete"
+    puts ""
+  end
+
+  desc "compile site without --lsi option, favicon, or cloud"
+  task :compile_quick => [:delete, :compass] do
+    puts "building production _site"
+    system('jekyll')
     puts "building _site complete"
     puts ""
   end
