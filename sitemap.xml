@@ -22,13 +22,4 @@ layout: nil
     <loc>http://jason.the-graham.com/about/</loc>
     <lastmod>2010-11-19</lastmod>
   </url>
-  <url>
-    <loc>http://jason.the-graham.com/about/blogroll/</loc>
-    <lastmod>2010-03-23</lastmod>
-  </url>
-  <url>
-    <loc>http://jason.the-graham.com/archive/</loc>
-    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
 </urlset> 
