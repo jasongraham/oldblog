@@ -13,7 +13,10 @@ My name is Jason. I'm 23 years old. I have a lovely wife, and two small dogs. By
 
 On the rare occasion I have free time, I enjoy playing guitar, spending time with my family, reading sci-fi, and exploring Linux.
 
+<div class="clear_both"></div>
+
 {% include on_the_web.html %}
+
 For a bit more professional or academic information on me, check out my [school website][], though it's a bit sparse at the moment.  My wife and I also share a [family blog][].
 
 [family blog]:http://www.graham-clan.net
