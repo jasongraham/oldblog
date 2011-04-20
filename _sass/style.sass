@@ -12,6 +12,7 @@ $secondary-text-color: #aaaaaa
 $code-text-color: #c3bf9f
 
 // Include the partials
+@import compass/css3
 //@import fonts
 @import zenburn
 
@@ -38,7 +39,7 @@ html
 body
   width: 38em
   margin: 0 auto
-  padding: 0 20px 3em
+  padding: 0 0 3em
 
 ul
   list-style-type: square
@@ -71,6 +72,7 @@ ul
     position: relative
     right: 50%
   a
+    +transition-timing-function(ease-in-out)
     display: block
     padding: 0.2em 1.75em
     border: solid 1px $foreground-color
@@ -146,6 +148,8 @@ h4
   color: $heading-color
 
 a
+  +transition-property((color, border, background))
+  +transition-duration(.3s)
   text-decoration: none
   color: $anchor-color
   &:hover, &:active, &:focus
