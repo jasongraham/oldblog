@@ -7,7 +7,7 @@ tags: [education, family, work, time, life]
 
 If there is one thing that I have learned in my short time on this earth, it
 is that unexpected things happen.  You lay plans, only to see them torn to
-sunders by [Murphy]().
+sunders by [Murphy][].
 
 [Murphy]:http://en.wikipedia.org/wiki/Murphy's_law
 
