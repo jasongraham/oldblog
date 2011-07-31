@@ -4,7 +4,7 @@
 # save copies of sent emails to the ${folder}Sent directory
 # the '+' expands to $folders (like '~' to $HOME in the bash shell)
 set record = +eecs/sent
-set postpone = +eecs/drafts
+set postponed = +eecs/drafts
 set signature = ~/.mail_configs/mutt/sig_school.sig
 
 # use msmtp to send outgoing mail to the mailserver
