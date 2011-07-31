@@ -194,6 +194,7 @@ To summarize, here are the links from the other post to integrate [msmtp with gn
 
 ### Changelog ###
 
++ Jul. 30, 2011: Fixed typo in mutt configs. Postpone -> Postponed
 + Jan 16, 2011: Added encrypting passwords with Gnome-Keyring
 + {{ page.date | date:"%b %d, %Y" }}: Initial post.
 
