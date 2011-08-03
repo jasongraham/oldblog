@@ -11,9 +11,9 @@ sunders by [Murphy][].
 
 [Murphy]:http://en.wikipedia.org/wiki/Murphy's_law
 
-Think of all the metaphors for the unexpected happening in life the most
-common I hear are describing _life detours_, and _life throwing you a curve
-ball_.  Perhaps it's my aversion to road construction and baseball, but these
+As I think of all the metaphors for the unexpected happening in life the most
+common I hear are "life detours", and "life throwing you a curve
+ball".  Perhaps it's my aversion to road construction and baseball, but these
 don't seem like positive connotations.  I can understand being upset that life
 doesn't go exactly the way that you had planned it, so perhaps these are
 appropriate for a great number of circumstances.  But sometimes, the
