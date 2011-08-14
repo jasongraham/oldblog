@@ -73,7 +73,7 @@ end
 namespace :deploy do
   desc "rsync _site"
   task :rsync => [:"build:compile", :"build:compress"] do
-    system('rsync -avrz _site/ homeserver:blog')
+    system('rsync -avrz --checksum _site/ homeserver:blog')
     puts "site deployed"
     puts ""
   end
