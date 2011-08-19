@@ -1,197 +1,222 @@
-/* Adapted from http://victorgavin.co.uk/zenburn/
-
 .highlight
   padding: 0.5em 1em
   margin-bottom: 1em
   line-height: 1.1em
   overflow: auto
-  .hll
-    background-color: #262626
+  background-color: #262626
   background: #262626
+
+.hll
   color: #dcdccc
-  .c
-    color: #7f9f7f
-    font-style: italic
-  .err
-    color: #80d4aa
-    font-weight: bold
-    background-color: #2f2f2f
-  .g
-    color: #dcdccc
-  .k
-    color: #F0DFAF
-    font-weight: bold
-  .l, .n
-    color: #dcdccc
-  .o
-    color: #f0efd0
-  .x, .p
-    color: #dcdccc
-  .cm
-    color: #7f9f7f
-    font-style: italic
-  .cp
-    color: #ffcfaf
-    font-weight: bold
-  .c1
-    color: #7f9f7f
-    font-style: italic
-  .cs
-    color: #82a282
-    font-weight: bold
-  .gd
-    color: #262626
-    background-color: #464646
-  .ge
-    color: #dcdccc
-  .gr
-    color: #80d4aa
-    font-weight: bold
-    background-color: #2f2f2f
-  .gh
-    color: #dcdccc
-    font-weight: bold
-  .gi
-    color: #dcdccc
-  .go
-    color: #dcdccc
-    background-color: #222222
-  .gp, .gs
-    color: #dcdccc
-  .gu
-    color: #dcdccc
-    font-weight: bold
-  .gt
-    color: #dcdccc
-  .kc
-    color: #DCA3A3
-    font-weight: bold
-  .kd
-    color: #FFCFAF
-    font-weight: bold
-  .kn
-    color: #F0DFAF
-    font-weight: bold
-  .kp
-    color: #F0DFAF
-  .kr
-    color: #F0DFAF
-    font-weight: bold
-  .kt
-    color: #DFDFBF
-    font-weight: bold
-  .ld
-    color: #dcdccc
-  .m
-    color: #8cd0d3
-  .s
-    color: #CC9393
-  .na
-    color: #ff0086
-    font-weight: bold
-  .nb, .nc
-    color: #dcdccc
-  .no
-    color: #DCA3A3
-    font-weight: bold
-  .nd, .ni
-    color: #dcdccc
-  .ne
-    color: #C3BF9F
-  .nf
-    color: #EFEF8F
-  .nl
-    color: #DFCFAF
-    text-decoration: underline
-  .nn, .nx, .py
-    color: #dcdccc
-  .nt
-    color: #E89393
-    font-weight: bold
-  .nv
-    color: #fb660a
-  .ow
-    color: #dcdccc
-  .w
-    color: #404040
-  .mf, .mh
-    color: #C0BED1
-  .mi
-    color: #8CD0D3
-  .mo, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .sr, .s1, .ss
-    color: #C0BED1
-  .bp
-    color: #dcdccc
-  .vc, .vg, .vi
-    color: #EFDCBC
-  .il
-    color: #C0BED1
 
 /* Comment
-/* Error
-/* Generic
+.c
+  color: #7f9f7f
+  font-style: italic
+
+/* .err { border: 1px solid #cc9393 }        /\* Error *\/
+
 /* Keyword
-/* Literal
-/* Name
+.k
+  color: #f0dfaf
+  font-weight: bold
+
 /* Operator
-/* Other
-/* Punctuation
+.o
+  color: #f0efd0
+
 /* Comment.Multiline
+.cm
+  color: #7f9f7f
+  font-style: italic
+
 /* Comment.Preproc
+.cp
+  color: #7f9f7f
+
 /* Comment.Single
+.c1
+  color: #7f9f7f
+  font-style: italic
+
 /* Comment.Special
+.cs
+  color: #82a282
+  font-weight: bold
+
 /* Generic.Deleted
+.gd
+  color: #dcdccc
+
 /* Generic.Emph
+.ge
+  font-style: italic
+
 /* Generic.Error
+.gr
+  color: #FF0000
+
 /* Generic.Heading
+.gh
+  color: #dcdccc
+  font-weight: bold
+
 /* Generic.Inserted
 /* Generic.Output
+.gi, .go
+  color: #dcdccc
+
 /* Generic.Prompt
+.gp
+  color: #dcdccc
+  font-weight: bold
+
 /* Generic.Strong
+.gs
+  font-weight: bold
+
 /* Generic.Subheading
+.gu
+  color: #dcdccc
+  font-weight: bold
+
 /* Generic.Traceback
+.gt
+  color: #dcdccc
+
 /* Keyword.Constant
+.kc
+  color: #dca3a3
+  font-weight: bold
+
 /* Keyword.Declaration
 /* Keyword.Namespace
+.kd, .kn
+  color: #f0dfaf
+  font-weight: bold
+
 /* Keyword.Pseudo
+.kp
+  color: #f0dfaf
+
 /* Keyword.Reserved
+.kr
+  color: #f0dfaf
+  font-weight: bold
+
 /* Keyword.Type
-/* Literal.Date
+.kt
+  color: #dfdfbf
+  font-weight: bold
+
 /* Literal.Number
+.m
+  color: #dcdccc
+
 /* Literal.String
+.s
+  color: #cc9393
+
 /* Name.Attribute
 /* Name.Builtin
-/* Name.Class
 /* Name.Constant
 /* Name.Decorator
+.na, .nb, .no, .nd
+  color: #e3ceab
+
 /* Name.Entity
+/* Name.Class
 /* Name.Exception
+.ni, .ne
+  color: #8cd0d3
+  font-weight: bold
+
 /* Name.Function
+.nf,
+  color: #efef8f
+
 /* Name.Label
+.nl
+  color: #dfcfaf
+  text-decoration: underline
+
 /* Name.Namespace
-/* Name.Other
-/* Name.Property
+//.nn
+  //color: #8cd0d3
+  //font-weight: bold
 /* Name.Tag
+.nt
+  color: #e89393
+  font-weight: bold
+
 /* Name.Variable
+.nv
+  color: #f0dfaf
+
 /* Operator.Word
+.ow
+  color: #8cd0d3
+  font-weight: bold
+
 /* Text.Whitespace
+.w
+  color: #bbbbbb
+
 /* Literal.Number.Float
 /* Literal.Number.Hex
 /* Literal.Number.Integer
 /* Literal.Number.Oct
+.mf, .mh, .mi, .mo
+  color: #8cd0d3
+
 /* Literal.String.Backtick
 /* Literal.String.Char
+.sb, .sc
+  color: #cc9393
+
 /* Literal.String.Doc
+.sd
+  color: #cc9393
+  font-style: italic
+
 /* Literal.String.Double
+.s2
+  color: #cc9393
+
 /* Literal.String.Escape
+.se
+  color: #BB6622
+  font-weight: bold
+
 /* Literal.String.Heredoc
+.sh
+  color: #cc9393
+
 /* Literal.String.Interpol
+.si
+  color: #BB6688
+  font-weight: bold
+
 /* Literal.String.Other
 /* Literal.String.Regex
 /* Literal.String.Single
+.sx, .sr, .s1
+  color: #cc9393
+
 /* Literal.String.Symbol
+.ss
+  color: #dcdccc
+
 /* Name.Builtin.Pseudo
+.bp
+  color: #f0dfaf
+
 /* Name.Variable.Class
 /* Name.Variable.Global
 /* Name.Variable.Instance
+.vc, .vg, .vi
+  color: #B8860B
+
 /* Literal.Number.Integer.Long
+.il
+  color: #dcdccc
