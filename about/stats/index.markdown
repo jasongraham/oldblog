@@ -15,7 +15,6 @@ This server is running:
 	* This [blog][].
 	* A small [code repository][].
 * A wordpress based [family oriented blog][].
-* A small mail server.
 * Rsync based file backups for my other computers.
 * A few assorted other services.
 
