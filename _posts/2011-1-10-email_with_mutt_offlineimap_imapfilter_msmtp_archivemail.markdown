@@ -176,7 +176,7 @@ archivemail -D 2011-1-1 -uv --archive-name cpts111_records_fall_2010 cpts111
 I can also iterate over all the directories correspoding to each class that I have set up.  A separate archive for each directory will be created.  My inboxes relating to classes are labeled starting with their with either 'ee' or 'cpts'.
 
 {% highlight bash %}
-ls | egrep ^(cpts|ee) | xargs archivemail -D 2011-1-1 -uvs _records_fall2010
+ls | egrep "^(cpts|ee)" | xargs archivemail -D 2011-1-1 -uvs _records_fall2010
 {% endhighlight %}
 
 It is also possible to set up archivemail to run from a cron job and keep a running archive, keeping your inbox clean of files older than a certain number of days, but as I don't use this personally, I leave the explanation to others.  Check out the man page for archive mail or Google to read many good examples online.
