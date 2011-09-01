@@ -4,3 +4,4 @@ favicon.*
 images/mug64.jpg
 **.sass-cache**
 css
+_cache
