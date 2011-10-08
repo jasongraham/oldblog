@@ -5,10 +5,10 @@ tags: [car, repairs]
 time: '10:40'
 ---
 
-My [Subaru Outback][] recently crested the 120k mile mark, and was due for maintenance, which I had to take care of this last week.  For other car troubles that I've had to take care of in Pullman, I've taken the car to [Jerry's Auto Repair][], and I've been fairly happy with their service.  It is more expensive compared with the place my dad uses back in Spokane though.
+My [Subaru Outback][] recently crested the 120k mile mark, and was due for maintenance, which I had to take care of this last week.  For other car troubles that I've had to take care of in Pullman, I've taken the car to [Jerry's Auto Repair][jar], and I've been fairly happy with their service.  It is more expensive compared with the place my dad uses back in Spokane though.
 
 [Subaru Outback]:http://en.wikipedia.org/wiki/Subaru_Outback
-[Jerrys Auto Repair]:http://www.jerrysautorepair.com/
+[jar]:http://www.jerrysautorepair.com/
 
 Sadly, after getting my car back this time, the car remote and alarm no longer works.  When I dropped off the car, they needed to disable the alarm system because I forgot to give them my remote, and they couldn't move the car.  But after reactivating the alarm, my remotes no longer work.  It seems that the memory module which remembers which remotes are set to that car got erased or something.
 

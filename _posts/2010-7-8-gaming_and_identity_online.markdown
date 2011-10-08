@@ -32,11 +32,9 @@ This may be a consequence of a law passed in South Korea [banning anonymous post
 [banning anonymous posting]:http://www.techdirt.com/articles/20090505/1854164760.shtml
 [Starcraft]:http://en.wikipedia.org/wiki/StarCraft
 
-Anyone having experienced the WoW community first-hand knows that the communal maturity level in the game is juvenile at best.  On the forums, at least, this will go a long way toward fixing the problem popularly known as the [Greater Internet F#@kwad Theory][].
+Anyone having experienced the WoW community first-hand knows that the communal maturity level in the game is juvenile at best.  On the forums, at least, this will go a long way toward fixing the problem popularly known as the [Greater Internet F#@kwad Theory][GIFT].
 
-[Greater Internet Fkwad Theory]:http://www.penny-arcade.com/comic/2004/3/19/
-
-<img class="img_right" src="http://upload.wikimedia.org/wikipedia/en/1/1b/Make_Love%2C_Not_Warcraft_%28South_Park%29.png" />
+[GIFT]:http://www.penny-arcade.com/comic/2004/3/19/
 
 A portion of the community, however, is understandably upset over their loss of anonymity. Most people, myself included, don't advertise the fact that they are MMO players due to people's misconceptions about gamers, especially those in MMOs.  It doesn't help that the media has found examples of some people doing [really stupid stuff][] that end up ruining their lives.  If this is what the world thinks of when they find out you play WoW, who would want to be associated with that?
 

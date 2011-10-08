@@ -4,8 +4,6 @@ title: Finals and other happenings
 tags: [school, research, grants, finals]
 ---
 
-<img src="http://voices.mysanantonio.com/stepfaniebishop/stress-picture-stress-relief-kit.jpg" alt="" width="300" height="356" />
-
 It is that wonderful semiannual occurrence which comes in December and May.  A time of mixed anticipation in the coming calm between semesters, and terror of finishing the current one.  I'm beginning to feel the stress of finals approaching, but I'll be fine.  For others dealing with stress at the moment, I have included the [stress reduction kit](http://voices.mysanantonio.com/stepfaniebishop/stress-picture-stress-relief-kit.jpg) above.
 
 I have a fellowship application in the running for the [NSF Graduate Research Fellowship](http://www.nsfgrfp.org/).  My application materials have been submitted for about a month now, and my reference letters were all just received.  I'll be hearing back sometime in Spring as to how I did.  I'm wary about being too optimistic about it: I may be a good candidate, but statistically the odds aren't good for me to get it (something like 5-10% chance if they draw randomly).  I'm not sure how many applicants they'll be getting this year, but starting either this year or last year [the President provided funding to triple the number of award recipients](http://www.whitehouse.gov/the_press_office/Remarks-by-the-President-at-the-National-Academy-of-Sciences-Annual-Meeting/).  So we'll see what happens.

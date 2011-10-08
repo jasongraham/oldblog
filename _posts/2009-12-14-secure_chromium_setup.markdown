@@ -5,7 +5,7 @@ tags: [privacy, security, chromium, howto]
 description: Browsing safely with privacy and thwarting malware
 ---
 
-<img class="img_right" src="http://upload.wikimedia.org/wikipedia/commons/c/c0/Chromium_Icon.png" width="246" height="246" style="border: 0px" />
+<img class="img_right" src="http://upload.wikimedia.org/wikipedia/commons/5/5f/Chromium_11_Logo.svg" width="246" height="246" style="border: 0px" />
 
 Google's new web browser, [Chrome][], is a very fast browser.  My wife especially likes it, for this reason, as well as because [I really lock down Firefox][] in a way that sometimes can make it hard to use sites without some configuration.  Being somewhat of a privacy and anti-tracking fanatic, I asked myself how to keep our online privacy reasonably safe while she's online, while not causing the majority of sites to fail for her while she's watching videos, house hunting, or shopping.
 
