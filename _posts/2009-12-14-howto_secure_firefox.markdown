@@ -31,13 +31,13 @@ A [flash cookie][], or Local Shared Object, is a file a website stores on your c
 
 	In Ubuntu and most other Linux distributions, Adobe Flash settings are stored in `~/.adobe` and the cookies themselves in `~/.macromedia` folders.  I have these simlinked to `/dev/null` (effectively a [black hole][]) so that anything trying to write to these folders doesn't get an error message, but nothing ever gets written to disk.
 
-	{% highlight bash %}
+{% highlight bash %}
 rm -rf ~/.adobe ~/.macromedia
 ln -s /dev/null ~/.adobe
 ln -s /dev/null ~/.macromedia
 {% endhighlight %}
 
-	Every so often, I do listen to [NPR][] or another site that requires Flash cookies for streaming media storage.  When that happens, I simply delete the simlinks to use them, and then repeat the command set above when I'm done.
+Every so often, I do listen to [NPR][] or another site that requires Flash cookies for streaming media storage.  When that happens, I simply delete the simlinks to use them, and then repeat the command set above when I'm done.
 
 
 * #### With extensions ####
@@ -46,18 +46,20 @@ ln -s /dev/null ~/.macromedia
 
 * #### Deleting Flash Cookies via Cron ####
 
-	You can also set up a cron job to delete the contents of `~/.adobe` and
+	You can alternatively set up a cron job to delete the contents of `~/.adobe` and
 `~/.macromedia` so that you can get the benefits of being able to use sites
 which require flash cookies, while simultaneously deleting them periodically
 (and not having to trust a third party extension to delete them for you).  To
-set up a [cron] job to delete the contents of these folders every 5 minutes,
+set up a [cron][] job to delete the contents of these folders every 5 minutes,
 add the following line to your crontab, which you can access via `crontab -e`.
 Replace `USER` with your username.
 
-	{% highlight crontab %}
+{% highlight bash %}
 # m     h dom mon dow command
   */5   *  *   *   *  /bin/rm -rf /home/USER/.adobe/* /home/USER/.macromedia/*
 {% endhighlight %}
+
+[cron]:http://en.wikipedia.org/wiki/Cron
 
 ### Installing Privacy Extensions ###
 

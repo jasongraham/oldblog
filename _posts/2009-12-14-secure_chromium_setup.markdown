@@ -51,6 +51,21 @@ ln -s /dev/null ~/.adobe
 ln -s /dev/null ~/.macromedia
 {% endhighlight %}
 
+You can alternatively set up a cron job to delete the contents of `~/.adobe` and
+`~/.macromedia` so that you can get the benefits of being able to use sites
+which require flash cookies, while simultaneously deleting them periodically
+(and not having to trust a third party extension to delete them for you).  To
+set up a [cron][] job to delete the contents of these folders every 5 minutes,
+add the following line to your crontab, which you can access via `crontab -e`.
+Replace `USER` with your username.
+
+{% highlight bash %}
+# m     h dom mon dow command
+  */5   *  *   *   *  /bin/rm -rf /home/USER/.adobe/* /home/USER/.macromedia/*
+{% endhighlight %}
+
+[cron]:http://en.wikipedia.org/wiki/Cron
+
 ### Open Chromium and Set Default Settings ###
 
 Now we get to setup the default settings within Chromium.  Open the browser, but don't go anywhere.  We're going to make the settings directory read-only in a bit so that nothing can change the settings or write in new ones.  This will also stop Chromium from logging your browsing history or installing extensions.
