@@ -20,7 +20,7 @@ appropriate for a great number of circumstances.  But sometimes, the
 unexpected isn't so bad.
 
 I propose a new euphemism: taking the scenic route through life:  going an
-indirect route and experiencing you could otherwise have missed along the way.
+indirect route and having experiences you could otherwise have missed along the way.
 
 <a title="Mook, Limburg, NL. Taken by macfred64 on Flickr" href="http://www.flickr.com/photos/40275249@N04/4681524980/"><img src="http://farm5.static.flickr.com/4011/4681524980_9dfbb6f8a2.jpg"/></a>
 
