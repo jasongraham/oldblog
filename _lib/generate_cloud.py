@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 """Generate tag cloud HTML for jekyll posts.
 """
 
@@ -14,15 +14,15 @@ def find_tags(postfile):
     tags = ''
     marker_count = 0
     for l in f.xreadlines():
-	if l == '---\n':
-	    marker_count += 1
-	    if marker_count == 2:
-		break
-	    continue
+        if l == '---\n':
+            marker_count += 1
+            if marker_count == 2:
+                break
+            continue
 
-	if l.startswith('tags:'):
-	    tags = l[5:].strip()
-	    break
+        if l.startswith('tags:'):
+            tags = l[5:].strip()
+            break
 
     # remove brackets
     lb = tags.find('[')
@@ -40,17 +40,17 @@ if __name__ == '__main__':
 
     counts = {}
     for p in posts:
-	tags = find_tags(os.path.join(postpath, p))
-	for t in tags:
-	    if t in counts.keys():
-		counts[t] += 1
-	    else:
-		counts[t] = 1
+        tags = find_tags(os.path.join(postpath, p))
+        for t in tags:
+            if t in counts.keys():
+                counts[t] += 1
+            else:
+                counts[t] = 1
 
     # grab the top N tags
     sorted_keys = sorted(counts.keys(), 
-			 lambda x,y: cmp(counts[x], counts[y]),
-			 reverse=True)
+                         lambda x,y: cmp(counts[x], counts[y]),
+                         reverse=True)
 
     # this code follows the algorithm in MT
     max_count = counts[sorted_keys[0]]
@@ -58,19 +58,19 @@ if __name__ == '__main__':
     factor = 1
 
     if max_count - min_count == 0:
-	min_count -= max_ranks
+        min_count -= max_ranks
     else:
-	factor = (max_ranks - 1) / math.log(max_count - min_count + 1)
+        factor = (max_ranks - 1) / math.log(max_count - min_count + 1)
 
     if len(sorted_keys) < max_ranks:
-	factor *= (len(sorted_keys) / float(max_ranks))
+        factor *= (len(sorted_keys) / float(max_ranks))
 
     # generate HTML in alpha order for top N tags
-    print "<ul>"
+    print("<ul>")
     for t in sorted(sorted_keys[:cloud_size]):
-	rank = max_ranks - int(math.log(counts[t] - min_count + 1) * factor)
-	print "  <li class='cloud-rank-%d'>"\
-	    "<a rel='tag' href='http://www.google.com/search?q=%s+site%%3Ajason.the-graham.com'>"\
-	    "%s</a></li>" % \
-	    (rank, urllib.quote_plus(t), t)
-    print "</ul>"
+        rank = max_ranks - int(math.log(counts[t] - min_count + 1) * factor)
+        print("  <li class='cloud-rank-%d'>"\
+            "<a rel='tag' href='http://www.google.com/search?q=%s+site%%3Ajason.the-graham.com'>"\
+            "%s</a></li>" % \
+            (rank, urllib.quote_plus(t), t))
+    print("</ul>")
