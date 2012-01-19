@@ -22,7 +22,12 @@ This page describes how I set up our computers (running [Ubuntu][]) to accomplis
 2. No automatic logins or remembered passwords.
 3. No Ad blocking or JavaScript blocking.
 4. No extensions.
-5. Some sites that stream with flash, such as [Pandora][] and [NPR][] require local flash storage.
+5. Some sites that stream with flash, such as [Pandora][] and [NPR][] require local flash storage (depends, see below).
+6. Google periodically updates their [Safe Browsing Filter][] so that a warning will pop up if you go to site with either known malware or scams, and this will these updates.  Be extra vigilent.
+7. This does nothing to hide what website you're browsing from your ISP, the government,...  For that, you need something like [Tor][].
+
+[Safe Browsing Filter]:http://dev.chromium.org/developers/design-documents/safebrowsing
+[Tor]:https://www.torproject.org/
 
 So there are serious disadvantages to securing the browser this way, and it is not perfect.  Read on for details.
 
@@ -101,8 +106,21 @@ CHROMIUM_FLAGS="-incognito"
 This will make it so that the settings cannot be changed from within Chromium.  It will also freeze your browser history with nothing in it.
 
 {% highlight bash %}
-chmod a-w -R ~/.config/chromium/Default
+chmod a-w -R ~/.config/chromium/Default/*
+
+# Note that on some installs, the folder 'Default'
+# may not exist. In this case, use
+# chmod a-w -R ~/.config/chromium/*
 {% endhighlight %}
+
+Note that Chromium currently uses this folder to create sockets/symlinks to
+temporary files, and will not run without allowing these to be made.  This is
+why we leave the folder itself writable.
+
+If you choose to do this and are sufficiently paranoid, whenever you update
+Chromium, you should delete your profile, and then start over with a fresh
+profile, and repeat all the setup above before once again making the profile
+Read-Only.
 
 ### Disable Chromium's Disk Cache ###
 
