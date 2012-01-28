@@ -6,6 +6,7 @@ tags: [email, passwords, gnome-keyring, msmtp, offlineiamp, imapfilter, cron]
 updated: '2011-2-16'
 ---
 
+**Update Jan 28th, 2012**: Simplified [cron](#cron) portion.  
 **Update Jan 27th, 2011**: Added portion relavent to cron.  It's down at the
 [bottom of the page][].
 {: .update}
@@ -25,7 +26,7 @@ Some searching online lead me to decide to use some pre-existing integration don
 
 [gnome keyring]:http://en.wikipedia.org/wiki/GNOME_Keyring
 
-A gnome-keyring patch for msmtp has [already been integrated][msmtp-gnome] into the `msmtp-gnome` package in the repositories, and a nice [script][msmtp-keyring-script] to add the appropriate data to the keyring exists.  Another great post I found explains how to [integrate offlineimap with gnome-keyring][offlineimap-gnome-keyring] with a python helper script.  It defines a couple functions that can pull the username and password directly within the configuration file.  I've updated my own configuration files and tutorial in the previous post.
+A gnome-keyring patch for msmtp has [already been integrated][msmtp-gnome] into the `msmtp-gnome` package in the Ubuntu repositories, and a nice [script][msmtp-keyring-script] to add the appropriate data to the keyring exists.  Another great post I found explains how to [integrate offlineimap with gnome-keyring][offlineimap-gnome-keyring] with a python helper script.  It defines a couple functions that can pull the username and password directly within the configuration file.  I've updated my own configuration files and tutorial in the previous post.
 
 [msmtp-gnome]:http://simple-and-basic.com/2008/10/using-msmtp-with-the-gnome-keyring.html
 [msmtp-keyring-script]:https://github.com/gaizka/misc-scripts/raw/master/msmtp/msmtp-gnome-tool.py
@@ -128,42 +129,43 @@ ACCOUNT = IMAP {
 {% endhighlight %}
 
 Finally, the trick to allowing cron to access the gnome-keyring is found in
-supplying it with the right environmental variables.  I found something close
-[implemented for svn][] and a couple small changes lets it work with
-offlineimap.
+supplying it with the right environmental variable (notably,
+`DBUS_SESSION_BUS_ADDRESS`) so that offlineimap can talk with your already
+authenticated session of gnome-keyring.  My original script to do this was
+really kludgey, but I found a [simpler version][] of the script from an
+individual who has a very similar setup.
 {: #cron}
 
-[implemented for svn]:http://mud-slide.blogspot.com/2010/12/subversion-and-gnome-keyring.html
+[simpler version]:http://dev.gentoo.org/~tomka/mail.html
+
+Take the `export_x_info.sh` script below, and make it run on startup.  Note
+that is must start after DBus.
+
+{% highlight bash %}
+#!/bin/bash
+# file: export_x_info.sh
+# Export the dbus session address on startup so it can be used by cron
+touch $HOME/.Xdbus
+chmod 600 $HOME/.Xdbus
+env | grep DBUS_SESSION_BUS_ADDRESS > $HOME/.Xdbus
+echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.Xdbus
+{% endhighlight %}
+
+If the script is called correctly, you will see a file `~/.Xdbus` created,
+that looks like the following:
+
+{% highlight bash %}
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-some-long-complicated-name
+export DBUS_SESSION_BUS_ADDRESS
+{% endhighlight %}
+
+Then, you can use cron to run the following:
 
 {% highlight bash %}
 #!/bin/bash
 # file: pullmail.sh
-#
-# This script may be called via a cron job to allow
-# offlineimap (and imapfilter) to use the environmental
-# variables to access from gnome-keyring
-#
-# Attaches the current BASH session to a GNOME keyring daemon
-#
-# Returns 0 on success 1 on failure.
-#
-# Example cron call: (change the times to suit)
-#
-#	*/10 * * * * /full/path/to/pullmail.sh > /full/path/to/logfile.txt
-#
-function gnome-keyring-control() {
-	local -a vars=( \
-		DBUS_SESSION_BUS_ADDRESS \
-		GNOME_KEYRING_CONTROL \
-		GNOME_KEYRING_PID \
-		XDG_SESSION_COOKIE \
-	)
-	local pid=$(ps -C gnome-session -o pid --no-heading)
-	eval "unset ${vars[@]}; $(printf "export %s;" $(sed 's/\x00/\n/g' /proc/${pid//[^0-9]/}/environ | grep $(printf -- "-e ^%s= " "${vars[@]}")) )"
-}
-
-gnome-keyring-control
-
-/usr/bin/offlineimap -c /full/path/to/offlineimaprc -o -u Noninteractive.Basic
+source $HOME/.Xdbus; /usr/bin/offlineimap
 {% endhighlight %}
 
+Congradulations!  You now have gnome-keyring managing your passwords for you,
+and your mail is being fetched automatically.
