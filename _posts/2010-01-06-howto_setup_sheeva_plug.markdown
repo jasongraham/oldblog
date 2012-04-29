@@ -101,7 +101,12 @@ vnstat -u -i eth0
 + [Install gitosis][] to manage git.
 + After installing gitosis, deploy `git-daemon` to those made public through gitosis for easy cloning.  For Ubuntu 9.04 at least, mind that there is a bug in the `git-daemon-run` package, and to use [this fix][].
 
-I run several services using the server, including this webpage, and my [code repository][] through [Git][].  Some generic highlights:
+I run several services using the server[^1], including this webpage, and my [code repository][] through [Git][].  Some generic highlights:
+
+[^1]: I used to run all these through the server, but have since started using
+      [Linode][] for that purpose.
+
+[Linode]:https://www.linode.com/
 
 #### Webserver through lighttpd ####
 
@@ -234,7 +239,7 @@ if __name__ == '__main__':
 [Sheeva Plug]:http://www.marvell.com/products/embedded_processors/developer/kirkwood/sheevaplug.jsp
 [Computing Plugs wiki]:http://computingplugs.com/index.php/Main_Page
 [vim]:http://www.vim.org/
-[code repository]:http://git.graham-clan.net
+[code repository]:http://code.the-graham.com
 [Git]:http://git-scm.com/
 [use ssh keys]:https://help.ubuntu.com/community/SSH/OpenSSH/Keys
 [Install gitosis]:http://scie.nti.st/2007/11/14/hosting-git-repositories-the-easy-and-secure-way
