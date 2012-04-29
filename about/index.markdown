@@ -38,8 +38,6 @@ You can email me at <a href='&#109;ail&#116;o&#58;jas&#111;n&#37;4&#48;th&#37;&#
 
 ## About This Site ##
 
-<img class="img_left" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/SheevaPlug_with_external_drive_enclosure.jpg/300px-SheevaPlug_with_external_drive_enclosure.jpg" />
-
 This is my personal blog, giving me a place to talk about my interests, blow off
 steam, and have some fun. 
 
@@ -49,13 +47,10 @@ time, and works surprisingly well for a blog.
 
 [Zenburn]:http://slinky.imukuppi.org/zenburnpage/
 
-A [Sheevaplug][] computer running [debian][] powers the site.  If you're curious
-what kind of stress you and others are putting on the tiny thing take a look at
-the [real-time stats][].
+The side is hosted on [Linode][], and using [Arch Linux][].
 
-[SheevaPlug]:http://en.wikipedia.org/wiki/SheevaPlug
-[debian]:http://www.debian.org/
-[real-time stats]:/about/stats/
+[Linode]:https://www.linode.com/
+[Arch Linux]:https://www.archlinux.org/
 
 I compose this blog with [Vim][], manage its code with [git][], and generate the
 site with [Jekyll][]. The [source code][] for the site is freely available.
