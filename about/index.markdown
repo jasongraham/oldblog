@@ -47,7 +47,7 @@ time, and works surprisingly well for a blog.
 
 [Zenburn]:http://slinky.imukuppi.org/zenburnpage/
 
-The side is hosted on [Linode][], and using [Arch Linux][].
+The site is hosted on [Linode][], using [Arch Linux][].
 
 [Linode]:https://www.linode.com/
 [Arch Linux]:https://www.archlinux.org/
@@ -58,7 +58,7 @@ site with [Jekyll][]. The [source code][] for the site is freely available.
 [Jekyll]:https://github.com/mojombo/jekyll
 [Vim]:http://www.vim.org/
 [git]:http://git-scm.cm
-[source code]:http://code.graham-clan.net/blog/
+[source code]:http://code.the-graham.com/blog/
 
 The original site design was heavily inspired by similar blogs setup up by [Tate
 Johnson][], [Raoul Felix][], and [Jack Moffitt][] who generously expose their
