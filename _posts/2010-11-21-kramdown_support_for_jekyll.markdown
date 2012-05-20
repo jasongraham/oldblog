@@ -13,7 +13,7 @@ updated: '2010-12-9'
 **Update Nov. 11th 2010**: My changes have been merged into the mainline branch, which can be found on [Github][Jekyll].
 {: .update}
 
-The last several months I've been fiddling around with different [Markdown][] converters used with [Jekyll][Jekyll readme].  I like [Maruku's][maruku] enhanced feature set (footnotes are nice), but was dissapointed with the execution speed.  I briefly played around with [Rdiscount][], which is *much* faster, but didn't ended up missing the extra features of Maruku.
+The last several months I've been fiddling around with different [Markdown][] converters used with [Jekyll][Jekyll readme].  I like [Maruku's][maruku] enhanced feature set (footnotes are nice), but was dissapointed with the execution speed.  I briefly played around with [Rdiscount][], which is *much* faster, but I missed the extra features of Maruku.
 
 [Markdown]:http://daringfireball.net/projects/markdown/
 [Jekyll]:https://github.com/mojombo/jekyll
@@ -34,7 +34,7 @@ I waited for a couple months, and then decided to [fork][] Jekyll and add the fu
 [fork]:https://github.com/jasongraham/jekyll
 [options]:http://kramdown.rubyforge.org/converter/html.html#options
 
-Another coder apparently had the same idea as me at almost exactly the same time, and created [his own fork] with the same functionality, but also didn't add the options passing.
+Another coder apparently had the same idea as me at almost exactly the same time, and created [his own fork][] with the same functionality, but also didn't add the options passing.
 
 [his own fork]:https://github.com/digitalsanctum/jekyll/tree/add_kramdown_support
 
@@ -43,10 +43,6 @@ With the start of Thanksgiving break, I've finally had some time to tack on the 
 [config]:https://github.com/jasongraham/jekyll/wiki/Configuration
 
 Hopefully, the fork will be pulled into the main branch, though I may need to clean up the options passing portion, it admittedly feels a bit hackish.  I'm a n00b ruby coder, so my excuse is that I don't know any better.  Fixes or suggestions are welcome though.
-
-You can find the fork on [Github][fork], or my own [personal repository][] on this site.
-
-[personal repository]:http://code.the-graham.com/jekyll
 
 ### Using kramdown and Jekyll ###
 

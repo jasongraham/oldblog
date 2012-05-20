@@ -19,7 +19,7 @@ The outcry by users especially miffed that this experiment is being conducted wi
 
 Experimenting is the purpose of pre-releases.  I have confidence that in the end product, Canonical will give the (largely negative) feedback of their testers some consideration.
 
-In summary, the sky is not falling.  Your freedom of choice and software is by no way affected even if this does end up as the new default.  Stop whining, you're clogging my [blogroll][].
+In summary, the sky is not falling.  Your freedom of choice and software is by no way affected even if this does end up as the new default.  Stop whining, you're clogging my blogroll.
 
 [drama playing out]:http://www.linux-magazine.com/Online/News/Ubuntu-10.04-Button-Rearrangement-Becomes-Hot-Topic
 
@@ -29,4 +29,3 @@ In summary, the sky is not falling.  Your freedom of choice and software is by n
 
 [via the command line]:http://richs-lxh.linux-hardcore.com/2010/03/how-to-ubuntu-10-04-window-buttons-on-the-right/
 
-[blogroll]:/about/blogroll/

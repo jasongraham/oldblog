@@ -7,7 +7,7 @@ time: '17:15'
 
 Since early in our period of dating, my wife and I have been sharing our (very different) taste in TV viewing.  While I still don't especially enjoy watching [Grey's Anatomy][] with her, she has introduced me to sit-coms such as [Friends][] which my family and social circle really hadn't been interested in.
 
-[Greys Anatomy]:http://en.wikipedia.org/wiki/Grey%27s_Anatomy
+[Grey's Anatomy]:http://en.wikipedia.org/wiki/Grey%27s_Anatomy
 [Friends]:http://en.wikipedia.org/wiki/Friends
 
 For my part, I'm especially happy that I've been able to convert my wife into a new science-fiction junky.  I've been quite happily revisiting some of my favorites with her, and exploring new ones together as well.  [Netflix][] and [hulu][] have been great resources for us in doing this.  We've actually gotten rid of our cable TV subscription, since the majority of what we want to see can be found for free (and legally) online.

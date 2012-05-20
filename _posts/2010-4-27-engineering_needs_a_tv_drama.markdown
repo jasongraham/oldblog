@@ -26,7 +26,7 @@ Thus, we must work to improve our socio-professional image.  And I can think of 
 >
 > __Sue__: John, we need to talk about last night.
 >
-> __John__: Not now, Sue.  I don't haven't finished the technical documentation you asked for, and I'm working on something else.
+> __John__: Not now, Sue.  I haven't finished the technical documentation you asked for, and I'm working on something else.
 >
 > __Sue__: Its not about that.  There's something I need to tell you.
 >

@@ -23,7 +23,7 @@ This page describes how I set up our computers (running [Ubuntu][]) to accomplis
 3. No Ad blocking or JavaScript blocking.
 4. No extensions.
 5. Some sites that stream with flash, such as [Pandora][] and [NPR][] require local flash storage (depends, see below).
-6. Google periodically updates their [Safe Browsing Filter][] so that a warning will pop up if you go to site with either known malware or scams, and this will these updates.  Be extra vigilent.
+6. Google periodically updates their [Safe Browsing Filter][] so that a warning will pop up if you go to site with either known malware or scams, and this will doesn't allow these updates.  Be extra vigilent.
 7. This does nothing to hide what website you're browsing from your ISP, the government,...  For that, you need something like [Tor][].
 
 [Safe Browsing Filter]:http://dev.chromium.org/developers/design-documents/safebrowsing
@@ -48,7 +48,7 @@ sudo apt-get update && sudo apt-get install chomium-browser
 
 A [flash cookie][], or Local Shared Object, is a file a website stores on your computer, outside of the control of your browser settings.  It is different from a regular [cookie][].  They are associated with adobe flash, which is used by many websites.  Unfortunately, they are also [used to store tracking information](http://www.wired.com/epicenter/2009/08/you-deleted-your-cookies-think-again/), as well as back up data from regular cookies stored by your browser.
 
-In Ubuntu and most other Linux distributions, Adobe Flash settings are stored in `~/.adobe` and the cookies themselves in `~/.macromedia` folders.  I have these simlinked to `/dev/null` (effectively a [black hole][]) so that anything trying to write to these folders doesn't get an error message, but nothing ever gets written to disk.
+In most Linux distributions, Adobe Flash settings are stored in `~/.adobe` and the cookies themselves in `~/.macromedia` folders.  I have these simlinked to `/dev/null` (effectively a [black hole][]) so that anything trying to write to these folders doesn't get an error message, but nothing ever gets written to disk.
 
 {% highlight bash %}
 rm -rf ~/.adobe ~/.macromedia

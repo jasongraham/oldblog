@@ -5,7 +5,7 @@ tags: [school, education]
 time: '13:11'
 ---
 
-It's been a while since my last post, and the Spring semester is rapidly approaching.  I wanted to take a moment to reflect on my first semester working as a teaching assistant.  As I [wrote previously][], I TA-ed for two similar introductory computer programming classes[^1][].
+It's been a while since my last post, and the Spring semester is rapidly approaching.  I wanted to take a moment to reflect on my first semester working as a teaching assistant.  As I [wrote previously][], I TA-ed for two similar introductory computer programming classes[^1].
 
 [^1]: While I certainly can code, I wouldn't describe it as my forte.  It really is true that you don't truly learn something until you have to teach it.
 [wrote previously]:/2010/09/02/much_to_do_little_time/

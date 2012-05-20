@@ -11,7 +11,7 @@ After leaving a post describing [how to set up Chromium Securely](/2009/12/14/se
 
 This post will deal with securing Firefox.  I'll leave another one in the future explaining what I do to speed it up.
 
-Also, I use [Ubuntu][] Linux as my operating system, but most of this guide is OS agnostic.
+Also, I use [Arch Linux][] as my operating system, but most of this guide is OS agnostic.
 
 #### Advantages ####
 1. Browsing information (cookies, cache, history) is deleted on browser exit.
@@ -29,7 +29,7 @@ A [flash cookie][], or Local Shared Object, is a file a website stores on your c
 
 * #### Symlinking to /dev/null ####
 
-	In Ubuntu and most other Linux distributions, Adobe Flash settings are stored in `~/.adobe` and the cookies themselves in `~/.macromedia` folders.  I have these simlinked to `/dev/null` (effectively a [black hole][]) so that anything trying to write to these folders doesn't get an error message, but nothing ever gets written to disk.
+	In most Linux distributions, Adobe Flash settings are stored in `~/.adobe` and the cookies themselves in `~/.macromedia` folders.  I have these simlinked to `/dev/null` (effectively a [black hole][]) so that anything trying to write to these folders doesn't get an error message, but nothing ever gets written to disk.
 
 {% highlight bash %}
 rm -rf ~/.adobe ~/.macromedia
@@ -95,7 +95,7 @@ Excepting the powerful extensions, my favorite feature of Firefox is that they e
 Though this, I disable disk caching and offline state saving so that Firefox doesn't spin up the hard drive on my laptop.  The keys you want to change are `browser.cache.disk.enable` and `browser.cache.offline.enable`, which I set to `false` (double-clicking on the key will change it).
 
 ---
-Additional resources on more advanced topics such as ad and malware filtering proxies, Apparmor Profiles, and TOR proxies can be found on the [Ubuntu Forums](http://ubuntuforums.org/showthread.php?t=671604).
+Additional resources on more advanced topics such as ad and malware filtering proxies, Apparmor Profiles, and TOR proxies are left to the reader.
 
 [Youtube]:http://www.youtube.com
 [Firefox]:http://www.mozilla.com/firefox/
@@ -104,6 +104,6 @@ Additional resources on more advanced topics such as ad and malware filtering pr
 [NPR]:http://npr.org
 [flash cookie]:http://en.wikipedia.org/wiki/Local_Shared_Object
 [cookie]:http://en.wikipedia.org/wiki/HTTP_cookie
-[Ubuntu]:http://www.ubuntu.com
+[Arch Linux]:https://www.archlinux.org
 [black hole]:http://en.wikipedia.org/wiki//dev/null
 [BetterPrivacy]:https://addons.mozilla.org/en-US/firefox/addon/6623
