@@ -1,29 +1,59 @@
-$header-color: #333333
-$background-color: #333333
-$foreground-color: #262626
-$title-color: #dfdfdf
-$title-span-color: #cfbfaf
-$navbar-background-highlight: #2a2a2a
-$heading-color: #f0dfaf
-$anchor-color: #ffcfaf
-$anchor-background-color: #504c49
-$primary-text-color: #dcdccc
-$secondary-text-color: #aaaaaa
-$code-text-color: #c3bf9f
+// Solarized Color Base
+$base03:    #002b36 !default
+$base02:    #073642 !default
+$base01:    #586e75 !default
+$base00:    #657b83 !default
+$base0:     #839496 !default
+$base1:     #93a1a1 !default
+$base2:     #eee8d5 !default
+$base3:     #fdf6e3 !default
+$yellow:    #b58900 !default
+$orange:    #cb4b16 !default
+$red:       #dc322f !default
+$magenta:   #d33682 !default
+$violet:    #6c71c4 !default
+$blue:      #268bd2 !default
+$cyan:      #2aa198 !default
+$green:     #859900 !default
 
-// Include the partials
+$header-bg-color:             $base3 !default
+$background-color:            $base3 !default
+$foreground-color:            $base2 !default
+$title-color:                 $base01 !default
+$title-span-color:            $base1 !default
+$navbar-text-color:           $yellow !default
+$navbar-bg-color:             $base2 !default
+$navbar-hover-text-color:     $base2 !default
+$navbar-hover-bg-color:       $yellow !default
+$heading-color:               $base01 !default
+$divider-color:               $base1 !default
+$anchor-color:                $yellow !default
+$anchor-background-color:     $base3 !default
+$primary-text-color:          $base00 !default
+$secondary-text-color:        $base1 !default
+$code-text-color:             $base0 !default
+
+$important-bg-color:          $base02 !default
+$important-text-color:        $base0 !default
+
+
+$sans: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif !default
+$serif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !default
+$mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !default
+
+@mixin sans
+  font-family: $sans
+
+@mixin serif
+  font-family: $serif
+
+@mixin mono
+  font-family: $mono
+
+// Include compass library
 @import compass/css3
-//@import fonts
-@import zenburn
-
-.serif
-  font-family: "Bitstream Charter", Georgia, serif
-
-.sans-serif
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif
-
-.monospace
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace
+// Include partials
+@import solarized
 
 html, body
   margin: 0
@@ -31,7 +61,7 @@ html, body
 
 html
   background: $background-color
-  @extend .serif
+  @include sans
   font-size: 105%
   line-height: 1.5em
   color: $primary-text-color
@@ -48,15 +78,14 @@ ul
   position: relative
   margin-bottom: 1em
   padding-top: 1em
-  background-color: $header-color
+  background-color: $header-bg-color
 
 #navbar
   width: 100%
   position: relative
   overflow: hidden
-  background-color: $foreground-color
-  -moz-border-radius: 10px
-  border-radius: 10px
+  background-color: $navbar-bg-color
+  @include border-radius(10px)
   ul
     margin: 0
     padding: 0
@@ -79,23 +108,22 @@ ul
     text-decoration: none
     font-weight: bold
     letter-spacing: 0.05em
-    color: $primary-text-color
+    color: $navbar-text-color
     margin: 0
     &:hover, &:active, &:focus
-      background: $navbar-background-highlight
-      color: $anchor-color
-      border: solid 1px $anchor-background-color
+      background: $navbar-hover-bg-color
+      color: $navbar-hover-text-color
+      border: solid 1px $navbar-hover-bg-color
       margin: 0
 
 .secondary-text
-  @extend .serif
+  @include serif
   color: $secondary-text-color
   a
     color: $primary-text-color
     border: none
     &:hover, &:focus, &:active
       background: $primary-text-color
-      color: $background-color
 
 h1
   margin-top: 0.25em
@@ -105,7 +133,7 @@ h1
   text-align: center
   letter-spacing: 0.03em
   a
-    border-bottom: none
+    border: none
     text-decoration: none
     color: $title-color
     &:hover, &:focus, &:active
@@ -121,76 +149,90 @@ h1
     font-size: 0.2em
     color: $title-span-color
 
+header
+  border-top: 2px solid $divider-color
+  border-bottom: 2px solid $divider-color
+
+  // The h2 specifically in post titles
+  h2
+    display: table
+    max-width: 87%
+    margin-right: 13%
+    border: none
+
 h2
-  @extend .sans-serif
+  @include serif
   font-size: 1.75em
   font-weight: bold
   color: $heading-color
   line-height: 1.4em
   margin: 0.5em 0
-  max-width: 87%
   text-align: left
+  border-bottom: 2px solid $divider-color
   a
+    border: none
     color: $heading-color
     &:hover, &:focus, &:active
       color: $heading-color
-      border-bottom: solid 1px $anchor-color
-      background-color: $background-color
 
 h3
-  @extend .sans-serif
+  @include serif
   font-size: 1.3em
   font-weight: bold
   color: $heading-color
+  border-bottom: 2px dotted $divider-color
 
 h4
-  @extend .sans-serif
+  @include serif
   color: $heading-color
+  border-bottom: 1px dotted $divider-color
 
 a
-  +transition-property((color, border, background))
+  +transition-property(color, border)
   +transition-duration(.3s)
   text-decoration: none
   color: $anchor-color
+  border-bottom: 1px solid $anchor-color
   &:hover, &:active, &:focus
-    color: $foreground-color
-    background-color: $anchor-color
+    color: darken($anchor-color, 5%)
+    border-color: darken($anchor-color, 5%)
 
 p
   letter-spacing: 0.005em
   margin: 0.5em 0
   text-align: justify
   &.update
-    border: 1px solid $primary-text-color
-    padding: 4px
-    -moz-box-shadow: 0px 0px 4px $primary-text-color
-    -webkit-box-shadow: 0px 0px 4px $primary-text-color
-    box-shadow: 0px 0px 0px $primary-text-color
+    @include border-radius(5px)
+    padding: 10px
+    background-color: $important-bg-color
+    color: $important-text-color
     text-indent: 0
 
 p + p, .on_the_web + p
   text-indent: 25px
 
 blockquote
+  @include serif
   margin: 1.5em 2.5em
   padding-left: 1em
-  border-left: 1px solid $secondary-text-color
+  border-left: 1px solid $heading-color
   font-style: italic
-  @extend .secondary-text
 
 code
-  color: $code-text-color
+  color: $primary-text-color
   background: $foreground-color
-  @extend .monospace
+  @include mono
   padding: 2px
-  -moz-border-radius: 4px
-  -webkit-border-radius: 4px
-  border-radius: 4px
+  @include border-radius(4px)
   letter-spacing: 0
 
+pre
+  padding: 15px
+
 pre code
-  color: $primary-text-color
+  color: $code-text-color
   font-size: 13px
+  background: inherit
 
 .on_the_web
   line-height: 1.2em
@@ -250,7 +292,7 @@ img
 table
   width: 90%
   margin: 0 auto
-  @extend .sans-serif
+  @include sans
   border-collapse: collapse
   th
     text-align: center
@@ -264,7 +306,7 @@ table.archive
   margin: 0
   text-align: left
   font-size: 90%
-  @extend .serif
+  @include serif
   tr
     vertical-align: top
     border-bottom: 1px solid $foreground-color
@@ -274,7 +316,7 @@ table.archive
     &.first
       width: 8em
       font-size: 80%
-      @extend .monospace
+      @include mono
       color: $secondary-text-color
 
 //ol.archive
@@ -305,15 +347,15 @@ table.archive
   margin: 1.2em 0
   line-height: 0
   font-size: 60%
-  @extend .sans-serif
+  @include sans
 
 hr
-  color: $foreground-color
+  color: $divider-color
   border-style: solid none
   border-width: 1px medium
   &.post
     margin: 1em 0 0 0
-    border-width: 3px medium
+    border-width: 1px medium
 
 .footer
   line-height: 1.6em
@@ -321,7 +363,7 @@ hr
   margin-right: auto
   max-width: 100%
   font-size: 0.775em
-  border-top: 5px solid $foreground-color
+  border-top: 2px solid $divider-color
   margin-top: 2em
   overflow: hidden
   .menu
@@ -333,52 +375,52 @@ hr
   float: left
   margin-left: 0.5em
   margin-right: 0.5em
-.links
-  float: left
-  width: 200px
-  height: 32px
-  margin-left: 3em
-  margin-right: 0.5em
-  text-align: center
-  ul
-    padding: 0
-  a
-    margin: 0
-    padding: 0
-    display: block
-    height: 32px
-    &:hover
-      background-color: transparent
-      color: transparent
-  li
-    margin: 4px
-    padding: 0
-    top: 0
-    height: 32px
-    list-style: none
-    diplay: block
-    background: url(/images/icons/sprite.png) no-repeat top left
-    float: left
-    &#email
-      background-position: -21px 0
-      width: 32px
-      height: 32px
-    &#linkedin
-      background-position: -195px 0
-      width: 32px
-      height: 32px
-    &#facebook
-      background-position: -79px 0
-      width: 32px
-      height: 32px
-    &#twitter
-      background-position: -253px 0
-      width: 32px
-      height: 32px
-    &#flickr
-      background-position: -137px 0
-      width: 32px
-      height: 32px
+//.links
+  //float: left
+  //width: 200px
+  //height: 32px
+  //margin-left: 3em
+  //margin-right: 0.5em
+  //text-align: center
+  //ul
+    //padding: 0
+  //a
+    //margin: 0
+    //padding: 0
+    //display: block
+    //height: 32px
+    //&:hover
+      //background-color: transparent
+      //color: transparent
+  //li
+    //margin: 4px
+    //padding: 0
+    //top: 0
+    //height: 32px
+    //list-style: none
+    //diplay: block
+    //background: url(/images/icons/sprite.png) no-repeat top left
+    //float: left
+    //&#email
+      //background-position: -21px 0
+      //width: 32px
+      //height: 32px
+    //&#linkedin
+      //background-position: -195px 0
+      //width: 32px
+      //height: 32px
+    //&#facebook
+      //background-position: -79px 0
+      //width: 32px
+      //height: 32px
+    //&#twitter
+      //background-position: -253px 0
+      //width: 32px
+      //height: 32px
+    //&#flickr
+      //background-position: -137px 0
+      //width: 32px
+      //height: 32px
 .copy
   margin-top: 2em
   text-align: center
@@ -411,7 +453,7 @@ hr
   .cloud-rank-#{$rank}
     font-size: 1.5em - ($rank - 1)*.1em
     a
-      color: darken($title-color, ($rank - 1)*4%)
+      color: darken($anchor-color, ($rank - 1)*2%)
 
 
 @for $i from 1 through 10
@@ -423,9 +465,10 @@ hr
   font-size: 70%
   margin-top: -2.75em
   float: right
+  display: table
 
 .date
-  @extend .monospace
+  @include mono
   color: $secondary-text-color
 
 .previous_posts
@@ -438,7 +481,7 @@ hr
   color: $secondary-text-color
   float: right
   font-size: 70%
-  @extend .sans-serif
+  @include sans
   span
     margin-right: 2px
 
@@ -447,4 +490,4 @@ hr
 
 .footnotes
   font-size: 75%
-  @extend .serif
+  @include serif

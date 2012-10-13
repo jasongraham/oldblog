@@ -41,11 +41,10 @@ You can email me at <a href='&#109;ail&#116;o&#58;jas&#111;n&#37;4&#48;th&#37;&#
 This is my personal blog, giving me a place to talk about my interests, blow off
 steam, and have some fun. 
 
-The color scheme for the site is based on the popular [Zenburn][] colors which
-I prefer for my coding environments.  It's easy to look at for long periods of
-time, and works surprisingly well for a blog.
+The color scheme for the site is based on the popular [Solarized][] scheme for
+code editors.
 
-[Zenburn]:http://slinky.imukuppi.org/zenburnpage/
+[Solarized]:http://ethanschoonover.com/solarized
 
 The site is hosted on [Linode][], using [Arch Linux][].
 
