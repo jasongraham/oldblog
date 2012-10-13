@@ -25,7 +25,7 @@ namespace :build do
   desc "build and start webserver"
   task :test => [:delete, :compass] do
     puts "building _site"
-    system('jekyll --server')
+    system('jekyll --server --auto')
   end
 
   desc "compile site"
