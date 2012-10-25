@@ -45,11 +45,6 @@ My [PGP public key][] available.
 This is my personal blog, giving me a place to talk about my interests, blow off
 steam, and have some fun. 
 
-The color scheme for the site is based on the popular [Solarized][] scheme for
-code editors.
-
-[Solarized]:http://ethanschoonover.com/solarized
-
 The site is hosted on [Linode][], using [Arch Linux][].
 
 [Linode]:https://www.linode.com/

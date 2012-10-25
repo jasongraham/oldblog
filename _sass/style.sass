@@ -1,43 +1,49 @@
 // Solarized Color Base
-$base03:    #002b36 !default
-$base02:    #073642 !default
-$base01:    #586e75 !default
-$base00:    #657b83 !default
-$base0:     #839496 !default
-$base1:     #93a1a1 !default
-$base2:     #eee8d5 !default
-$base3:     #fdf6e3 !default
-$yellow:    #b58900 !default
-$orange:    #cb4b16 !default
-$red:       #dc322f !default
-$magenta:   #d33682 !default
-$violet:    #6c71c4 !default
-$blue:      #268bd2 !default
-$cyan:      #2aa198 !default
-$green:     #859900 !default
+//$base03:    #002b36 !default
+//$base02:    #073642 !default
+//$base01:    #586e75 !default
+//$base00:    #657b83 !default
+//$base0:     #839496 !default
+//$base1:     #93a1a1 !default
+//$base2:     #eee8d5 !default
+//$base3:     #fdf6e3 !default
+//$yellow:    #b58900 !default
+//$orange:    #cb4b16 !default
+//$red:       #dc322f !default
+//$magenta:   #d33682 !default
+//$violet:    #6c71c4 !default
+//$blue:      #268bd2 !default
+//$cyan:      #2aa198 !default
+//$green:     #859900 !default
 
 // desaturate($base3, 50%)
-$mybackground: #f5f3ea !default
+$background: #FFFFFF !default
 
-$header-bg-color:             $mybackground !default
-$background-color:            $mybackground !default
-$foreground-color:            $base2 !default
-$title-color:                 $base01 !default
-$title-span-color:            $base1 !default
-$navbar-text-color:           $yellow !default
-$navbar-bg-color:             $base2 !default
-$navbar-hover-text-color:     $base2 !default
-$navbar-hover-bg-color:       $yellow !default
-$heading-color:               $base01 !default
-$divider-color:               $base1 !default
-$anchor-color:                $yellow !default
-$anchor-background-color:     $mybackground !default
-$primary-text-color:          $base00 !default
-$secondary-text-color:        $base1 !default
-$code-text-color:             $base0 !default
+$crimson:    #981E32 !default
+$black:      #3C2F20 !default
+$dark-grey:  #666 !default
+$light-grey: #D7D7D7 !default
+$blue:       darken(#0066CC,10%) !default
 
-$important-bg-color:          $base02 !default
-$important-text-color:        $base0 !default
+$header-bg-color:             $background !default
+$background-color:            $background !default
+$foreground-color:            $light-grey !default
+$title-color:                 $blue !default
+$title-span-color:            $dark-grey !default
+$navbar-text-color:           $crimson !default
+$navbar-bg-color:             $light-grey !default
+$navbar-hover-text-color:     $light-grey !default
+$navbar-hover-bg-color:       $crimson !default
+$heading-color:               $blue !default
+$divider-color:               $black !default
+$anchor-color:                $crimson !default
+$anchor-background-color:     $background !default
+$primary-text-color:          $black !default
+$secondary-text-color:        $dark-grey !default
+$code-text-color:             $dark-grey !default
+
+$important-bg-color:          $light-grey !default
+$important-text-color:        $black !default
 
 
 $sans: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif !default
@@ -233,7 +239,6 @@ pre
   padding: 15px
 
 pre code
-  color: $code-text-color
   font-size: 13px
   background: inherit
 
