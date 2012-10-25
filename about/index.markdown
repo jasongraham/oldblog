@@ -36,6 +36,10 @@ a [family blog][].
 
 You can email me at <a href='&#109;ail&#116;o&#58;jas&#111;n&#37;4&#48;th&#37;&#54;5%&#50;Dgra%&#54;8a&#109;&#46;&#99;om'>jas&#111;n&#64;th&#101;-gra&#104;am&#46;co&#109;</a>.
 
+My [PGP public key][] available.
+
+[PGP public key]:/pubkey.asc
+
 ## About This Site ##
 
 This is my personal blog, giving me a place to talk about my interests, blow off
